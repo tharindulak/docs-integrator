@@ -1,0 +1,428 @@
+{
+  "summary": {
+    "source": "wso2/docs-integrator@3139523c88056337f779f2f99f0cae287ae6fb2b",
+    "sourceKind": "docusaurus",
+    "edition": "next",
+    "legacyBase": "https://wso2.com/integration-platform/docs/integrator/next/",
+    "sidebar": "sidebars.ts (its object literal parsed, not run)",
+    "navPages": 296,
+    "sourceFiles": 332,
+    "stats": {
+      "pages": 296,
+      "partials": 4,
+      "apiPages": 0,
+      "images": 1347,
+      "imageBytes": 648759684,
+      "unlisted": 0,
+      "links": 2366,
+      "legacyLinks": 259,
+      "droppedLinks": 9,
+      "missingImages": 0,
+      "generatedDescriptions": 56,
+      "sidebarLabels": 39,
+      "components": {
+        "ThemedImage": 1212,
+        "palette-card": 123,
+        "palette-grid": 25,
+        "palette-chip": 127,
+        "CloudDocsLink": 27,
+        "admonition caution→warning": 11,
+        "PaletteIcon": 4,
+        "QuickstartHeader": 8,
+        "PrereqCard": 18,
+        "Prerequisites": 8,
+        "Steps": 8,
+        "HTML comment": 23,
+        "ArtifactPicker": 1,
+        "EipReferenceLink": 9,
+        "PatternImplementationTabs": 20,
+        "PatternImage": 2,
+        "GuidesCatalog": 1,
+        "TabAwareToc": 2
+      },
+      "paletteFallbacks": 275,
+      "acceptedByOverrides": 0,
+      "excludedPages": 32,
+      "legacyRedirects": 296
+    },
+    "issues": {
+      "link": 10,
+      "palette": 18,
+      "description": 43,
+      "component": 2
+    },
+    "compileFailures": 0,
+    "contentSafetyFindings": 0,
+    "overrides": {
+      "patches": 0,
+      "patchesApplied": 0
+    }
+  },
+  "items": [
+    {
+      "kind": "link",
+      "file": "cloud-providers/aws.md",
+      "message": "link to /guides/business-use-cases: no page of next has that URL; it goes to the legacy site"
+    },
+    {
+      "kind": "palette",
+      "file": "cloud-providers/aws.md",
+      "message": "Palette grids 7, cards 24, chips 24 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "deploy-and-run/deploy-to-wso2-cloud/deploy-to-wso2-cloud.md",
+      "message": "description longer than 160 characters (188); one was generated from the first paragraph"
+    },
+    {
+      "kind": "palette",
+      "file": "deploy-and-run/deploy-and-run.md",
+      "message": "Palette grids 2, cards 8, chips 14 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "deploy-and-run/secure/aws-access.md",
+      "message": "description longer than 160 characters (207); one was generated from the first paragraph"
+    },
+    {
+      "kind": "palette",
+      "file": "observe/observe.md",
+      "message": "Palette grids 3, cards 7, chips 14 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "observe/tracing.md",
+      "message": "description longer than 160 characters (165); one was generated from the first paragraph"
+    },
+    {
+      "kind": "palette",
+      "file": "get-started/concepts/concepts.mdx",
+      "message": "Palette cards 4, chips 27 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "palette",
+      "file": "get-started/get-started.md",
+      "message": "Palette grids 1, cards 4, chips 7 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "palette",
+      "file": "get-started/quickstarts/build-ai-agent.md",
+      "message": "Palette cards 1 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "palette",
+      "file": "get-started/quickstarts/build-automation.md",
+      "message": "Palette cards 1 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "get-started/quickstarts/build-durable-workflow.md",
+      "message": "description longer than 160 characters (162); one was generated from the first paragraph"
+    },
+    {
+      "kind": "palette",
+      "file": "get-started/quickstarts/build-event-driven-integration.md",
+      "message": "Palette cards 1 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "palette",
+      "file": "get-started/quickstarts/build-integration-api.md",
+      "message": "Palette cards 1 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "guides/business-use-cases/building-hr-knowledge-base-rag.md",
+      "message": "description longer than 160 characters (186); one was generated from the first paragraph"
+    },
+    {
+      "kind": "link",
+      "file": "guides/business-use-cases/edi-purchase-order-processing.md",
+      "message": "link to ../../develop-and-test/integration-artifacts/file-driven-integration/ftp-sftp.md: no such page in next; the link was removed and its text kept"
+    },
+    {
+      "kind": "description",
+      "file": "guides/business-use-cases/edi-purchase-order-processing.md",
+      "message": "description longer than 160 characters (229); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "guides/business-use-cases/review-summarizer-natural-function.md",
+      "message": "description longer than 160 characters (193); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "guides/business-use-cases/sap-b1-low-stock-purchase-automation.md",
+      "message": "description longer than 160 characters (208); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "guides/business-use-cases/sf-ec-leave-to-google-calendar-sync.md",
+      "message": "description longer than 160 characters (254); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/create-workspace/create-workspace.md",
+      "message": "description longer than 160 characters (174); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/create-workspace/restricted-networks/restricted-networks.md",
+      "message": "description longer than 160 characters (163); one was generated from the first paragraph"
+    },
+    {
+      "kind": "palette",
+      "file": "develop-and-test/data-transformation/data-transformation.md",
+      "message": "Palette grids 1, cards 10 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/data-transformation/data-transformation.md",
+      "message": "description longer than 160 characters (186); one was generated from the first paragraph"
+    },
+    {
+      "kind": "palette",
+      "file": "develop-and-test/developer-tools/developer-tools.md",
+      "message": "Palette grids 2, cards 11 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "palette",
+      "file": "develop-and-test/develop-and-test.md",
+      "message": "Palette grids 3, cards 10 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/create-an-agent.md",
+      "message": "description longer than 160 characters (162); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/definitions/definitions.md",
+      "message": "description longer than 160 characters (179); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/definitions/sharing-and-reusing-definitions.md",
+      "message": "description longer than 160 characters (167); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/evaluations/create-evaluations-custom.md",
+      "message": "description longer than 160 characters (173); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/evaluations/create-evaluations-templates.md",
+      "message": "description longer than 160 characters (176); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/evaluations/evaluations.md",
+      "message": "description longer than 160 characters (170); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/memory.md",
+      "message": "description longer than 160 characters (208); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/multi-agent/agents-as-tools.md",
+      "message": "description longer than 160 characters (163); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/multi-agent/multi-agent.md",
+      "message": "description longer than 160 characters (166); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/chunkers.md",
+      "message": "description longer than 160 characters (232); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/data-loaders.md",
+      "message": "description longer than 160 characters (267); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/embedding-providers.md",
+      "message": "description longer than 160 characters (250); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/knowledge-bases.md",
+      "message": "description longer than 160 characters (262); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/model-providers.md",
+      "message": "description longer than 160 characters (282); one was generated from the first paragraph"
+    },
+    {
+      "kind": "palette",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/ai-building-blocks.md",
+      "message": "Palette grids 1, cards 6 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/ai-building-blocks.md",
+      "message": "description longer than 160 characters (184); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/vector-stores.md",
+      "message": "description longer than 160 characters (223); one was generated from the first paragraph"
+    },
+    {
+      "kind": "palette",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/ai-integrations.md",
+      "message": "Palette grids 1, cards 7 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/rag/rag-query.md",
+      "message": "description longer than 160 characters (162); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/voice-agent/voice-agent.md",
+      "message": "description longer than 160 characters (184); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/event-driven-integration/cdc-mysql.md",
+      "message": "description longer than 160 characters (179); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/event-driven-integration/whatsapp-business.md",
+      "message": "description longer than 160 characters (179); one was generated from the first paragraph"
+    },
+    {
+      "kind": "component",
+      "file": "develop-and-test/integration-artifacts/integration-artifacts.md",
+      "message": "<ArtifactPicker /> (an interactive catalogue) became <DocCardList />, the folder's pages"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/supportive-artifacts/data-mapper/data-mapper.md",
+      "message": "description longer than 160 characters (204); one was generated from the first paragraph"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/workflow/durable-agentic-workflow/create-durable-agent.md",
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/workflow/durable-agentic-workflow/get-data-event-result.md",
+      "message": "description longer than 160 characters (161); one was generated from the first paragraph"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/activities.md",
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/activities.md",
+      "message": "description longer than 160 characters (177); one was generated from the first paragraph"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/create.md",
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/create.md",
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/durable-timers.md",
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+    },
+    {
+      "kind": "description",
+      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/durable-timers.md",
+      "message": "description longer than 160 characters (163); one was generated from the first paragraph"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/durable-workflow.md",
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/start.md",
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/workflow/workflow.md",
+      "message": "link to ../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+    },
+    {
+      "kind": "palette",
+      "file": "editor/canvases/flow-canvas/node-palette.md",
+      "message": "Palette grids 1, cards 8, chips 27 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "palette",
+      "file": "editor/editor.md",
+      "message": "Palette grids 1, cards 6, chips 14 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "editor/troubleshooting/moving-to-ballerina-2201-14.md",
+      "message": "description longer than 160 characters (185); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "guides/how-to-guides/azure-files-change-tracker.md",
+      "message": "description longer than 160 characters (172); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "guides/how-to-guides/s3-events-via-sqs-listener.md",
+      "message": "description longer than 160 characters (161); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "guides/how-to-guides/sap-s4hana-stock-availability-api.md",
+      "message": "description longer than 160 characters (239); one was generated from the first paragraph"
+    },
+    {
+      "kind": "component",
+      "file": "guides/guides.md",
+      "message": "<GuidesCatalog /> (an interactive catalogue) became <DocCardList />, the folder's pages"
+    },
+    {
+      "kind": "palette",
+      "file": "migrate/index.md",
+      "message": "Palette grids 1, cards 3 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "guides/tutorials/file-order-hub.md",
+      "message": "description longer than 160 characters (349); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "guides/tutorials/social-media.md",
+      "message": "description longer than 160 characters (272); one was generated from the first paragraph"
+    },
+    {
+      "kind": "palette",
+      "file": "reference/reference.md",
+      "message": "Palette grids 1, cards 11 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "description",
+      "file": "reference/streaming-capabilities.md",
+      "message": "description longer than 160 characters (212); one was generated from the first paragraph"
+    }
+  ]
+}

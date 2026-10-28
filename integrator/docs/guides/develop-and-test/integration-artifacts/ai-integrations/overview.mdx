@@ -1,0 +1,65 @@
+---
+title: AI Integrations Overview
+description: Build AI-powered integrations with WSO2 Integrator using direct LLM calls, AI agents, RAG pipelines, MCP servers, natural functions, and voice agents.
+type: how-to
+sidebar_label: AI integration basics
+sidebar_position: 1
+keywords:
+  - wso2 integrator
+  - genai
+  - ai
+  - llm
+  - rag
+  - agent
+  - mcp
+  - natural function
+  - voice agent
+  - model provider
+  - embedding
+  - vector store
+  - knowledge base
+hide_table_of_contents: true
+---
+
+WSO2 Integrator lets you build AI-powered integrations, including direct LLM calls, AI agents, RAG pipelines, MCP servers, natural functions, and voice agents.
+
+## [AI Building Blocks](./ai-building-blocks/overview.mdx)
+
+The shared connections and stores every AI feature is built from: model providers, embedding providers, vector stores, knowledge bases, chunkers, and data loaders.
+
+## [Direct LLMs](./direct-llm/index.mdx)
+
+The simplest AI block. Add a generate node to a flow, write a prompt, and bind the response to a typed value in a single round-trip.
+
+## [AI Agents](./agents/overview.mdx)
+
+Autonomous LLM-driven agents that reason over a system prompt, call tools, and keep memory across turns. Covers reusable definitions, multi-agent systems, gated tools, observability, and evaluations.
+
+## [Retrieval-Augmented Generation (RAG)](./rag/overview.mdx)
+
+Ground LLM responses in your own documents. Ingest documents into a knowledge base, then retrieve the relevant chunks at query time and inject them into the prompt.
+
+## [Model Context Protocol (MCP)](./mcp/overview.mdx)
+
+Expose a service as MCP tools for AI assistants, or use tools from external MCP servers in your agents.
+
+## [Natural Functions](./natural-functions/index.mdx)
+
+Experimental. Write the function body in plain English. The LLM returns a value that conforms to your declared return type.
+
+## [Voice Agent](./voice-agent/index.mdx)
+
+Expose an AI agent over a voice channel. WSO2 Cloud handles speech-to-text and text-to-speech, so your service works only with text.
+
+## Getting started
+
+- **[Build a Sentiment Analyzer](../../../how-to-guides/build-a-sentiment-analyzer.mdx):** Your first AI integration with a direct LLM call.
+- **[Build a Hotel Finder Agent](../../../how-to-guides/build-a-hotel-finder-agent.mdx):** An agent with two custom tools and session-scoped memory.
+
+## Tutorials
+
+- **[Email Generator with Direct LLM](../../../how-to-guides/email-generator-direct-llm.mdx)**
+- **[Building an IT Helpdesk AI Agent with Persistent Memory](../../../business-use-cases/it-helpdesk-chatbot.mdx)**
+- **[Building an HR knowledge base with RAG](../../../business-use-cases/building-hr-knowledge-base-rag.mdx)**
+- **[Build a customer care agent with MCP](../../../business-use-cases/building-a-customer-care-agent-mcp.mdx)**
+- **[Customer review analyzer with Natural Function](../../../business-use-cases/review-summarizer-natural-function.mdx)**

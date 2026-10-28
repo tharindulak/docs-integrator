@@ -1,0 +1,105 @@
+---
+title: Develop and Test
+description: Build, transform, test, and debug integrations with WSO2 Integrator.
+type: how-to
+hide_table_of_contents: true
+---
+
+This section covers the Develop and Test phase of the [integration lifecycle](../../index.mdx#from-development-to-production): building integrations in the WSO2 Integrator editor before anything ships. We assume you're already familiar with the editor's surfaces from the [Editor Tour](../editor/index.mdx).
+
+:::tip
+Start building your integration by prompting [WSO2 Integrator Copilot](../editor/copilot/overview.mdx) to generate a first working version of your integration flow, refine it on the visual designer, and drop into Ballerina pro-code only when you need more precise control; everything stays in sync throughout.
+:::
+
+## Create Integration Workspace
+
+### [Create integrations](./create-workspace/overview.mdx)
+
+- Start new integration project
+- Explore samples
+- Build libraries
+
+### [Editor Tour (Prerequisite)](../editor/index.mdx)
+
+- Workspace and views
+- Editors and canvases
+- WSO2 Integrator Copilot
+
+Moving from another platform? See [Migrate](../migrate/index.mdx).
+
+## Build Integration
+
+<div class="palette-card--standalone">
+
+### [Build with Copilot](../editor/copilot/overview.mdx)
+
+- Prompt Copilot to generate a first working version
+- Works across artifacts, logic, and data mapping
+- Iterate in chat, then refine visually or in code
+
+</div>
+
+<div class="palette-group">
+
+<p class="palette-group-label">Or build visually</p>
+
+### [Add Integration artifacts](./integration-artifacts/index.mdx)
+
+- Automations
+- APIs: HTTP, GraphQL, gRPC, TCP, WebSub
+- Event-driven: Kafka, RabbitMQ, MQTT, Salesforce, GitHub
+- File-driven integrations
+- AI integrations
+- Supportive artifacts
+
+### [Design integration logic](../editor/canvases/flow-canvas/overview.mdx)
+
+- Flow Canvas with Node Palette
+- Control flow and error handling
+- Expressions and query expressions
+- Ballerina pro-code
+
+### [Use Developer Tools](./developer-tools/overview.mdx)
+
+- Generate code: OpenAPI, GraphQL, AsyncAPI, gRPC
+- Generate code: WSDL, XSD, EDI, Health
+- Data persistence (<code>bal persist</code>)
+- Static analysis (<code>bal scan</code>)
+
+### [Transform Your Data](./data-transformation/overview.mdx)
+
+- Visual Data Mapper
+- JSON, XML, CSV, and XLSX
+- EDI and YAML/TOML
+- PDF and ZIP processing
+
+</div>
+
+## Try, test, and debug Integration
+
+### [Test Your Integration](./test/overview.mdx)
+
+- Built-in Try-It tool
+- Unit and data-driven tests
+- Mocking and code coverage
+- AI-generated test cases
+
+### [Debug Your Integration](./debugging/index.mdx)
+
+- Breakpoints and stepping
+- Variable inspection
+- Test debugging
+- Remote debugging
+
+### [Troubleshoot Your Integration](./troubleshooting/overview.mdx)
+
+- Logging
+- Errors and stack traces
+- Strand dumps
+- Performance profiling
+
+## What's next
+
+- [Create a new integration](./create-workspace/create-a-project.mdx) — Start a project in the WSO2 Integrator or from the CLI
+- [Design integration logic](../editor/canvases/flow-canvas/overview.mdx) — Wire up the flow between request and response
+- [Deploy and operate](../../deploy-and-operate/deploy-and-run/index.mdx) — Ship your integration once it's ready

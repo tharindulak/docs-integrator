@@ -1,0 +1,391 @@
+---
+title: WSO2 Integrator on AWS
+description: Connect to AWS services, build AI on Amazon Bedrock, deploy to ECS, EKS, EC2 or Lambda, and secure and observe it all with AWS-native tools.
+type: how-to
+sidebar_position: 1
+keywords:
+  - wso2 integrator
+  - aws
+  - amazon web services
+  - bedrock
+  - ecs
+  - eks
+  - lambda
+  - iam
+  - cloudwatch
+---
+
+<div className="aws-page">
+
+# WSO2 Integrator on AWS
+
+WSO2 Integrator has native support for Amazon Web Services ([AWS](https://aws.amazon.com/)). Connect to AWS services, add AI
+with Amazon Bedrock, run your integrations on AWS, keep them secure
+without storing access keys, and observe how they're running. This page covers
+everything in one place, in the order you'll need it.
+
+<ThemedImage light="../../../assets/img/aws/architecture-light.png" dark="../../../assets/img/aws/architecture-dark.png" alt="Architecture diagram: an event in AWS (SQS or Lambda) triggers WSO2 Integrator, which runs on ECS, EKS, EC2 or Lambda, optionally calls Amazon Bedrock for AI, and talks to AWS services like S3, DynamoDB, SNS, SES and Redshift -- secured by IAM roles and watched with CloudWatch, X-Ray and Prometheus." />
+
+## [New to AWS?](https://docs.aws.amazon.com/)
+
+### [Fargate](https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html)
+
+A serverless compute engine for containers - no EC2 instances to manage, used by the recommended ECS deployment below.
+
+### [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
+
+An identity AWS gives your integration, so it can use AWS without access keys in your code.
+
+### [Region](https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions-availability-zones.html)
+
+The AWS location where your services run, for example <code>us-east-1</code>.
+
+### [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-service.html)
+
+The AWS service for using AI models from several providers through one API.
+
+<div
+  className="palette-group"
+  style={{
+    background: 'var(--wso2-accent-light)',
+    borderStyle: 'solid',
+    borderColor: 'var(--wso2-accent)',
+  }}>
+
+<p className="palette-group-label" style={{color: 'var(--wso2-accent-text)'}}>Start here</p>
+
+## Four steps to unlock AWS Services with WSO2 Integrator
+
+You need an [AWS account](https://portal.aws.amazon.com/billing/signup) and
+[WSO2 Integrator installed](https://wso2.com/products/downloads/?product=wso2integrator).
+
+<div className="step-cols">
+  <div className="step-col">
+    <div className="step-head">
+      <span className="step-num">1</span>
+      <span className="step-line" />
+    </div>
+    <h3 className="step-title">Build</h3>
+    <p className="step-desc">Connect to AWS services and add AI with Amazon Bedrock.</p>
+  </div>
+  <div className="step-col">
+    <div className="step-head">
+      <span className="step-num">2</span>
+      <span className="step-line" />
+    </div>
+    <h3 className="step-title"><a href="#deploy">Deploy</a></h3>
+    <p className="step-desc">Run it on Amazon ECS with Fargate, with no servers to manage.</p>
+  </div>
+  <div className="step-col">
+    <div className="step-head">
+      <span className="step-num">3</span>
+      <span className="step-line" />
+    </div>
+    <h3 className="step-title"><a href="#secure">Secure</a></h3>
+    <p className="step-desc">Use IAM roles, not keys, and keep secrets out of code.</p>
+  </div>
+  <div className="step-col">
+    <div className="step-head">
+      <span className="step-num">4</span>
+      <span className="step-line" />
+    </div>
+    <h3 className="step-title"><a href="#observe">Observe</a></h3>
+    <p className="step-desc">Send logs, traces and metrics to the AWS tools you already use.</p>
+  </div>
+</div>
+
+</div>
+
+<div className="part-head">
+
+<span className="part-icon-badge">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 4.5 19 9l-9.5 9.5H5V14z" /></svg>
+</span>
+
+## Build for AWS {#build}
+
+</div>
+
+Decide how your integration interacts with AWS, add AI with Amazon Bedrock, and
+use Bedrock for AI assisted development.
+
+<div className="sub-steps">
+
+<div className="sub-head">
+
+### Connect with AWS
+
+</div>
+
+Most teams start with a connector.
+
+#### Connect to AWS services
+
+Add a connector from the palette and sign in with the IAM role of wherever it runs.
+
+- [Browse AWS connectors](https://wso2.com/integration-platform/docs/connectors/catalog)
+
+#### React to AWS events
+
+Start an integration when a message lands in an SQS queue, or when an event invokes an AWS Lambda function.
+
+- [SQS listener](../../guides/develop-and-test/integration-artifacts/event-driven-integration/aws-sqs.mdx)
+- [Lambda event handlers](../deploy-and-run/self-hosted/serverless-deployment.mdx#aws-lambda)
+
+#### Call any AWS API
+
+No connector for a service? Call its API directly - request signing (SigV4), Region and FIPS endpoints are handled for you.
+
+- [Call AWS APIs](../deploy-and-run/secure/aws-access.mdx#call-aws-apis-without-a-connector)
+
+<div className="sub-head">
+
+### Add AI with Amazon Bedrock {#ai}
+
+</div>
+
+Use AI models hosted on AWS, so your data stays in your AWS account.
+
+#### Use Bedrock models
+
+Call chat models and create embeddings through Amazon Bedrock, configured as a model or embedding provider.
+
+- [Model providers](../../guides/develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/model-providers.mdx#aws-bedrock)
+- [Embedding providers](../../guides/develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/embedding-providers.mdx#aws-bedrock)
+- [Authentication](../../guides/develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/model-providers.mdx#aws-credential-options)
+
+#### Answer from your own data (RAG)
+
+Let AI answer from your documents using retrieval-augmented generation, with your source documents in S3.
+
+- [Bedrock knowledge bases](../../guides/develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/knowledge-bases.mdx#aws-bedrock)
+- [S3 Vectors](../../guides/develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/vector-stores.mdx#amazon-s3-vectors)
+- [S3 data loader](../../guides/develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/data-loaders.mdx#aws-s3-text-data-loader)
+
+#### Run agents on Bedrock AgentCore
+
+Deploy AI agents to AgentCore and give them tools through AgentCore Gateway.
+
+- [Deploy](../deploy-and-run/self-hosted/containerized-deployment.mdx#amazon-bedrock-agentcore-runtime-deployment)
+- [Authentication](../deploy-and-run/secure/authentication.mdx#agents-on-amazon-bedrock-agentcore-runtime)
+- [Tracing](../observe/tracing.mdx#on-amazon-bedrock-agentcore-runtime)
+
+#### Give agents a memory
+
+Store conversation memory in DynamoDB so agents remember earlier messages.
+
+- [DynamoDB](../../guides/develop-and-test/integration-artifacts/ai-integrations/agents/memory.mdx#creating-an-amazon-dynamodb-short-term-memory-store)
+
+<div className="sub-head">
+
+### AI Assistance with Amazon Bedrock
+
+</div>
+
+Bedrock also powers AI features built into WSO2 Integrator itself.
+
+#### Copilot with Amazon Bedrock
+
+Sign in to WSO2 Integrator Copilot with your own Amazon Bedrock credentials.
+
+- [Sign in with Bedrock](../../guides/editor/copilot/overview.mdx#sign-in-from-the-copilot-welcome-screen)
+- [How Copilot uses Bedrock](../../guides/editor/copilot/copilot-architecture.mdx#amazon-bedrock)
+
+#### AI-assisted migration
+
+Use Bedrock models to help migrate existing integrations onto WSO2 Integrator.
+
+- [From MuleSoft](../../guides/migrate/from-mulesoft.mdx#step-5-ai-enhancement)
+- [From TIBCO](../../guides/migrate/from-tibco.mdx#step-5-ai-enhancement)
+
+</div>
+
+<div className="part-head">
+
+<span className="part-icon-badge">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14" /></svg>
+</span>
+
+## Deploy to AWS {#deploy}
+
+</div>
+
+
+Choose where your integration runs. Not sure? Start with ECS on Fargate.
+
+### [Amazon ECS on Fargate <span class="badge badge--success">Recommended</span>](../deploy-and-run/self-hosted/containerized-deployment.mdx#amazon-ecs-deployment)
+
+Run containers without managing any servers - the easiest place to start.
+
+### [Amazon EKS](../deploy-and-run/self-hosted/containerized-deployment.mdx#amazon-eks-deployment)
+
+Choose this if your team already runs Kubernetes.
+
+### [Amazon EC2](../deploy-and-run/self-hosted/vm-deployment.mdx#run-on-amazon-ec2)
+
+Choose this if you want a virtual machine you fully control.
+
+### [AWS Lambda](../deploy-and-run/self-hosted/serverless-deployment.mdx#aws-lambda)
+
+Choose this for short, event-driven jobs that run only when needed.
+
+<div className="part-head">
+
+<span className="part-icon-badge">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z" /></svg>
+</span>
+
+## Secure on AWS {#secure}
+
+</div>
+
+
+Follow these three practices from day one.
+
+### Use IAM roles, not keys
+
+Your integration picks up the role of wherever it runs - nothing secret lives in code.
+
+- [Default credential chain](../deploy-and-run/secure/aws-access.mdx#use-the-default-credential-chain)
+- [Attach an IAM role](../deploy-and-run/secure/aws-access.mdx#attach-an-iam-role)
+- [Cross-account access](../deploy-and-run/secure/aws-access.mdx#access-resources-in-another-aws-account)
+
+### [Keep secrets out of code](../deploy-and-run/secure/secrets-encryption.mdx#aws-secrets-manager)
+
+Load passwords and settings from AWS Secrets Manager or SSM Parameter Store.
+
+### [Keep traffic private](../deploy-and-run/secure/aws-access.mdx#keep-aws-traffic-inside-your-vpc)
+
+Reach AWS services through VPC endpoints, with FIPS and dual-stack options.
+
+<div className="part-head">
+
+<span className="part-icon-badge">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12h4l3-7 4 14 3-7h4" /></svg>
+</span>
+
+## Observe in AWS {#observe}
+
+</div>
+
+
+Send logs, traces and metrics to the AWS tools you already use.
+
+### Logs
+
+Collect logs in Amazon CloudWatch Logs.
+
+- [CloudWatch Logs](../observe/logging.mdx#send-logs-to-amazon-cloudwatch-logs)
+
+### Traces
+
+Follow each request end to end with AWS X-Ray.
+
+- [AWS X-Ray](../observe/tracing.mdx#choose-a-tracing-backend)
+
+### Metrics
+
+Track performance in Amazon Managed Service for Prometheus.
+
+- [Managed Prometheus](../observe/metrics.mdx#send-metrics-to-amazon-managed-service-for-prometheus)
+
+## AWS connectors
+
+Each AWS service has its own connector in the palette. On AWS, set `auth:
+DEFAULT_CREDENTIALS` on a connector so it uses the IAM role of wherever it
+runs. See [Access AWS services securely](../deploy-and-run/secure/aws-access.mdx).
+
+<table className="aws-connectors-table">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Connector</th>
+      <th>Use it for</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowSpan={3}>Messaging</td>
+      <td>[Amazon SQS](https://wso2.com/integration-platform/docs/connectors/catalog/messaging/aws.sqs/overview)</td>
+      <td>Queue messages</td>
+    </tr>
+    <tr>
+      <td>[Amazon SNS](https://wso2.com/integration-platform/docs/connectors/catalog/communication/aws.sns/aws-sns-connector-overview)</td>
+      <td>Publish to topics</td>
+    </tr>
+    <tr>
+      <td>[Amazon SES](https://wso2.com/integration-platform/docs/connectors/catalog/marketing-social/aws.ses/connector-overview)</td>
+      <td>Send email</td>
+    </tr>
+    <tr>
+      <td>Storage</td>
+      <td>[Amazon S3](https://wso2.com/integration-platform/docs/connectors/catalog/storage-file/aws.s3/overview)</td>
+      <td>Bucket and object management</td>
+    </tr>
+    <tr>
+      <td rowSpan={5}>Database</td>
+      <td>[Amazon DynamoDB](https://wso2.com/integration-platform/docs/connectors/catalog/database/aws.dynamodb/connector-overview)</td>
+      <td>Read and write NoSQL data</td>
+    </tr>
+    <tr>
+      <td>[DynamoDB Streams](https://wso2.com/integration-platform/docs/connectors/catalog/database/aws.dynamodbstreams/connector-overview)</td>
+      <td>Follow table changes</td>
+    </tr>
+    <tr>
+      <td>[Amazon Redshift](https://wso2.com/integration-platform/docs/connectors/catalog/database/aws.redshift/aws-redshift-connector-overview)</td>
+      <td>Query data warehouses</td>
+    </tr>
+    <tr>
+      <td>[Redshift Data API](https://wso2.com/integration-platform/docs/connectors/catalog/database/aws.redshiftdata/connector-overview)</td>
+      <td>Query data warehouses over an API</td>
+    </tr>
+    <tr>
+      <td>[Amazon SimpleDB](https://wso2.com/integration-platform/docs/connectors/catalog/database/aws.simpledb/connector-overview)</td>
+      <td>Legacy key-value data</td>
+    </tr>
+    <tr>
+      <td>Security</td>
+      <td>[AWS Secrets Manager](https://wso2.com/integration-platform/docs/connectors/catalog/security-identity/aws.secretmanager/aws-secrets-manager-connector-overview)</td>
+      <td>Read secrets at runtime</td>
+    </tr>
+    <tr>
+      <td rowSpan={2}>Marketplace</td>
+      <td>[Metering](https://wso2.com/integration-platform/docs/connectors/catalog/cloud-infrastructure/aws.marketplace.mpm/aws-marketplace-mpm-connector-overview)</td>
+      <td>Meter usage for Marketplace products</td>
+    </tr>
+    <tr>
+      <td>[Entitlement](https://wso2.com/integration-platform/docs/connectors/catalog/cloud-infrastructure/aws.marketplace.mpe/aws-marketplace-mpe-connector-overview)</td>
+      <td>Check entitlements for Marketplace products</td>
+    </tr>
+    <tr>
+      <td rowSpan={3}>General-purpose</td>
+      <td>[MySQL](https://wso2.com/integration-platform/docs/connectors/catalog/database/mysql/connector-overview)</td>
+      <td>For Amazon RDS and Aurora (MySQL-compatible)</td>
+    </tr>
+    <tr>
+      <td>[PostgreSQL](https://wso2.com/integration-platform/docs/connectors/catalog/database/postgresql/connector-overview)</td>
+      <td>For Amazon RDS and Aurora (PostgreSQL-compatible)</td>
+    </tr>
+    <tr>
+      <td>[Redis](https://wso2.com/integration-platform/docs/connectors/catalog/database/redis/connector-overview)</td>
+      <td>For ElastiCache and MemoryDB</td>
+    </tr>
+    <tr>
+      <td>Change data capture</td>
+      <td>[CDC](https://wso2.com/integration-platform/docs/connectors/catalog/database/cdc/connector-overview)</td>
+      <td>Stream database changes, with schema history kept in S3</td>
+    </tr>
+  </tbody>
+</table>
+
+[Browse the full AWS connector catalog &rarr;](https://wso2.com/integration-platform/docs/connectors/catalog)
+
+## What's next?
+
+<div class="skip-ahead-card">
+  ### [Explore a business use case with AWS](https://wso2.com/integration-platform/docs/integrator/next/guides/business-use-cases)
+
+  See complete, end-to-end solutions built with WSO2 Integrator to understand AWS native support.
+</div>
+
+</div>

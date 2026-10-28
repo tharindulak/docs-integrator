@@ -49,7 +49,7 @@ Choosing **Auto Retry** adds the backoff fields to the form. Every one of them i
 
 Choosing **Human Review** hands a failure to a person instead of to the engine. The workflow does not fail along with the activity, and the engine does not retry on its own: the run parks at that step, and a review task is raised carrying the failing input and the error it produced. The task takes its name from the activity being called, so there is nothing to name in the form.
 
-The review is listed on the **Human Tasks** page of the [Control Plane](https://wso2.com/integration-platform/docs/integrator/next/icp/manage-workflows/complete-human-tasks) for the roles you name below, matched by exact role name. Until one of them decides it, the run waits there durably and holds no threads or connections, the same as any other durable wait. The decision is what resumes it.
+The review is listed on the **Human Tasks** page of the [Control Plane](https://wso2.com/integration-platform/docs/integrator/icp/manage-workflows/complete-human-tasks) for the roles you name below, matched by exact role name. Until one of them decides it, the run waits there durably and holds no threads or connections, the same as any other durable wait. The decision is what resumes it.
 
 | Field              | Required | Description                                                                                                                                          |
 |--------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ The review is listed on the **Human Tasks** page of the [Control Plane](https://
 | **Reviewers**      | No       | User IDs permitted to decide the review, whatever their roles. |
 | **Excluded Reviewers** | No   | User IDs that may not decide the review. |
 | **Excluded Roles** | No       | Roles that may not decide the review. |
-| **Administrator Roles** | No  | Roles that administer the review: they see it, and can reassign it, move its deadline, or decide it. See [Administer a task](https://wso2.com/integration-platform/docs/integrator/next/icp/manage-workflows/complete-human-tasks#administer-a-task). |
+| **Administrator Roles** | No  | Roles that administer the review: they see it, and can reassign it, move its deadline, or decide it. See [Administer a task](https://wso2.com/integration-platform/docs/integrator/icp/manage-workflows/complete-human-tasks#administer-a-task). |
 | **Administrator Users** | No  | User IDs that administer the review. |
 | **Title**          | No       | Short summary shown in the reviewer's inbox. Defaults to a phrase naming the activity being reviewed. |
 | **Description**    | No       | Context shown with the decision. Defaults to a description of the failure and the outcomes available. |
@@ -81,7 +81,7 @@ Some steps should never run without sign-off, even when nothing has failed. A ga
 
 <ThemedImage light="../../../../../../assets/img/workflows/develop/review-activity/requires-approval.png" dark="../../../../../../assets/img/workflows/develop/review-activity/requires-approval.png" alt="The activity call form with Approval Policy set to Human Approval and Reviewer Roles set to Finance" />
 
-With the gate on, the run suspends durably before every call to that activity and raises a review activity showing the arguments it *proposes*. The reviewer proceeds, proceeds with edited arguments, or rejects. Gates are decided on the **Human Tasks** page of the Control Plane. See [Decide a review activity](https://wso2.com/integration-platform/docs/integrator/next/icp/manage-workflows/complete-human-tasks#decide-a-review-activity).
+With the gate on, the run suspends durably before every call to that activity and raises a review activity showing the arguments it *proposes*. The reviewer proceeds, proceeds with edited arguments, or rejects. Gates are decided on the **Human Tasks** page of the Control Plane. See [Decide a review activity](https://wso2.com/integration-platform/docs/integrator/icp/manage-workflows/complete-human-tasks#decide-a-review-activity).
 
 ## Error handling in the workflow logic
 
@@ -127,7 +127,7 @@ Everything above rests on one guarantee: the engine writes down the outcome of e
 | A durable timer   | The original deadline, so an elapsed wait does not restart its clock.                                             |
 | Current time      | The instant the run first reached that step. The workflow always works with the time at which it first got there. |
 
-This is why a durable workflow needs no state management of its own. You write no checkpoint rows, no status columns, and no resume logic, and you do not reload progress when a run picks back up: the variables in the workflow body are rebuilt from the record, so the code after a wait sees exactly what the code before it left behind. The recorded events for a run are listed in its **Event History** in the [Control Plane](https://wso2.com/integration-platform/docs/integrator/next/icp/manage-workflows/workflow-executions), which opens from the debug-information icon on the execution's **Execution** card.
+This is why a durable workflow needs no state management of its own. You write no checkpoint rows, no status columns, and no resume logic, and you do not reload progress when a run picks back up: the variables in the workflow body are rebuilt from the record, so the code after a wait sees exactly what the code before it left behind. The recorded events for a run are listed in its **Event History** in the [Control Plane](https://wso2.com/integration-platform/docs/integrator/icp/manage-workflows/workflow-executions), which opens from the debug-information icon on the execution's **Execution** card.
 
 What this asks of you in return is a deterministic workflow body, since that is the part that runs again on every replay. See [Activities](./activities.mdx#why-the-split-matters).
 

@@ -2,9 +2,9 @@
   "summary": {
     "source": "wso2/docs-integrator@3139523c88056337f779f2f99f0cae287ae6fb2b",
     "sourceKind": "docusaurus",
-    "edition": "next",
-    "legacyBase": "https://wso2.com/integration-platform/docs/integrator/next/",
-    "sidebar": "sidebars.ts (its object literal parsed, not run)",
+    "edition": "5.1.0",
+    "legacyBase": "https://wso2.com/integration-platform/docs/integrator/",
+    "sidebar": "version-5.1.0-sidebars.json (JSON)",
     "navPages": 296,
     "sourceFiles": 332,
     "stats": {
@@ -15,8 +15,8 @@
       "imageBytes": 648759684,
       "unlisted": 0,
       "links": 2366,
-      "legacyLinks": 259,
-      "droppedLinks": 9,
+      "legacyLinks": 263,
+      "droppedLinks": 8,
       "missingImages": 0,
       "generatedDescriptions": 56,
       "sidebarLabels": 39,
@@ -46,7 +46,7 @@
       "legacyRedirects": 296
     },
     "issues": {
-      "link": 10,
+      "link": 9,
       "palette": 18,
       "description": 43,
       "component": 2
@@ -62,7 +62,7 @@
     {
       "kind": "link",
       "file": "cloud-providers/aws.md",
-      "message": "link to /guides/business-use-cases: no page of next has that URL; it goes to the legacy site"
+      "message": "link to /guides/business-use-cases: no page of 5.1.0 has that URL; it goes to the legacy site"
     },
     {
       "kind": "palette",
@@ -133,11 +133,6 @@
       "kind": "description",
       "file": "guides/business-use-cases/building-hr-knowledge-base-rag.md",
       "message": "description longer than 160 characters (186); one was generated from the first paragraph"
-    },
-    {
-      "kind": "link",
-      "file": "guides/business-use-cases/edi-purchase-order-processing.md",
-      "message": "link to ../../develop-and-test/integration-artifacts/file-driven-integration/ftp-sftp.md: no such page in next; the link was removed and its text kept"
     },
     {
       "kind": "description",
@@ -312,7 +307,7 @@
     {
       "kind": "link",
       "file": "develop-and-test/integration-artifacts/workflow/durable-agentic-workflow/create-durable-agent.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in 5.1.0; the link was removed and its text kept"
     },
     {
       "kind": "description",
@@ -322,7 +317,7 @@
     {
       "kind": "link",
       "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/activities.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in 5.1.0; the link was removed and its text kept"
     },
     {
       "kind": "description",
@@ -332,17 +327,17 @@
     {
       "kind": "link",
       "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/create.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in 5.1.0; the link was removed and its text kept"
     },
     {
       "kind": "link",
       "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/create.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in 5.1.0; the link was removed and its text kept"
     },
     {
       "kind": "link",
       "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/durable-timers.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in 5.1.0; the link was removed and its text kept"
     },
     {
       "kind": "description",
@@ -352,17 +347,17 @@
     {
       "kind": "link",
       "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/durable-workflow.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in 5.1.0; the link was removed and its text kept"
     },
     {
       "kind": "link",
       "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/start.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in 5.1.0; the link was removed and its text kept"
     },
     {
       "kind": "link",
       "file": "develop-and-test/integration-artifacts/workflow/workflow.md",
-      "message": "link to ../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "message": "link to ../../../get-started/quickstarts/build-order-processing.md: no such page in 5.1.0; the link was removed and its text kept"
     },
     {
       "kind": "palette",

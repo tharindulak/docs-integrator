@@ -1,84 +1,28 @@
 ---
 title: Concepts
-description: The vocabulary you need to build, deploy, and operate integrations on WSO2 Integration Platform.
+description: Understand the core building blocks of WSO2 Integrator and the managed runtime concepts of WSO2 Cloud.
 type: quick-start
 keywords:
   - wso2 integrator
   - concepts
-  - project
-  - integration
-  - connector
-  - data plane
-  - environment
-  - icp
-toc_max_heading_level: 3
+  - core concepts
+  - integration cloud
+  - wso2 cloud
 ---
 
-import Foundations from '../../../partials/get-started/concepts/foundations.mdx';
-import Develop from '../../../partials/get-started/concepts/develop.mdx';
-import Deploy from '../../../partials/get-started/concepts/deploy.mdx';
-import ManageObserve from '../../../partials/get-started/concepts/manage-observe.mdx';
+The WSO2 Integration Platform has two sides to it: designing and building integrations in the WSO2 Integrator IDE, and deploying, running, and managing them in WSO2 Cloud. Understanding the vocabulary for each side helps you navigate the platform and make informed architecture decisions. The concepts in this section are organized the same way.
 
-This page defines the vocabulary used across WSO2 Integration Platform, grouped by the phase of the integration lifecycle where you first encounter each term. Each section links to the documentation that covers these topics in depth.
+## Core concepts
 
-## Foundations
+[Core concepts](./core.mdx) covers everything you work with when designing and building integrations in the IDE: organizations, projects, integrations, endpoints, and connections, along with the building blocks you compose integrations from.
 
-Concepts that apply at every phase, independent of how or where an integration runs.
+## WSO2 Cloud concepts
 
-- [Organization](#organization)
-- [Project](#project)
-- [Package](#package)
-- [Library](#library)
-
-## Develop and Test
-
-What you compose an integration from in the WSO2 Integrator editor.
-
-- [Integration](#integration)
-- [Integration styles](#integration-types)
-- [Endpoint](#endpoint)
-- [Connection](#connection)
-- [Types](#types)
-- [Configurables and Config.toml](#configurables-and-configtoml)
-- [Data mapper](#data-mapper)
-- [Function](#function)
-- [Expressions](#expressions)
-- [Artifacts](#artifacts)
-
-## Deploy and Run
-
-Getting an integration running, and moving it between environments.
-
-- [Deployment models](#deployment-models)
-- [Deployment targets](#deployment-targets)
-- [Control plane and data plane](#control-plane-and-data-plane)
-- [Resource hierarchy](#resource-hierarchy)
-- [Environment](#environment)
-- [Environments and clusters](#environments-and-clusters)
-- [Promotion](#promotion)
-- [Configurations and secrets](#configurations-and-secrets)
-- [Deployment track](#deployment-track)
-- [CI/CD](#cicd)
-- [Private (cloud) hosting responsibility](#private-cloud-hosting-responsibility)
-
-## Manage and Observe
-
-Keeping an integration healthy and understandable once it is live.
-
-- [Integration Control Plane (ICP)](#integration-control-plane-icp)
-- [Observability](#observability)
-
-<Foundations />
-
-<Develop />
-
-<Deploy />
-
-<ManageObserve />
+[WSO2 Cloud concepts](./integration-cloud-concepts.mdx) covers the managed runtime: data planes, environments, deployment tracks, and CI/CD. These concepts apply when you deploy integrations to WSO2 Cloud.
 
 ## What's next
 
-- [Cloud setup](../setup/index.mdx): sign up for WSO2 Cloud and create your first project
-- [Build an automation](../quickstarts/build-automation.mdx): schedule tasks and run background jobs
-- [Build an Integration as API](../quickstarts/build-integration-api.mdx): expose an HTTP service and handle requests
-- [Deploy](../../deploy-and-operate/deploy-and-run/index.mdx): deployment targets, CI/CD, and security
+- [Core concepts](./core.mdx) — projects, integrations, services, connectors, and more
+- [WSO2 Cloud concepts](./integration-cloud-concepts.mdx) — data planes, environments, and deployment tracks
+- [Local setup](../setup/local-setup.mdx) — install the WSO2 Integrator IDE on your machine
+- [Build an automation](../quick-starts/build-automation.mdx) — schedule tasks and run background jobs

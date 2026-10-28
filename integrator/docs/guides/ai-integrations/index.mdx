@@ -1,0 +1,46 @@
+---
+title: AI Integrations Overview
+description: Build AI-powered integrations with WSO2 Integrator using direct LLM calls, RAG pipelines, AI agents, and MCP servers.
+type: how-to
+keywords:
+  - wso2 integrator
+  - genai
+  - ai
+  - llm
+  - rag
+  - agent
+  - mcp
+  - natural function
+  - model provider
+  - embedding
+  - vector store
+  - knowledge base
+---
+
+WSO2 Integrator lets you build AI-powered integrations, including direct LLM calls, RAG pipelines, AI agents, and MCP servers.
+
+## Getting started
+
+- **[Build a Sentiment Analyzer](./getting-started/build-a-sentiment-analyzer.mdx):** Your first AI integration with a direct LLM call.
+- **[Build a Hotel Finder Agent](./getting-started/build-a-hotel-finder-agent.mdx):** An agent with two custom tools and session-scoped memory.
+
+## Develop AI applications
+
+- **[Direct LLM calls](./develop/overview.mdx):** The simplest AI block. Send a prompt and bind the response to a typed value, in a single round-trip.
+- **[RAG](./develop/rag/index.mdx):** Retrieval-augmented generation that grounds LLM responses in your own documents by retrieving relevant content at query time and injecting it into the prompt.
+- **[AI agents](./develop/agents/index.mdx):** Autonomous LLM-driven agents that reason over a system prompt, call tools, and maintain conversation state across turns.
+- **[MCP integration](./develop/mcp/index.mdx):** Expose your integrations as MCP tools for AI assistants, or use external MCP tools with your agents.
+- **[Natural functions](./develop/natural-functions-overview.mdx):** (Experimental) Write the function body in plain English. The LLM returns a value that conforms to your declared return type.
+- **[Model providers](./develop/model-providers.mdx):** Connect to OpenAI, Anthropic, Azure OpenAI, Google Vertex, Mistral, and others through one consistent interface.
+- **[Embedding providers](./develop/embedding-providers.mdx):** Turn text into semantic vectors used on both ingest and query for similarity search.
+- **[Vector stores](./develop/vector-stores.mdx):** Persist embeddings and run similarity search across in-memory, Pinecone, pgvector, Weaviate, or Milvus vector databases.
+- **[Knowledge bases](./develop/knowledge-bases.mdx):** The indexable document store RAG reads from and writes to, composed of a vector store, embedding provider, and chunker.
+- **[Chunkers](./develop/chunkers.mdx):** Split documents into chunks before embedding. Smaller chunks improve retrieval precision. Larger chunks preserve more surrounding context.
+
+## Tutorials
+
+- **[Email Generator with Direct LLM](./tutorials/email-generator-direct-llm.mdx)**
+- **[Customer review analyzer with Natural Function](./tutorials/review-summarizer-natural-function.mdx)**
+- **[Building an HR knowledge base with RAG](./tutorials/building-hr-knowledge-base-rag.mdx)**
+- **[Build a customer care agent with MCP](./tutorials/building-a-customer-care-agent-mcp.mdx)**
+- **[Building an IT Helpdesk AI Agent with Persistent Memory](./tutorials/it-helpdesk-chatbot.mdx)**

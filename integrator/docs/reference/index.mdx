@@ -1,57 +1,65 @@
 ---
 title: Reference
-description: Lookup material for WSO2 Integrator - configuration, CLI commands, APIs, error codes, supported protocols and data formats, and release notes.
+description: What's the exact syntax / config / API for Z?
 type: reference
-hide_table_of_contents: true
 ---
 
-## [Configuration Reference](./configuration-reference.mdx)
+Pure lookup material - syntax, configuration keys, CLI commands, API docs, and specifications. No tutorials, no narrative - just the facts.
 
-- Configurable variables and value sources
-- Config.toml, Ballerina.toml, Cloud.toml
+## Language
 
-## [CLI Commands](./cli-commands.mdx)
+Ballerina language reference for integration developers:
 
-- Build, run, and test
-- Code generation and migration tools
+- **[Type System](./language/type-system.mdx)** - Structural types, unions, optional, any, stream, never
+- **[Error Handling](./language/error-handling.mdx)** - Error types and handling patterns
+- **[Query Expressions](./language/query-expressions.mdx)** - SQL-like data processing
+- **[Concurrency](./language/concurrency.mdx)** - Workers, strands, locks, transactions
 
-## [API Reference](./api-reference.mdx)
 
-- Ballerina library APIs
-- Integration Control Plane APIs
+## Configuration
 
-## [Error Codes](./error-codes.mdx)
+Project and deployment configuration files:
 
-- Error code reference
+| File                                                         | Purpose                           |
+| ------------------------------------------------------------ | --------------------------------- |
+| **[Configuration management](./config/configuration-management.mdx)**    | Configurable variables, value sources, and environment variables |
+| **[Ballerina.toml](./project/ballerinatoml-reference.mdx)**              | Project metadata and dependencies |
+| **[Config.toml](./config/configtoml-reference.mdx)**                     | Runtime configuration values      |
+| **[Cloud.toml](./project/cloudtoml-reference.mdx)**                      | Cloud deployment settings         |
 
-## [Supported Protocols](./supported-protocols.mdx)
 
-- Protocol support at a glance
+## APIs
 
-## [Streaming Capabilities](./streaming-capabilities.mdx)
+- **[Management API](./api/management.mdx)** - Runtime management endpoints
+- **[Auth API](./api/auth-api.mdx)** - Authentication and authorization endpoints
+- **[ICP API](./api/icp.mdx)** - Integration Control Plane API
+- **[Ballerina API Docs](./api/ballerina-documentation.mdx)** - Standard library API documentation
 
-- Streaming support in WSO2 Integrator
+## ICP Configuration
 
-## [Data Formats](./data-formats/supported-data-formats.mdx)
+Server and deployment configuration for WSO2 Integration Control Plane:
 
-- Supported data formats
-- A reference page for each format
+- **[Server Configuration](./icp/server-configuration.mdx)** - Server settings and authentication token keys
+- **[Database Configuration](./icp/database-configuration.mdx)** - Main database and credentials database setup
+- **[Authentication Configuration](./icp/authentication-config.mdx)** - Authentication backends and LDAP configuration
 
-## [Release Notes](./release-notes.mdx)
+## Specifications & formats
 
-- What's new in each release
+- **[Supported protocols](./supported-protocols.mdx)** - Complete protocol support table
+- **[Supported data formats](./data-formats/index.mdx)** - Complete data format support table
+- **[Ballerina by Example](./ballerina-by-example.mdx)** - 200+ runnable examples
+- **[Ballerina Specifications](./ballerina-specifications.mdx)** - Language, library, and platform specs
 
-## [FAQ](./faq.mdx)
+## Miscellaneous
 
-- Frequently asked questions about WSO2 Integrator
+- **[Configure a Network Proxy for WSO2 Integrator](./miscellaneous/configure-a-network-proxy.mdx)** - Set up proxy access in corporate environments
+- **[Proxy Ballerina Central with Maven Repository](./miscellaneous/proxy-ballerina-central-with-maven-repository.mdx)** - Set up Maven repository proxy for Ballerina Central
 
-## [Glossary](./glossary.mdx)
+## Appendix
 
-- Terminology definitions
+- **[Error Codes](./appendix/error-code.mdx)** - Error code reference
+- **[Glossary](./appendix/glossary.mdx)** - Terminology definitions
+- **[FAQ](./appendix/faq.mdx)** - Frequently asked questions
+- **[Release Notes](./appendix/release-notes.mdx)** - What's new in each release
 
-## [Ballerina Documentation](https://ballerina.io/learn/)
-
-- Language syntax and standard library docs
-- Language specification and runnable examples
-
-ICP server, database, and authentication settings are documented with the [Integration Control Plane](https://wso2.com/integration-platform/docs/integrator/next/icp).
+For troubleshooting and debugging, see [Debugging](../guides/develop/debugging/editor.mdx).

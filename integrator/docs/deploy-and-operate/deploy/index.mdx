@@ -1,0 +1,63 @@
+---
+title: Deploy Overview
+description: Learn about the different deployment options for your WSO2 Integrator projects and how to choose the right one for your needs.
+type: how-to
+keywords:
+  - wso2 integrator
+  - deployment
+  - wso2 cloud
+  - docker
+  - kubernetes
+  - vm-based deployment
+  - integration control plane
+---
+
+{/* TODO: Work in progress */}
+
+Once your integration is ready, this section covers everything you need to ship it, keep it running, and operate it in production.
+
+## Deployment options
+
+WSO2 Integrator supports multiple deployment targets. Choose the one that fits your infrastructure:
+
+- **[WSO2 Cloud](./cloud/index.mdx)** — Push your project directly from the IDE or the cloud editor to the managed WSO2 Integration Platform. No infrastructure setup required.
+- **[VM Deployment](./self-hosted/vm-deployment.mdx)** — Deploy your integration to a virtual machine or bare-metal server as a standalone JAR file.
+- **[Containerized Deployment](./self-hosted/containerized-deployment.mdx)** — Package your integration as a container and deploy it to Docker, Kubernetes, or Red Hat OpenShift.
+- **[Serverless deployment](./self-hosted/serverless-deployment.mdx)** — Run integrations as serverless functions.
+- **[GraalVM native images](./self-hosted/graalvm-native-images.mdx)** — Compile your integration to a native binary for faster startup and lower memory usage.
+
+## Configuration and scaling
+
+- **[Managing configurations](./self-hosted/managing-configurations.mdx)** — Externalize and manage runtime configuration values.
+- **[Scaling and high availability](./self-hosted/scaling-high-availability.mdx)** — Design your deployment for resilience and scale.
+- **[Capacity planning](./capacity-planning/overview.mdx)** — Estimate resource requirements and plan deployment sizing.
+
+## CI/CD
+
+Automate your deployment pipeline using your preferred CI/CD platform:
+
+- [GitHub Actions](./cicd/github-actions.mdx)
+- [Jenkins](./cicd/jenkins.mdx)
+- [GitLab](./cicd/gitlab.mdx)
+- [Azure DevOps](./cicd/azure-devops.mdx)
+
+## Observability
+
+Monitor your integrations in production with logs, metrics, and traces:
+
+- **[Observability overview](./observe/observability-overview.mdx)** — Understand the observability model.
+- **[Logging overview](./observe/logging-overview.mdx)** — Capture and query structured log output.
+- **[Metrics overview](./observe/metrics-overview.mdx)** — Emit application-level metrics.
+- **[Prometheus and Grafana](./observe/metrics-prometheus-grafana.mdx)** — Scrape metrics and build dashboards.
+- **[Jaeger](./observe/distributed-tracing/jaeger-distributed-tracing.mdx)** and **[Zipkin](./observe/distributed-tracing/zipkin-tracing.mdx)** tracing — Distributed request tracing.
+- **[Datadog](./observe/datadog-integration.mdx)**, **[New Relic](./observe/supported-platforms/new-relic-integration.mdx)**, **[Elastic Stack (ELK)](./observe/elastic-stack-elk.mdx)**, **[OpenSearch](./observe/opensearch-integration.mdx)**, **[Moesif](./observe/supported-platforms/moesif-api-analytics.mdx)** — Third-party observability platforms.
+
+## Security
+
+Protect your integrations and the data they process:
+
+- **[Runtime security](./secure/runtime-security.mdx)** — Harden the runtime environment.
+- **[Authentication](./secure/authentication.mdx)** — Secure service endpoints.
+- **[API security and rate limiting](./secure/api-security-rate-limiting.mdx)** — Enforce access policies.
+- **[Secrets and encryption](./secure/secrets-encryption.mdx)** — Manage sensitive credentials safely.
+- **[Compliance considerations](./secure/compliance-considerations.mdx)** — Meet regulatory and audit requirements.

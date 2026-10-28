@@ -1,130 +1,93 @@
 ---
-title: Platform Overview
-description: Understand the WSO2 Integration Platform, its development model, integration styles, deployment architecture, and operational lifecycle.
+title: Introduction
+description: WSO2 Integration Platform is a 100% open-source solution for connecting AI agents, APIs, data, and events across cloud, on-prem, and hybrid environments.
 type: concept
 keywords:
-  - WSO2 Integration Platform
-  - WSO2 Integrator
-  - integration development
-  - integrations as APIs
-  - event-driven integration
-  - file-driven integration
-  - AI agents
-  - connectors
-  - control plane
-  - data plane
+  - wso2 integrator
+  - integration platform
+  - architecture
+  - low-code
+  - pro-code
+  - ballerina
+  - ai integration
 ---
 
-## What is WSO2 Integration Platform?
+The WSO2 Integration Platform is a 100% open-source integration solution for connecting AI agents, APIs, data, and events across cloud, on-prem, and hybrid environments. It lets you build any type of integration from a single API to a distributed AI-driven workflow and run it wherever your business needs it.
 
-WSO2 Integration Platform is a platform for building, running, and managing integrations that connect applications, APIs, data, events, and AI agents across cloud, on-premises, and hybrid environments. It is built on open-source foundations and open standards, and is available both as a fully managed service and as a self-hosted deployment.
+The platform pairs the rapid development of low-code with the full control of pro-code, with AI assistance available across both, taking you from your first local integration to a managed, observable deployment at scale.
 
-It supports the integration lifecycle, from development and testing through deployment, management, and observability. Visual design, source code, AI assistance, and enterprise connectivity work together in a consistent development experience.
+## Design and run
 
-The platform separates how you develop an integration from where it runs and how it is operated, giving you flexibility to choose the deployment model that fits your organization.
+Working with the WSO2 Integration Platform involves two activities: you design integrations in the IDE, and you deploy them to the runtime of your choice. WSO2 Cloud, your own Kubernetes cluster, or on-premises infrastructure.
 
-<ThemedImage light="../assets/img/platform-overview/wso2-integration-platform-architecture-v5.1.png" dark="../assets/img/platform-overview/wso2-integration-platform-architecture-v5.1.png" alt="WSO2 Integration Platform architecture: development tools, control plane, data plane and observability plane, connecting developers, operators, consumers and enterprise systems" />
+### Design: WSO2 Integrator IDE
 
-## What can you build?
+The WSO2 Integrator IDE is where you design, build, and test integrations. It offers:
 
-WSO2 Integration Platform supports several integration styles using shared capabilities for connectivity, data transformation, orchestration, security, and error handling.
+- **The visual designer and code editor stay in sync.** Every change in one appears instantly in the other, no export step required.
+- **AI-assisted development** across both views, so you can move from intent to working integration quickly.
 
-| Integration Style | What you can do | 
-|---|---|
-| Integrations as APIs | Expose business capabilities as APIs and connect multiple backend systems behind a single service. |
-| Automations | Run scheduled or triggered tasks, such as synchronizing data between SaaS applications. |
-| Event-driven integrations | Publish, consume, and react to events and messages from applications and message brokers. | 
-| File-driven integrations | Receive, transform, and exchange files across systems.| 
-| Workflows | Coordinate multi-step business processes, including long-running processes that wait for events, timers, or human decisions. | 
-| AI Agents | Combine integration logic with AI reasoning, and enable agents to access enterprise data and take action through tools. | 
-| MCP servers | Expose integrations as Model Context Protocol (MCP) tools, so AI assistants and agents can discover and call your enterprise capabilities through a governed boundary. | 
+### Deploy and manage
 
-AI serves two roles in the platform: it assists developers in building integrations, and it can participate in execution through AI services and agents.
+Integrations built in the IDE can run in two ways. Pick the one that fits your operational model.
 
-<ThemedImage light="../assets/img/platform-overview/ai-in-integration-v5.1.png" dark="../assets/img/platform-overview/ai-in-integration-v5.1.png" alt="AI assists developers in building integrations, and it can participate in execution through AI services and agents" />
+**WSO2 Cloud:** A fully managed cloud platform operated by WSO2. WSO2 Integration Cloud handles build pipelines, environments, deployment tracks, observability, and zero-downtime promotion across development, staging, and production.
 
-## Platform components
+**Self-hosted (open source).** Run the platform on your own infrastructure Kubernetes, Docker, VMs, or bare metal. You retain full control over data sovereignty, infrastructure choices, and CI/CD and observability stack. Your integrations never leave your perimeter, and the platform runs in air-gapped environments.
 
-The platform brings together following core components.
+## Architecture
 
-### WSO2 Integrator
+![WSO2 Integrator architecture diagram](../assets/site/src/assets/img/get-started/overview-and-architecture/integrator_diagram.webp)
 
-WSO2 Integrator is the editor where integrations are built and tested. It is available as an installable desktop application and a browser-based editor through WSO2 Integration Cloud.
+The platform is organized into a small number of clearly separated planes, each with a focused responsibility. The diagram above shows the architecture as it appears in WSO2 Integration Cloud. Self-hosted deployments use a simpler topology that maps to the same essential planes.
 
-It combines:
+### WSO2 Integrator IDE
 
-- Visual development to design and refine integration flows.
-- AI assistance to generate integrations, create data mappings, and explain or troubleshoot integration logic.
-- Source code editing for custom logic and precise control.
-- Testing and debugging to validate behavior before deployment.
-- Visual and code representations remain synchronized, allowing you to move between them as you develop.
+The WSO2 Integrator IDE is the entry point for developers. It produces the source artifacts that the rest of the platform deploys, runs, and observes.
 
-WSO2 Integrator is powered by [Ballerina](https://ballerina.io/), a programming language designed for integration. Prior knowledge of Ballerina is **not required** to begin: you can start with APIs, connectors, mappings, and workflows, then use the underlying code when needed.
+### Control plane
 
-### WSO2 Integration Cloud (WSO2 iPaaS)
+The control plane is the operations brain of the platform. It is where admins and DevOps users perform the three core lifecycle actions: deploy, manage, and observe.
 
-[WSO2 Integration Cloud](https://console.devant.dev/) is a managed environment for building and running integrations. WSO2 operates the underlying infrastructure, allowing your team to focus on integration development.
+The control plane doesn't run your integrations. Its job is to orchestrate the data plane and interpret the observability plane. The control plane shown in the diagram is the one provided by WSO2 Integration Cloud. In self-hosted deployments, you can manage these actions through the Integration Control Plane or through your own tooling and pipelines.
 
-You can develop in the cloud editor, import an existing integration from a source repository, or start with a pre-built sample. The managed service provides deployment, scaling, availability, management, and observability capabilities.
+### Data plane
 
-### WSO2 Integration Control Plane (ICP)
+The data plane is the infrastructure on which your integrations actually run. 
 
-WSO2 Integration Control Plane is a centralized place to manage self-hosted integrations.
+The data plane can be:
 
-It provides visibility across projects and environments, helping teams deploy integrations, check their status, and manage ongoing operations from one console.
+- **WSO2-managed:** Provisioned and operated by WSO2 as part of WSO2 Integration Cloud.
+- **Private (cloud):** Running in your own AWS, Azure, GCP, OpenShift, or Kubernetes environment, but still managed through WSO2 Integration Cloud's control plane.
+- **Self-hosted:** Running entirely on your own infrastructure, managed end-to-end by you.
 
-ICP also surfaces health information, metrics, and aggregated logs. But for self-hosted deployments, you aren't limited to ICP, WSO2 Intgerator is designed to integrate seamlessly with your organization's existing observability stack.
+### Observability plane
 
+The observability plane works with common tools like ELK, Grafana, Zipkin, Prometheus, and Jenkins, and fits into your operational dashboards, alerting, and incident workflows.
 
-### Connectors
+### External systems
 
-Connectors provide pre-built, typed connectivity to external systems, including SaaS applications, databases, APIs, cloud services, and message brokers.
+Integrations connect to external systems and services like SAP, Salesforce, Snowflake, Twilio, OpenAI, and HubSpot through typed connectors and connections defined at design time.
 
-They simplify authentication, requests, and data handling, reducing the need to implement connectivity from scratch. Typed operations and data models help you work with external services consistently within your integration.
+## What makes it different
 
-You can choose connectors from the WSO2 Connector Store or generate connectors from API descriptions such as OpenAPI specifications and WSDL files.
+### 100% low-code and pro-code parity
 
-## Choose your deployment model
+Every integration can be built in two ways, and both stay in sync. Add components through a graphical interface, configure properties visually, and see the flow as a diagram. Or write code directly with full IDE support, auto-complete, and type checking.
 
-Integrations developed in WSO2 Integrator can run in managed or self-hosted environments. The development experience remains consistent; the deployment model determines where integrations execute and who operates the infrastructure.
+### Powered by Ballerina
 
-| Deployment model | Where integrations run | Management and observability | Infrastructure responsibility |
-|---|---|---|---|
-| Fully managed iPaaS | WSO2-managed cloud infrastructure | Provided through WSO2 Integration Cloud | WSO2 operates the platform and runtime infrastructure.|
-| Fully self-hosted | Your infrastructure, including Kubernetes, OpenShift, containers, virtual machines, bare metal, or public/private cloud | Your team operates ICP and the observability infrastructure | Your organization operates the entire environment.| 
-| Private or hybrid | A private data plane or dedicated infrastructure | WSO2 manages control and observability capabilities centrally | Runtime infrastructure responsibility depends on the selected arrangement. |
+Under the hood, every integration is a Ballerina program. The language has cloud-native services and protocols (HTTP, gRPC, GraphQL, WebSocket, Kafka, and more) built in, type-safe data handling that catches errors at compile time, and a rich standard library for data formats (JSON, XML, CSV, and more) and connectors (SAP, Salesforce, Twilio, and more).
 
-<ThemedImage light="../assets/img/platform-overview/deployment-models-v5.1.png" dark="../assets/img/platform-overview/deployment-models-v5.1.png" alt="Deployment models: self-hosted, where you run both the control plane (ICP) and the data plane, and WSO2 Integration Cloud (iPaaS), where WSO2 manages the control plane and you choose a cloud or private data plane" />
+### AI-assisted, AI-ready
 
-You can select a model based on your requirements for infrastructure control, data residency, operational ownership, and managed services.
+AI shows up on the platform in two ways. WSO2 Integrator Copilot helps you build integrations by generating flows, scaffolding connectors, and writing logic from natural-language prompts. And AI is a first-class part of what you build: AI agents, MCP servers, and RAG workflows are native integration types alongside APIs, automations, and event handlers.
 
-##  From development to production
+## What's next
 
-The platform supports a continuous integration lifecycle:
-
-| Phase | What happens | 
-|---|---|
-| Develop and test | Build integration logic in WSO2 Integrator using connectors, visual design, code, and AI assistance. Test and debug it before release. | 
-| Build and deploy | Package the integration, run automated checks, and deploy it through your delivery pipeline. Validate and promote it across environments. | 
-| Manage | Operate integrations centrally through ICP or the managed cloud experience. | 
-| Observe | Use health information, logs, metrics, and distributed traces to monitor behavior and investigate failures. | 
-
-<ThemedImage light="../assets/img/platform-overview/integration-lifecycle-v5.1.png" dark="../assets/img/platform-overview/integration-lifecycle-v5.1.png" alt="Integration lifecycle with WSO2 Integration Platform" />
-
-## How the platform fits together 
-
-The architecture separates three responsibilities: 
-
-- Data plane: Executes integrations and processes requests, events, messages, and data.
-- Control plane: Provides centralized deployment, management, and operational controls.
-- Observability plane: Collects and presents information about integration health and runtime behavior.
-
-In a managed deployment, WSO2 operates these capabilities as part of the service. In a self-hosted deployment, your organization operates them using ICP and your chosen infrastructure and observability tools.
-
-The platform supports OpenTelemetry, allowing logs, metrics, and traces to feed into compatible observability systems.
-
-# Where to go next
-
-- [Concepts](./get-started/concepts/index.mdx): Learn the vocabulary used across WSO2 Integration Platform, from organizations and projects to deployment and observability.
-- [Setup](./get-started/setup/index.mdx): Set up your development environment.
-- [Quickstarts](./get-started/quickstarts/build-integration-api.mdx): Build your first integration in under 10 minutes: an API, automation, AI agent, event-driven, or file-driven integration.
+- [Concepts](./get-started/concepts/index.mdx) — learn the vocabulary used across the platform
+- [Set up WSO2 Integrator](./get-started/setup/index.mdx) — set up the IDE and create your first integration
+- [Build an automation](./get-started/quick-starts/build-automation.mdx) — schedule tasks and run background jobs
+- [Integration Control Plane](./deploy-and-operate/manage/icp/index.mdx) — monitor and manage running integrations centrally
+- [WSO2 Cloud](./deploy-and-operate/deploy/cloud/index.mdx) — deploy integrations to the fully managed cloud platform
+- [Ballerina by Example](./reference/ballerina-by-example.mdx) — explore working code samples for common patterns

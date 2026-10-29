@@ -1,91 +1,69 @@
 ---
-title: Set up WSO2 Integrator
-description: Download and install WSO2 Integrator on Windows, macOS, or Linux, sign in, and start building integrations on your machine.
+title: Setup
+description: Sign up for WSO2 Cloud and launch WSO2 Integrator in the browser-based cloud editor to start building integrations.
 type: quick-start
 keywords:
   - wso2 integrator
-  - setup
-  - install
-  - windows
-  - macos
-  - linux
+  - wso2 cloud
+  - cloud setup
+  - sign up
+  - sign in
+  - account
+  - organization
+  - cloud editor
 ---
 
-Install WSO2 Integrator on your machine to develop, test, and debug integrations locally. The WSO2 Integrator available for Windows, macOS, and Linux.
+WSO2 Integrator runs entirely in the browser on WSO2 Integration Cloud, no local installation required. Sign up for an account, then launch the cloud editor to start building integrations.
 
-## System requirements
+WSO2 Cloud is the identity and access layer for WSO2 Integration Platform. When you sign up, you create an organization and become its admin. An organization is a logical grouping of users and their associated resources. Users and resources in one organization are isolated from all others. Access across organizations is only possible when an admin explicitly invites a user as a member.
 
-Before installing WSO2 Integrator, ensure your machine meets the following hardware and software requirements:
+A WSO2 Cloud account gives you access to:
 
-| Requirement | Minimum | Recommended |
-| :--- | :--- | :--- |
-| **Operating System** | [Supported versions of Windows client](https://learn.microsoft.com/en-us/windows/release-health/supported-versions-windows-client) (64-bit), macOS versions with Apple security update support (typically the latest release and the two previous versions), Linux: Ubuntu Desktop 20.04, Debian 10, Red Hat Enterprise Linux 8, Fedora 36 or later | Latest version of a supported operating system |
-| **Processor (CPU)** | 64-bit dual-core x64 or ARM64 processor, 1.6 GHz or faster | Quad-core or better (Intel Core i5/i7, AMD Ryzen 5/7, or Apple silicon) |
-| **Memory (RAM)** | 4 GB | 8 GB or more (16 GB if you also run Docker or several projects) |
-| **Disk Space** | 4 GB free space | 10 GB free space (SSD recommended) |
-| **Network** | Internet connection to install, update, and pull packages from Ballerina Central | Broadband internet connection |
+- **WSO2 IPaas**: Deploy and run integrations in a managed cloud environment with built-in CI/CD, environment promotion, observability, and access control.
+- **WSO2 Integrator Copilot features**: Use AI-assisted development in WSO2 Integrator to generate integrations, mappings, and configurations.
 
-:::tip[Behind a corporate proxy?]
-If your network restricts internet access, see [Work in a Restricted Network](../../guides/develop-and-test/create-workspace/restricted-networks/overview.mdx) to configure a proxy before you install.
+## Step 1: Go to the sign-up page
+
+Go to [WSO2 Cloud](https://console.devant.dev/signup) and choose your preferred sign-up option.
+
+<ThemedImage light="../../../assets/img/get-started/setup/sign-up-sign-in/sign-up.png" dark="../../../assets/img/get-started/setup/sign-up-sign-in/sign-up.png" alt="WSO2 Cloud sign-up page with available sign-up options" />
+
+## Step 2: Create an organization
+
+Enter a unique name for your organization.
+
+<ThemedImage light="../../../assets/img/get-started/setup/sign-up-sign-in/org-creation.png" dark="../../../assets/img/get-started/setup/sign-up-sign-in/org-creation.png" alt="Creating an organization" />
+
+The name must:
+
+- Be between 4 and 30 characters
+- Begin with a letter
+- Contain only uppercase letters, lowercase letters, hyphens, spaces, or underscores
+
+## Step 3: Accept the terms
+
+Read and accept the [Privacy Policy](https://wso2.com/devant/privacy-policy/) and [Terms of Use](https://wso2.com/devant/terms-of-use/), then click **Create**.
+
+## Step 4: Select a region
+
+Select the cloud region where you want to deploy your integrations and click **Confirm**.
+
+You land on the **Overview** page of the default project in your new organization.
+
+<ThemedImage light="../../../assets/img/get-started/setup/sign-up-sign-in/project-home.png" dark="../../../assets/img/get-started/setup/sign-up-sign-in/project-home.png" alt="Project overview page after creating an organization" />
+
+:::info[Invite others]
+To give teammates access, an organization admin can invite them from the organization settings. Invited users can only see resources within that organization. See [Users and access control](../../deploy-and-operate/manage/users-and-access/overview.mdx) for more information.
 :::
 
-## Installation steps
+## Step 5: Open the cloud editor
 
-### Step 1: Download WSO2 Integrator
+On the project overview page, click **Create on Cloud**. WSO2 Integrator provisions a cloud editor instance for you, showing progress through each setup stage.
 
-1. Visit the [WSO2 Integrator Downloads page](https://wso2.com/products/downloads/?product=wso2integrator).
-2. Select your operating system: Windows, macOS, or Linux.
-3. Download the installer for **WSO2 Integrator**.
+<ThemedImage light="../../../assets/img/get-started/setup/cloud-editor-setup.png" dark="../../../assets/img/get-started/setup/cloud-editor-setup.png" alt="Cloud editor instance being created" />
 
-### Step 2: Install WSO2 Integrator
+Once the instance is ready, the WSO2 Integrator cloud editor opens in your browser, using the same visual designer and pro-code editor available in the desktop IDE. Add an artifact to your integration, then deploy it to WSO2 Cloud from the **Deploy to WSO2 Cloud** panel on the right.
 
-**Windows**
-- Run the `.msi` installer and follow the installation wizard.
+<ThemedImage light="../../../assets/img/get-started/setup/cloud-editor-landing.png" dark="../../../assets/img/get-started/setup/cloud-editor-landing.png" alt="WSO2 Integrator cloud editor landing page showing an empty integration and the Deploy to WSO2 Cloud panel" />
 
-**macOS**
-- Run the `.dmg` installer and drag the application to the **Applications** folder.
-
-**Linux**
-- Ubuntu or Debian: install the `.deb` package.
-- RHEL or Fedora: install the `.rpm` package.
-- Other distributions: extract the `.tar.gz` archive.
-
-### Step 3: Launch WSO2 Integrator
-
-After installation, launch the WSO2 Integrator:
-
-- **Windows**: Double-click the **WSO2 Integrator** icon on your desktop or start menu.
-- **macOS**: Open the **Applications** folder and double-click **WSO2 Integrator**.
-- **Linux**: Launch **WSO2 Integrator** from your applications menu (after a `.deb` or `.rpm` install), or run the binary from the extracted directory if you used the `.tar.gz` archive.
-
-<ThemedImage light="../../../assets/img/get-started/setup/wso2-integrator-ide-v5.1.png" dark="../../../assets/img/get-started/setup/wso2-integrator-ide-v5.1.png" alt="Welcome to WSO2 Integrator screen with the Sign in with WSO2 Integration Platform and Skip for now buttons" />
-
-### Step 4: Sign in to WSO2 Integrator
-
-Sign in with your WSO2 Cloud account to deploy to WSO2 Cloud, manage environments, access observability features, and use [WSO2 Integrator Copilot](../../guides/editor/copilot/overview.mdx).
-
-1. On the **Welcome to WSO2 Integrator** screen that appears when you first launch the editor, click **Sign in with WSO2 Integration Platform**.
-
-   If you click **Skip for now**, you can sign in later by clicking **Sign In** in the top-right corner of the **Get Started** page.
-
-   <ThemedImage light="../../../assets/img/get-started/setup/sign-in/integrator-get-started-v5.1.png" dark="../../../assets/img/get-started/setup/sign-in/integrator-get-started-v5.1.png" alt="WSO2 Integrator Get Started page with the Sign In button in the top-right corner" />
-
-2. The WSO2 Integration Platform sign-in page opens up in your default browser. Sign in using your preferred method.
-
-   <ThemedImage light="../../../assets/img/get-started/setup/sign-in/sign-in-providers.png" dark="../../../assets/img/get-started/setup/sign-in/sign-in-providers.png" alt="WSO2 Integration Platform sign-in page" />
-
-3. When the browser prompts you, click **Open WSO2 Integrator** to return to the editor.
-4. The editor shows a **Successfully signed into WSO2 Integration Platform** notification, and your account avatar appears in the top-right corner.
-
-   <ThemedImage light="../../../assets/img/get-started/setup/sign-in/signed-in-v5.1.png" dark="../../../assets/img/get-started/setup/sign-in/signed-in-v5.1.png" alt="WSO2 Integrator Get Started page after sign-in showing the account avatar in the top-right corner" />
-
-:::info[Don't have a WSO2 Cloud account?]
-Create one and set up your organization by following [Cloud setup](https://wso2.com/integration-platform/docs/saas/get-started/setup) in the WSO2 Cloud documentation, then return here to sign in.
-:::
-
-## Next steps
-
-- [Cloud setup](https://wso2.com/integration-platform/docs/saas/get-started/setup) — Create a WSO2 Cloud account and organization to get the most out of WSO2 Integrator.
-- [Develop a new integration](../../guides/develop-and-test/create-workspace/create-a-project.mdx) — Create a new integration project and start building.
-- [Open an existing integration](../../guides/develop-and-test/create-workspace/open-a-project.mdx) — Continue working on a project you already have.
-- [Explore sample integrations](../../guides/develop-and-test/create-workspace/explore-sample-integrations.mdx) — Learn from ready-made examples.
+To work on a different project, go to the organization overview page by clicking your organization name in the top navigation, then create a new project from there.

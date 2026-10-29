@@ -350,6 +350,6 @@ public function main() returns error? {
 
 Now that the automation works, you can take it further:
 
-- **Deploy and schedule it.** Ship it to [WSO2 Cloud](../../deploy-and-operate/deploy-and-run/deploy-to-wso2-cloud/overview.mdx), a [Docker container](../../deploy-and-operate/deploy-and-run/self-hosted/containerized-deployment.mdx#docker-deployment), [Kubernetes](../../deploy-and-operate/deploy-and-run/self-hosted/containerized-deployment.mdx#kubernetes-deployment), or a [virtual machine](../../deploy-and-operate/deploy-and-run/self-hosted/vm-deployment.mdx), then schedule it to run once a day.
+- **Deploy and schedule it.** Ship it to [WSO2 Cloud](../../deploy-and-operate/deploy-and-run/deploy-to-wso2-cloud/overview.mdx), a Docker container, Kubernetes, or a virtual machine, then schedule it to run once a day.
 - **Avoid duplicate events.** The filter's one-day look-ahead means a leave starting tomorrow is seen by today's run *and* tomorrow's, so a daily schedule creates each event twice as built. Either narrow the window to a single day (`startDate lt datetime'${tommorrow()}T00:00:00'`), or before creating an event call **Get Events** for that date and skip it if one already carries the same SuccessFactors leave ID in its description.
 - **Sync updates and cancellations too.** SuccessFactors' `EmployeeTime` records can be modified or withdrawn after approval; extend the automation to look up the calendar event by the stored `eventId` and update or delete it when the underlying leave record changes.

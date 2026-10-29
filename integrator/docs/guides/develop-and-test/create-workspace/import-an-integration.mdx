@@ -1,0 +1,65 @@
+---
+title: Import an Integration
+description: Import an integration from a Git repository into WSO2 Cloud and deploy it to the Development environment.
+type: how-to
+sidebar_position: 4
+keywords:
+  - wso2 integrator
+  - wso2 cloud
+  - import
+  - git
+  - github
+  - gitlab
+  - azure devops
+  - deploy
+---
+
+If your integration is already in a Git repository, you can import it directly into WSO2 Cloud without going through the WSO2 Integrator editor. WSO2 Cloud automatically builds and deploys the integration to the Development environment once the import is complete.
+
+:::info[Prerequisites]
+- An integration created with WSO2 Integrator editor pushed to a remote Git repository (GitHub, GitLab, Bitbucket, or Azure DevOps).
+- A WSO2 Cloud account. Sign up at [WSO2 Cloud](https://console.devant.dev) if you don't have one.
+:::
+
+## Connect your Git provider
+
+1. Sign in to [WSO2 Cloud](https://console.devant.dev).
+
+   When you sign up for the first time, WSO2 Cloud creates a default project for you. You land on the project home page.
+
+2. On the project home page, click **Import an Integration** and select your Git provider. Alternatively, click your Git provider's icon directly on the home page to authorize it with WSO2 Cloud.
+
+    <ThemedImage light="../../../../assets/img/create-project/create-project-saas-landing.png" dark="../../../../assets/img/create-project/create-project-saas-landing.png" alt="Project Home in WSO2 Cloud" />
+
+    <ThemedImage light="../../../../assets/img/import-project/import-integration.png" dark="../../../../assets/img/import-project/import-integration.png" alt="Click Import Integration" />
+
+    :::warning
+    One-click OAuth2 authorization is only available for GitHub. To use Bitbucket, GitLab, or Azure DevOps, you must first add your credentials at the organization level. See [Connect a Git provider](../../../deploy-and-operate/deploy-and-run/deploy-to-wso2-cloud/connect-git-provider.mdx) for instructions.
+    :::
+
+3. Complete the authorization flow in the browser and return to WSO2 Cloud.
+
+## Import the integration
+
+1. Select the organization that owns the repository.
+2. Select the repository and the branch.
+3. Set the path to the folder where your integration lives within the repository.
+4. Optionally, add a description.
+5. Select the integration type. WSO2 Cloud detects the technology automatically.
+6. Click **Create**.
+
+    <ThemedImage light="../../../../assets/img/import-project/import-integration-saas-form-new.png" dark="../../../../assets/img/import-project/import-integration-saas-form-new.png" alt="Import Integration" />
+
+    <ThemedImage light="../../../../assets/img/import-project/build-completed.png" dark="../../../../assets/img/import-project/build-completed.png" alt="Build Integration" />
+
+WSO2 Cloud starts the build immediately. Once the build completes, the integration is automatically deployed to the **Development** environment.
+
+
+## What's next
+
+- [Import a project](./import-a-project.mdx) — Bring a whole project, with several integrations, into WSO2 Cloud at once.
+
+- [View and manage integrations](../../../deploy-and-operate/manage/integrations/overview.mdx) — Inspect build status, deployment status, and manage the lifecycle of your deployed integrations.
+- [Runtime configurations](../../../deploy-and-operate/manage/configurations/runtime-configurations.mdx) — Set configurable values per environment and manage reusable configuration groups.
+- [Security configurations](../../../deploy-and-operate/manage/configurations/security-configurations.mdx) — Secure your integration endpoints with API Key or OAuth2 authentication.
+- [Endpoint configurations](../../../deploy-and-operate/manage/configurations/endpoint-configurations.mdx) — Control endpoint visibility levels for integrations deployed as Integration as APIs.

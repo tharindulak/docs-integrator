@@ -1,67 +1,88 @@
 ---
-title: Choosing a Control Plane
-description: Understand how the way you deploy WSO2 Integrator integrations determines which control plane manages them, and where to find the docs for each.
+title: WSO2 Cloud - Integration Platform
+description: WSO2 Cloud - Integration Platform is a managed cloud environment for running integrations developed with WSO2 Integrator.
 type: how-to
 keywords:
   - wso2 integrator
-  - manage
-  - control plane
-  - integration control plane
-  - icp
   - wso2 cloud
+  - integration platform
+  - manage
+  - overview
+hide_table_of_contents: true
 ---
 
-Once your integrations are deployed, you need a control plane to organize them into projects and environments, monitor their runtime state, manage their lifecycle, and control access. WSO2 Integrator has two: **WSO2 Cloud - Integration Platform** and the **Integration Control Plane (ICP)**.
+WSO2 Cloud - Integration Platform is a managed cloud environment for running integrations developed with WSO2 Integrator. Once you push an integration to the cloud, the console gives you full control over how it runs: you can track build and deployment status, promote integrations across environments, configure runtime values and security, monitor logs and metrics, and control who has access, all without managing infrastructure.
 
-:::info[The control plane follows your deployment choice]
-You do not pick a control plane independently of how you deploy. Where your integrations run decides how you manage them:
+## Manage your integrations
 
-- Integrations you [deploy to WSO2 Cloud](../deploy-and-run/deploy-to-wso2-cloud/overview.mdx) are managed in WSO2 Cloud.
-- Integrations you run on your own infrastructure (VMs, containers, Kubernetes, on-premises, private cloud, or air-gapped environments) are managed with the self-hosted [Integration Control Plane](https://wso2.com/integration-platform/docs/integrator/next/icp).
+### [Manage Integrations](./integrations/overview.mdx)
 
-Decide where to run first, in [Deploy and Run](../deploy-and-run/index.mdx). The control plane follows from that.
-:::
+- Track build and deployment status
+- Redeploy, schedule, or stop integrations
+- API Management for integrations exposed as APIs
 
-## Manage on WSO2 Cloud
+### [Manage Projects](./projects.mdx)
 
-WSO2 Cloud is a fully managed SaaS offering. WSO2 operates the control plane and data plane infrastructure, so you deploy your integrations without provisioning or maintaining servers.
+- Create, view, edit, and remove projects
 
-**This is what you use when you:**
+### [Manage Environments](./environments/overview.mdx)
 
-- Get started immediately without any infrastructure setup.
-- Use built-in autoscaling and scale-to-zero for HTTP-triggered integrations.
-- Secure endpoints with API Key or OAuth2 without configuring an external identity provider.
-- Use managed promotion workflows, including approval gates, to move integrations across environments.
-- Store sensitive configuration values in a managed secret vault.
+- Configure promotion pipelines
+- Promote with optional approval gates
+- Override configuration per environment
 
-Managing integrations on WSO2 Cloud is covered in the WSO2 Cloud documentation: [Manage on WSO2 Cloud](https://wso2.com/integration-platform/docs/saas/manage).
+### [Manage Configurations](./configurations/overview.mdx)
 
-## Manage with the Integration Control Plane (ICP)
+- Runtime values and secrets
+- Endpoint visibility and security
+- Build behavior and autoscaling
 
-ICP is a self-hosted management server you install on your own infrastructure. It connects to your WSO2 Integrator runtimes over a dedicated registration port and provides a centralized dashboard, GraphQL API, and observability endpoints.
+### [Manage Access](./users-and-access/overview.mdx)
 
-**This is what you use when you:**
+- User groups and roles
+- Organization- or project-level access
+- Enterprise login with an external identity provider
+- User Portal for external users
 
-- Run the control plane on your own infrastructure: on-premises, in your private cloud, or air-gapped.
-- Keep all runtime metadata in a database you control (PostgreSQL, MySQL, or MSSQL).
+## Managed platform services
 
-ICP is documented in its own section, starting with [Integration Control Plane](https://wso2.com/integration-platform/docs/integrator/next/icp).
+Managed backing services and resources your integrations can use.
 
-## Comparison
+### [Managed Databases and Caches](./managed-databases-and-caches.mdx)
 
-| Capability | WSO2 Cloud | ICP |
-|---|---|---|
-| **Used when you deploy** | To WSO2 Cloud | On your own infrastructure |
-| **Hosting** | Fully managed by WSO2 | Self-hosted |
-| **Setup required** | None | Install server, configure database |
-| **Autoscaling** | Built-in | Managed by your infrastructure |
-| **Endpoint security** | API Key and OAuth2, built-in | Managed by your infrastructure |
-| **Secret management** | Managed secret vault | Managed by your infrastructure |
-| **Observability** | Built-in logs and metrics | Requires OpenSearch integration |
-| **Data residency** | WSO2 Cloud data plane or private data plane | Fully under your control |
+- PostgreSQL, MySQL, and cache services
+- Connect to your integrations
+- Plan for high availability
 
-## What's next
+### [Managed Message Brokers](./managed-message-brokers.mdx)
 
-- [Deploy and Run](../deploy-and-run/index.mdx) — choose where your integrations run
-- [Manage on WSO2 Cloud](https://wso2.com/integration-platform/docs/saas/manage) — manage integrations deployed to WSO2 Cloud
-- [Install ICP](https://wso2.com/integration-platform/docs/integrator/next/icp/install-icp) — set up the self-hosted Integration Control Plane
+- Managed Kafka services
+- Use them from your integrations
+
+### [RAG Ingestion](./rag-ingestion/vector-databases.mdx)
+
+- Load documents into managed vector databases
+- Query them
+- Deploy the AI agents that consume them
+
+### [Voice Agents (Preview)](./voice-agents.mdx)
+
+- Add voice to a deployed AI agent
+- Choose speech-to-text and text-to-speech providers
+- Test it live in the Voice Tester
+
+## Organization and billing
+
+Organization-level governance, separate from day-to-day integration work.
+
+### [Billing](./billing/pricing-and-plans.mdx)
+
+- Analyze usage across your organization
+- Pricing and plans for platform services
+
+### [Audit](./audit/audit-logs.mdx)
+
+- Organization-level audit logs
+- Data residency and compliance handling
+
+Once an integration is live, see [Observe](../observe/index.mdx) to monitor request throughput and resource usage, search runtime logs, and configure anomaly detection alerts. To run on dedicated infrastructure instead of the shared WSO2 Cloud data plane, see [Deploy on a Private Data Plane](../deploy-and-run/deploy-on-private-data-plane/overview.mdx).

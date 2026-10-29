@@ -313,7 +313,7 @@ The integration overview now shows the whole API: the HTTP listener, the `/inven
 
 Now that the API works, you can take it further:
 
-- **Deploy it.** Ship it to [WSO2 Cloud](../../deploy-and-operate/deploy-and-run/deploy-to-wso2-cloud/overview.mdx), a [Docker container](../../deploy-and-operate/deploy-and-run/self-hosted/containerized-deployment.mdx#docker-deployment), [Kubernetes](../../deploy-and-operate/deploy-and-run/self-hosted/containerized-deployment.mdx#kubernetes-deployment), or a [virtual machine](../../deploy-and-operate/deploy-and-run/self-hosted/vm-deployment.mdx), and put it behind your API gateway.
+- **Deploy it.** Ship it to [WSO2 Cloud](../../deploy-and-operate/deploy-and-run/deploy-to-wso2-cloud/overview.mdx), a Docker container, Kubernetes, or a virtual machine, and put it behind your API gateway.
 - **Check several materials at once.** Add a `POST /inventory/stock` resource that takes a list of materials and builds an OData filter such as `(Material eq 'RM019' or Material eq 'FG011') and Plant eq '1710'`, so a shopping cart needs a single call.
 - **Reserve the stock.** Once availability is confirmed, create a reservation with the [SAP Reservation Document connector](https://wso2.com/integration-platform/docs/connectors/catalog/erp-business/sap.s4hana.api_reservation_document_srv/sap-reservation-document-connector-overview) so the quantity is held for the order.
 - **Explore the other operations.** The [Material Stock action reference](https://wso2.com/integration-platform/docs/connectors/catalog/erp-business/sap.s4hana.api_material_stock_srv/actions) covers every operation, including reading serial numbers for serialized materials.

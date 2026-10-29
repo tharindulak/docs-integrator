@@ -1,38 +1,38 @@
 {
   "summary": {
-    "source": "wso2/docs-integrator@3139523c88056337f779f2f99f0cae287ae6fb2b",
+    "source": "wso2/docs-integrator@6a3393f01ced72f574dd97db55cc7d89ec3e029f",
     "sourceKind": "docusaurus",
-    "edition": "next",
-    "legacyBase": "https://wso2.com/integration-platform/docs/integrator/next/",
+    "edition": "cloud",
+    "legacyBase": "https://wso2.com/integration-platform/docs/saas/",
     "sidebar": "sidebars.ts (its object literal parsed, not run)",
-    "navPages": 296,
-    "sourceFiles": 332,
+    "navPages": 263,
+    "sourceFiles": 267,
     "stats": {
-      "pages": 296,
+      "pages": 263,
       "partials": 4,
       "apiPages": 0,
-      "images": 1347,
-      "imageBytes": 648759684,
+      "images": 1355,
+      "imageBytes": 871618215,
       "unlisted": 0,
-      "links": 2366,
-      "legacyLinks": 259,
-      "droppedLinks": 9,
+      "links": 1811,
+      "legacyLinks": 93,
+      "droppedLinks": 49,
       "missingImages": 0,
-      "generatedDescriptions": 56,
-      "sidebarLabels": 39,
+      "generatedDescriptions": 41,
+      "sidebarLabels": 35,
       "components": {
-        "ThemedImage": 1212,
-        "palette-card": 123,
-        "palette-grid": 25,
-        "palette-chip": 127,
-        "CloudDocsLink": 27,
-        "admonition caution→warning": 11,
-        "PaletteIcon": 4,
-        "QuickstartHeader": 8,
-        "PrereqCard": 18,
-        "Prerequisites": 8,
-        "Steps": 8,
+        "ThemedImage": 1250,
+        "palette-card": 92,
+        "palette-grid": 18,
         "HTML comment": 23,
+        "PaletteIcon": 4,
+        "palette-chip": 73,
+        "QuickstartHeader": 6,
+        "PrereqCard": 6,
+        "Prerequisites": 6,
+        "Steps": 6,
+        "mermaid (shown as code)": 9,
+        "admonition caution→warning": 7,
         "ArtifactPicker": 1,
         "EipReferenceLink": 9,
         "PatternImplementationTabs": 20,
@@ -40,15 +40,17 @@
         "GuidesCatalog": 1,
         "TabAwareToc": 2
       },
-      "paletteFallbacks": 275,
+      "paletteFallbacks": 183,
       "acceptedByOverrides": 0,
-      "excludedPages": 32,
-      "legacyRedirects": 296
+      "excludedPages": 0,
+      "droppedAnchors": 5,
+      "legacyRedirects": 263
     },
     "issues": {
-      "link": 10,
+      "link": 57,
       "palette": 18,
-      "description": 43,
+      "description": 41,
+      "fallback": 9,
       "component": 2
     },
     "compileFailures": 0,
@@ -61,38 +63,68 @@
   "items": [
     {
       "kind": "link",
-      "file": "cloud-providers/aws.md",
-      "message": "link to /guides/business-use-cases: no page of next has that URL; it goes to the legacy site"
-    },
-    {
-      "kind": "palette",
-      "file": "cloud-providers/aws.md",
-      "message": "Palette grids 7, cards 24, chips 24 became plain Markdown (headings, text, link lists)"
-    },
-    {
-      "kind": "description",
-      "file": "deploy-and-run/deploy-to-wso2-cloud/deploy-to-wso2-cloud.md",
-      "message": "description longer than 160 characters (188); one was generated from the first paragraph"
+      "file": "deploy-and-run/capacity-planning.md",
+      "message": "link to scaling-high-availability.md: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "palette",
       "file": "deploy-and-run/deploy-and-run.md",
-      "message": "Palette grids 2, cards 8, chips 14 became plain Markdown (headings, text, link lists)"
+      "message": "Palette grids 1, cards 2 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "palette",
+      "file": "manage/manage.md",
+      "message": "Palette grids 3, cards 11 became plain Markdown (headings, text, link lists)"
     },
     {
       "kind": "description",
-      "file": "deploy-and-run/secure/aws-access.md",
-      "message": "description longer than 160 characters (207); one was generated from the first paragraph"
+      "file": "manage/manage.md",
+      "message": "description longer than 160 characters (163); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "manage/integrations/api-management/api-management.md",
+      "message": "description longer than 160 characters (188); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "manage/managed-databases-and-caches.md",
+      "message": "description longer than 160 characters (181); one was generated from the first paragraph"
+    },
+    {
+      "kind": "link",
+      "file": "manage/managed-message-brokers.md",
+      "message": "link to managed-databases-and-caches.md#add-a-managed-database-or-cache-to-the-marketplace: the page has no heading #add-a-managed-database-or-cache-to-the-marketplace; the link goes to the page"
+    },
+    {
+      "kind": "description",
+      "file": "manage/users-and-access/api-external-idp/wso2-identity-platform.md",
+      "message": "description longer than 160 characters (186); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "manage/users-and-access/user-portal/check-and-repair.md",
+      "message": "description longer than 160 characters (172); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "manage/users-and-access/user-portal/user-portal.md",
+      "message": "description longer than 160 characters (178); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "manage/users-and-access/user-portal/sign-in-to-user-portal.md",
+      "message": "description longer than 160 characters (168); one was generated from the first paragraph"
+    },
+    {
+      "kind": "description",
+      "file": "manage/users-and-access/user-portal/use-user-portal.md",
+      "message": "description longer than 160 characters (178); one was generated from the first paragraph"
     },
     {
       "kind": "palette",
       "file": "observe/observe.md",
-      "message": "Palette grids 3, cards 7, chips 14 became plain Markdown (headings, text, link lists)"
-    },
-    {
-      "kind": "description",
-      "file": "observe/tracing.md",
-      "message": "description longer than 160 characters (165); one was generated from the first paragraph"
+      "message": "Palette grids 1, cards 3 became plain Markdown (headings, text, link lists)"
     },
     {
       "kind": "palette",
@@ -102,7 +134,7 @@
     {
       "kind": "palette",
       "file": "get-started/get-started.md",
-      "message": "Palette grids 1, cards 4, chips 7 became plain Markdown (headings, text, link lists)"
+      "message": "Palette grids 1, cards 4, chips 5 became plain Markdown (headings, text, link lists)"
     },
     {
       "kind": "palette",
@@ -115,19 +147,39 @@
       "message": "Palette cards 1 became plain Markdown (headings, text, link lists)"
     },
     {
-      "kind": "description",
-      "file": "get-started/quickstarts/build-durable-workflow.md",
-      "message": "description longer than 160 characters (162); one was generated from the first paragraph"
-    },
-    {
       "kind": "palette",
       "file": "get-started/quickstarts/build-event-driven-integration.md",
       "message": "Palette cards 1 became plain Markdown (headings, text, link lists)"
     },
     {
+      "kind": "link",
+      "file": "get-started/quickstarts/build-file-driven-integration.md",
+      "message": "link to ../../develop-and-test/integration-artifacts/file-driven-integration/ftp-sftp.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "get-started/quickstarts/build-file-driven-integration.md",
+      "message": "link to ../../develop-and-test/integration-artifacts/file-driven-integration/ftp-sftp.md#streaming-large-files: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "get-started/quickstarts/build-file-driven-integration.md",
+      "message": "link to ../../develop-and-test/integration-artifacts/file-driven-integration/csv-fault-tolerance.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
       "kind": "palette",
       "file": "get-started/quickstarts/build-integration-api.md",
       "message": "Palette cards 1 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "fallback",
+      "file": "guides/business-use-cases/building-a-customer-care-agent-mcp.md",
+      "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
+      "kind": "fallback",
+      "file": "guides/business-use-cases/building-hr-knowledge-base-rag.md",
+      "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
     },
     {
       "kind": "description",
@@ -137,7 +189,22 @@
     {
       "kind": "link",
       "file": "guides/business-use-cases/edi-purchase-order-processing.md",
-      "message": "link to ../../develop-and-test/integration-artifacts/file-driven-integration/ftp-sftp.md: no such page in next; the link was removed and its text kept"
+      "message": "link to ../../reference/data-formats/edi.md#prebuilt-edifact-packages: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "guides/business-use-cases/edi-purchase-order-processing.md",
+      "message": "link to ../../develop-and-test/integration-artifacts/file-driven-integration/ftp-sftp.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "guides/business-use-cases/edi-purchase-order-processing.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md#docker-deployment: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "guides/business-use-cases/edi-purchase-order-processing.md",
+      "message": "link to ../../deploy-and-run/self-hosted/vm-deployment.md: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "description",
@@ -145,9 +212,29 @@
       "message": "description longer than 160 characters (229); one was generated from the first paragraph"
     },
     {
+      "kind": "fallback",
+      "file": "guides/business-use-cases/it-helpdesk-chatbot.md",
+      "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
       "kind": "description",
       "file": "guides/business-use-cases/review-summarizer-natural-function.md",
       "message": "description longer than 160 characters (193); one was generated from the first paragraph"
+    },
+    {
+      "kind": "link",
+      "file": "guides/business-use-cases/sap-b1-low-stock-purchase-automation.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md#docker-deployment: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "guides/business-use-cases/sap-b1-low-stock-purchase-automation.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md#kubernetes-deployment: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "guides/business-use-cases/sap-b1-low-stock-purchase-automation.md",
+      "message": "link to ../../deploy-and-run/self-hosted/vm-deployment.md: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "description",
@@ -155,19 +242,29 @@
       "message": "description longer than 160 characters (208); one was generated from the first paragraph"
     },
     {
+      "kind": "link",
+      "file": "guides/business-use-cases/sf-ec-leave-to-google-calendar-sync.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md#docker-deployment: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "guides/business-use-cases/sf-ec-leave-to-google-calendar-sync.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md#kubernetes-deployment: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "guides/business-use-cases/sf-ec-leave-to-google-calendar-sync.md",
+      "message": "link to ../../deploy-and-run/self-hosted/vm-deployment.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
       "kind": "description",
       "file": "guides/business-use-cases/sf-ec-leave-to-google-calendar-sync.md",
       "message": "description longer than 160 characters (254); one was generated from the first paragraph"
     },
     {
-      "kind": "description",
-      "file": "develop-and-test/create-workspace/create-workspace.md",
-      "message": "description longer than 160 characters (174); one was generated from the first paragraph"
-    },
-    {
-      "kind": "description",
-      "file": "develop-and-test/create-workspace/restricted-networks/restricted-networks.md",
-      "message": "description longer than 160 characters (163); one was generated from the first paragraph"
+      "kind": "link",
+      "file": "develop-and-test/data-transformation/edi.md",
+      "message": "link to ../../reference/data-formats/edi.md#prebuilt-edifact-packages: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "palette",
@@ -180,9 +277,34 @@
       "message": "description longer than 160 characters (186); one was generated from the first paragraph"
     },
     {
+      "kind": "link",
+      "file": "develop-and-test/data-transformation/xlsx.md",
+      "message": "link to ../../reference/data-formats/xlsx.md#table: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/data-transformation/xlsx.md",
+      "message": "link to ../../reference/data-formats/xlsx.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/developer-tools/integration-tools/health-tool.md",
+      "message": "link to ../../../reference/configuration-reference.md#configuration-management: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/developer-tools/integration-tools/wsdl-tool.md",
+      "message": "link to ../../../reference/configuration-reference.md#configuration-management: no such page in cloud; the link was removed and its text kept"
+    },
+    {
       "kind": "palette",
       "file": "develop-and-test/developer-tools/developer-tools.md",
       "message": "Palette grids 2, cards 11 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/developer-tools/utility-tools/persist-tool.md",
+      "message": "link to ../../../reference/configuration-reference.md#configuration-management: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "palette",
@@ -235,6 +357,16 @@
       "message": "description longer than 160 characters (166); one was generated from the first paragraph"
     },
     {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/observability.md",
+      "message": "link to ../../../../observe/tracing.md#choose-a-tracing-backend: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/agents/observability.md",
+      "message": "link to ../../../../observe/open-source/jaeger.md#configuration-options: no such page in cloud; the link was removed and its text kept"
+    },
+    {
       "kind": "description",
       "file": "develop-and-test/integration-artifacts/ai-integrations/ai-building-blocks/chunkers.md",
       "message": "description longer than 160 characters (232); one was generated from the first paragraph"
@@ -275,14 +407,44 @@
       "message": "description longer than 160 characters (223); one was generated from the first paragraph"
     },
     {
+      "kind": "fallback",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/mcp/mcp.md",
+      "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
+      "kind": "fallback",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/mcp/mcp.md",
+      "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
       "kind": "palette",
       "file": "develop-and-test/integration-artifacts/ai-integrations/ai-integrations.md",
       "message": "Palette grids 1, cards 7 became plain Markdown (headings, text, link lists)"
     },
     {
+      "kind": "fallback",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/rag/rag.md",
+      "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
+      "kind": "fallback",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/rag/rag-ingestion.md",
+      "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
+      "kind": "fallback",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/rag/rag-query.md",
+      "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
       "kind": "description",
       "file": "develop-and-test/integration-artifacts/ai-integrations/rag/rag-query.md",
       "message": "description longer than 160 characters (162); one was generated from the first paragraph"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/ai-integrations/voice-agent/voice-agent.md",
+      "message": "link to ../../../../deploy-and-run/deploy-to-wso2-cloud/push-from-ide.md: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "description",
@@ -300,9 +462,39 @@
       "message": "description longer than 160 characters (179); one was generated from the first paragraph"
     },
     {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/file-driven-integration/ftp-sftp/high-availability-and-coordination.md",
+      "message": "link to ../../../../deploy-and-run/scaling-high-availability.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
       "kind": "component",
       "file": "develop-and-test/integration-artifacts/integration-artifacts.md",
       "message": "<ArtifactPicker /> (an interactive catalogue) became <DocCardList />, the folder's pages"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/supportive-artifacts/configurations.md",
+      "message": "link to ../../../reference/configuration-reference.md#configuration-management: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/supportive-artifacts/configurations.md",
+      "message": "link to ../../../reference/configuration-reference.md#configuration-management: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/supportive-artifacts/configurations.md",
+      "message": "link to ../../../deploy-and-run/secure/secrets-encryption.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/supportive-artifacts/configurations.md",
+      "message": "link to ../../../reference/configuration-reference.md#configuration-management: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/integration-artifacts/supportive-artifacts/configurations.md",
+      "message": "link to ../../../deploy-and-run/secure/secrets-encryption.md: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "description",
@@ -311,58 +503,53 @@
     },
     {
       "kind": "link",
-      "file": "develop-and-test/integration-artifacts/workflow/durable-agentic-workflow/create-durable-agent.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
-    },
-    {
-      "kind": "description",
-      "file": "develop-and-test/integration-artifacts/workflow/durable-agentic-workflow/get-data-event-result.md",
-      "message": "description longer than 160 characters (161); one was generated from the first paragraph"
+      "file": "develop-and-test/integration-artifacts/supportive-artifacts/data-persistence.md",
+      "message": "link to ../../../reference/configuration-reference.md#configuration-management: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "link",
-      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/activities.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
-    },
-    {
-      "kind": "description",
-      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/activities.md",
-      "message": "description longer than 160 characters (177); one was generated from the first paragraph"
+      "file": "develop-and-test/integration-patterns/content-based-routing.md",
+      "message": "link to ../../reference/configuration-reference.md#configurable-variables: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "link",
-      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/create.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "file": "develop-and-test/integration-patterns/message-dispatcher.md",
+      "message": "link to ../../reference/configuration-reference.md#configurable-variables: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "link",
-      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/create.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "file": "develop-and-test/integration-patterns/polling-consumer.md",
+      "message": "link to ../../reference/configuration-reference.md#configurable-variables: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "link",
-      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/durable-timers.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
-    },
-    {
-      "kind": "description",
-      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/durable-timers.md",
-      "message": "description longer than 160 characters (163); one was generated from the first paragraph"
+      "file": "develop-and-test/integration-patterns/selective-consumer.md",
+      "message": "link to ../../reference/configuration-reference.md#configurable-variables: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "link",
-      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/durable-workflow.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "file": "develop-and-test/integration-patterns/service-activator.md",
+      "message": "link to ../../reference/configuration-reference.md#configurable-variables: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "link",
-      "file": "develop-and-test/integration-artifacts/workflow/durable-workflow/start.md",
-      "message": "link to ../../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "file": "develop-and-test/integration-patterns/service-activator.md",
+      "message": "link to ../../reference/configuration-reference.md#configurable-variables: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "link",
-      "file": "develop-and-test/integration-artifacts/workflow/workflow.md",
-      "message": "link to ../../../get-started/quickstarts/build-order-processing.md: no such page in next; the link was removed and its text kept"
+      "file": "develop-and-test/troubleshooting/logging.md",
+      "message": "link to /observe/logging: no page of cloud has that URL; it goes to the legacy site"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/troubleshooting/logging.md",
+      "message": "link to /observe/logging: no page of cloud has that URL; it goes to the legacy site"
+    },
+    {
+      "kind": "link",
+      "file": "develop-and-test/troubleshooting/logging.md",
+      "message": "link to /observe/logging: no page of cloud has that URL; it goes to the legacy site"
     },
     {
       "kind": "palette",
@@ -370,9 +557,19 @@
       "message": "Palette grids 1, cards 8, chips 27 became plain Markdown (headings, text, link lists)"
     },
     {
+      "kind": "link",
+      "file": "editor/editor-window.md",
+      "message": "link to ../icp/index.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
       "kind": "palette",
       "file": "editor/editor.md",
       "message": "Palette grids 1, cards 6, chips 14 became plain Markdown (headings, text, link lists)"
+    },
+    {
+      "kind": "link",
+      "file": "editor/troubleshooting/moving-to-ballerina-2201-14.md",
+      "message": "link to ../../reference/configuration-reference.md#ballerinatoml-reference: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "description",
@@ -380,14 +577,74 @@
       "message": "description longer than 160 characters (185); one was generated from the first paragraph"
     },
     {
+      "kind": "link",
+      "file": "editor/views/integration-view.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "editor/views/integration-view.md",
+      "message": "link to ../../deploy-and-run/self-hosted/vm-deployment.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "editor/views/integration-view.md",
+      "message": "link to ../integration-control-plane.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "editor/views/project-view.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "editor/views/project-view.md",
+      "message": "link to ../../deploy-and-run/self-hosted/vm-deployment.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "editor/views/project-view.md",
+      "message": "link to ../../icp/index.md: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "fallback",
+      "file": "guides/how-to-guides/azure-files-change-tracker.md",
+      "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
       "kind": "description",
       "file": "guides/how-to-guides/azure-files-change-tracker.md",
       "message": "description longer than 160 characters (172); one was generated from the first paragraph"
     },
     {
+      "kind": "link",
+      "file": "guides/how-to-guides/s3-events-via-sqs-listener.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md#docker-deployment: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "guides/how-to-guides/s3-events-via-sqs-listener.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md#kubernetes-deployment: no such page in cloud; the link was removed and its text kept"
+    },
+    {
       "kind": "description",
       "file": "guides/how-to-guides/s3-events-via-sqs-listener.md",
       "message": "description longer than 160 characters (161); one was generated from the first paragraph"
+    },
+    {
+      "kind": "link",
+      "file": "guides/how-to-guides/sap-s4hana-stock-availability-api.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md#docker-deployment: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "guides/how-to-guides/sap-s4hana-stock-availability-api.md",
+      "message": "link to ../../deploy-and-run/self-hosted/containerized-deployment.md#kubernetes-deployment: no such page in cloud; the link was removed and its text kept"
+    },
+    {
+      "kind": "link",
+      "file": "guides/how-to-guides/sap-s4hana-stock-availability-api.md",
+      "message": "link to ../../deploy-and-run/self-hosted/vm-deployment.md: no such page in cloud; the link was removed and its text kept"
     },
     {
       "kind": "description",
@@ -405,9 +662,29 @@
       "message": "Palette grids 1, cards 3 became plain Markdown (headings, text, link lists)"
     },
     {
+      "kind": "link",
+      "file": "guides/tutorials/file-order-hub.md",
+      "message": "link to ../../develop-and-test/create-workspace/create-a-project.md#configure-the-project: the page has no heading #configure-the-project; the link goes to the page"
+    },
+    {
+      "kind": "link",
+      "file": "guides/tutorials/file-order-hub.md",
+      "message": "link to ../../develop-and-test/create-workspace/create-a-project.md#add-an-integration: the page has no heading #add-an-integration; the link goes to the page"
+    },
+    {
       "kind": "description",
       "file": "guides/tutorials/file-order-hub.md",
       "message": "description longer than 160 characters (349); one was generated from the first paragraph"
+    },
+    {
+      "kind": "link",
+      "file": "guides/tutorials/social-media.md",
+      "message": "link to ../../develop-and-test/create-workspace/create-a-project.md#configure-the-project: the page has no heading #configure-the-project; the link goes to the page"
+    },
+    {
+      "kind": "link",
+      "file": "guides/tutorials/social-media.md",
+      "message": "link to ../../develop-and-test/create-workspace/create-a-project.md#add-an-integration: the page has no heading #add-an-integration; the link goes to the page"
     },
     {
       "kind": "description",
@@ -417,12 +694,7 @@
     {
       "kind": "palette",
       "file": "reference/reference.md",
-      "message": "Palette grids 1, cards 11 became plain Markdown (headings, text, link lists)"
-    },
-    {
-      "kind": "description",
-      "file": "reference/streaming-capabilities.md",
-      "message": "description longer than 160 characters (212); one was generated from the first paragraph"
+      "message": "Palette grids 1, cards 3 became plain Markdown (headings, text, link lists)"
     }
   ]
 }

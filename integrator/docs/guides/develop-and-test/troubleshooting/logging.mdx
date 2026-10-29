@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 
 Logs are the everyday tool for tracing what an integration did and diagnosing what went wrong. Reach for them when you want a persistent record across runs, when the issue only reproduces in a long-running deployment, or when [editor debugging](../debugging/index.mdx) is too heavyweight for the question you have.
 
-WSO2 Integrator supports the four standard severities: **Info**, **Warn**, **Error**, and **Debug**. For the field-by-field reference of the Log nodes, see [Logging in the flow diagram editor](../../editor/canvases/flow-canvas/node-palette.mdx#logging). For runtime configuration (log level, output format, file rotation, aggregation), see [Logging & structured logs](../../../deploy-and-operate/observe/logging.mdx).
+WSO2 Integrator supports the four standard severities: **Info**, **Warn**, **Error**, and **Debug**. For the field-by-field reference of the Log nodes, see [Logging in the flow diagram editor](../../editor/canvases/flow-canvas/node-palette.mdx#logging). For runtime configuration (log level, output format, file rotation, aggregation), see [Logging & structured logs](https://wso2.com/integration-platform/docs/saas/observe/logging).
 
 ## Add a log statement
 
@@ -141,7 +141,7 @@ level = "DEBUG"
 </TabItem>
 </Tabs>
 
-For module-specific levels, file rotation, and the JSON output format, see [Logging & structured logs](../../../deploy-and-operate/observe/logging.mdx).
+For module-specific levels, file rotation, and the JSON output format, see [Logging & structured logs](https://wso2.com/integration-platform/docs/saas/observe/logging).
 
 ## Reuse context across calls with child loggers
 
@@ -220,7 +220,7 @@ Ballerina libraries emit their own logs at the module level. The most common one
 accessLogConfig.console = true
 ```
 
-Other modules (such as `ballerina/sql` or `ballerina/grpc`) emit logs under their own module names. To raise or lower their verbosity independently of your integration code, configure module-specific levels as described in [Logging & structured logs](../../../deploy-and-operate/observe/logging.mdx).
+Other modules (such as `ballerina/sql` or `ballerina/grpc`) emit logs under their own module names. To raise or lower their verbosity independently of your integration code, configure module-specific levels as described in [Logging & structured logs](https://wso2.com/integration-platform/docs/saas/observe/logging).
 
 ## What's next
 

@@ -1,0 +1,43 @@
+---
+title: Observability Setup
+description: Set up centralized logs and metrics monitoring for ICP using Moesif or OpenSearch.
+type: how-to
+sidebar_label: Choose a setup
+sidebar_position: 1
+keywords:
+  - wso2 integrator
+  - integration control plane
+  - icp
+  - observability
+  - moesif
+  - fluent bit
+  - opensearch
+  - logs
+  - metrics
+---
+
+ICP supports two observability providers for viewing integration logs and metrics in the ICP console. Choose a provider and open its setup guide below.
+
+:::tip
+This guide covers **default profile** runtimes. To set up observability for a **WSO2 Integrator: MI** runtime connected to ICP, see [Adding observability for ICP](https://mi.docs.wso2.com/en/latest/install-and-setup/install/adding-observability-for-icp/) in the MI documentation.
+:::
+
+:::info[Prerequisites]
+
+- ICP installed and running. See [Install ICP](../../get-started/install-icp.mdx).
+- Integration connected to ICP with heartbeats working. See [Connect an integration to ICP](../../guides/connect-runtime.mdx).
+
+:::
+
+| Provider | Metrics collection | Application log collection | Setup |
+|----------|--------------------|----------------------------|-------|
+| **Moesif** | The runtime publishes metrics directly to Moesif. | Fluent Bit forwards JSON logs to Moesif. | [Set up Moesif](./moesif.mdx). |
+| **OpenSearch** | Fluent Bit forwards per-request metrics logs to OpenSearch. | Fluent Bit forwards structured application logs to OpenSearch. | [Set up OpenSearch](./opensearch.mdx). |
+
+Choose **Moesif** for a hosted service that requires a Moesif account. Choose **OpenSearch** to keep logs and metrics on infrastructure you run yourself.
+
+## What's next
+
+- [Manage integrations](../../guides/manage-integrations.mdx) — create integrations and navigate the integration overview in the ICP console
+- [Manage runtimes](../../guides/manage-runtimes.mdx) — monitor runtime health and status alongside observability data
+- [Access control](../../guides/access-control.mdx) — control who can view logs and metrics in the ICP console

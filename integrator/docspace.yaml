@@ -11,7 +11,7 @@ cloud:
   in: integration-platform
 owners:
   team: integration-platform-docs
-repo: wso2/docs-integrator
+repo: tharindulak/docs-integrator
 editLinks: false
 issues:
   repo: wso2/docs-integrator

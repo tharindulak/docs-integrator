@@ -21,11 +21,11 @@ When a durable workflow reaches a step that needs a person's decision, it suspen
 
 Two kinds of work arrive on that page:
 
-- A **task** asks a person for something the workflow cannot compute, such as validating an order or judging a claim. You complete a form, and the workflow resumes with what you submit. See [Await Human Task](https://wso2.com/integration-platform/docs/integrator/next/develop-and-test/integration-artifacts/workflow/durable-workflow/await-human-task).
+- A **task** asks a person for something the workflow cannot compute, such as validating an order or judging a claim. You complete a form, and the workflow resumes with what you submit. See [Await Human Task](https://wso2.com/integration-platform/docs/integrator/develop-and-test/integration-artifacts/workflow/durable-workflow/await-human-task).
 - A **review activity** is a decision attached to an activity rather than a freestanding question. It is raised in two cases:
 
-  - **After an activity fails**, when its retry policy is **Human Review**, or **Retry, then Review** once its automatic retries are spent, so a person decides whether to retry it. See [Human review failed activities](https://wso2.com/integration-platform/docs/integrator/next/develop-and-test/integration-artifacts/workflow/durable-workflow/review-activity-and-error-handling#human-review--when-a-person-should-fix-it).
-  - **Before an activity runs**, when its **Approval Policy** is set to **Human Approval**, on a workflow's activity call or on an activity a durable agent registered, so a person approves the call first. See [Approval gates](https://wso2.com/integration-platform/docs/integrator/next/develop-and-test/integration-artifacts/workflow/durable-workflow/review-activity-and-error-handling#approval-gates--review-before-the-step-runs).
+  - **After an activity fails**, when its retry policy is **Human Review**, or **Retry, then Review** once its automatic retries are spent, so a person decides whether to retry it. See [Human review failed activities](https://wso2.com/integration-platform/docs/integrator/develop-and-test/integration-artifacts/workflow/durable-workflow/review-activity-and-error-handling#human-review--when-a-person-should-fix-it).
+  - **Before an activity runs**, when its **Approval Policy** is set to **Human Approval**, on a workflow's activity call or on an activity a durable agent registered, so a person approves the call first. See [Approval gates](https://wso2.com/integration-platform/docs/integrator/develop-and-test/integration-artifacts/workflow/durable-workflow/review-activity-and-error-handling#approval-gates--review-before-the-step-runs).
 
 :::info[Prerequisites]
 
@@ -110,7 +110,7 @@ Open a human task from the queue. The panel gathers what you need in order to an
 
 <ThemedImage light="../../../assets/img/workflows/icp/human-tasks/human-task-complete-form.png" dark="../../../assets/img/workflows/icp/human-tasks/human-task-complete-form.png" alt="The Validate Order task with Complete Task selected, opening the result form with a Valid Yes/No toggle, a Reason box, the Edit as JSON link, and the Review before completion button" />
 
-The fields come from the result type the workflow declared for the task. See [Await Human Task](https://wso2.com/integration-platform/docs/integrator/next/develop-and-test/integration-artifacts/workflow/durable-workflow/await-human-task). Only a record result type has a form. Any other type, such as a plain `boolean`, opens a **Result (JSON)** box with the note "This task declares no result schema", and you enter the value itself, for example `true`.
+The fields come from the result type the workflow declared for the task. See [Await Human Task](https://wso2.com/integration-platform/docs/integrator/develop-and-test/integration-artifacts/workflow/durable-workflow/await-human-task). Only a record result type has a form. Any other type, such as a plain `boolean`, opens a **Result (JSON)** box with the note "This task declares no result schema", and you enter the value itself, for example `true`.
 
 ```ballerina
 public type OrderValidation record {|
@@ -230,13 +230,13 @@ The task needs at least one role or user, so you cannot reassign it to nobody. *
 
 Set **Days**, **Hours**, and **Minutes**, and **Extend** applies that span measured from now, not from when the task was created or from its existing deadline. **Clear deadline** removes the deadline instead, which leaves the task open until someone decides it. **Cancel** closes the form without changing anything.
 
-The deadline is the **Timeout** the workflow declared for the task. See [Bound the wait](https://wso2.com/integration-platform/docs/integrator/next/develop-and-test/integration-artifacts/workflow/durable-workflow/await-human-task#bound-the-wait). If nobody completes the task before the deadline, the task is recorded as **Failed**, and the workflow continues with that error to handle. Give the task more time when the assigned person needs it, or remove the deadline so the task stays open until someone completes it.
+The deadline is the **Timeout** the workflow declared for the task. See [Bound the wait](https://wso2.com/integration-platform/docs/integrator/develop-and-test/integration-artifacts/workflow/durable-workflow/await-human-task#bound-the-wait). If nobody completes the task before the deadline, the task is recorded as **Failed**, and the workflow continues with that error to handle. Give the task more time when the assigned person needs it, or remove the deadline so the task stays open until someone completes it.
 
 ## What's next
 
-- [Await Human Task](https://wso2.com/integration-platform/docs/integrator/next/develop-and-test/integration-artifacts/workflow/durable-workflow/await-human-task) — how a workflow creates tasks and types their results
-- [Error handling and review activities](https://wso2.com/integration-platform/docs/integrator/next/develop-and-test/integration-artifacts/workflow/durable-workflow/review-activity-and-error-handling) — how a workflow declares approval gates and failure reviews
-- [Await data events](https://wso2.com/integration-platform/docs/integrator/next/develop-and-test/integration-artifacts/workflow/durable-workflow/data-events) — wait for data from a system or a person instead of a decision
+- [Await Human Task](https://wso2.com/integration-platform/docs/integrator/develop-and-test/integration-artifacts/workflow/durable-workflow/await-human-task) — how a workflow creates tasks and types their results
+- [Error handling and review activities](https://wso2.com/integration-platform/docs/integrator/develop-and-test/integration-artifacts/workflow/durable-workflow/review-activity-and-error-handling) — how a workflow declares approval gates and failure reviews
+- [Await data events](https://wso2.com/integration-platform/docs/integrator/develop-and-test/integration-artifacts/workflow/durable-workflow/data-events) — wait for data from a system or a person instead of a decision
 - [Workflow executions](./workflow-executions.mdx) — see where the waiting execution has stopped
 - [Workflow permissions](./workflow-permissions.mdx) — the permissions behind each view and action
-- [Management API](https://wso2.com/integration-platform/docs/integrator/next/develop-and-test/integration-artifacts/workflow/durable-workflow/management-api) — complete tasks and decide reviews programmatically
+- [Management API](https://wso2.com/integration-platform/docs/integrator/develop-and-test/integration-artifacts/workflow/durable-workflow/management-api) — complete tasks and decide reviews programmatically

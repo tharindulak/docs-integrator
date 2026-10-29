@@ -7,7 +7,7 @@ sidebar_position: 3
 
 ### What is a connector?
 
-A connector is a pre-built integration component that exposes an external service's API as ready-to-use operations. Instead of constructing HTTP requests and parsing responses by hand, you select an action from the connector's list and configure its inputs. See [Overview](../concepts/overview.mdx) for the full set of concepts.
+A connector is a pre-built integration component that exposes an external service's API as ready-to-use operations. Instead of constructing HTTP requests and parsing responses by hand, you select an action from the connector's list and configure its inputs. See [Overview](../index.mdx) for the full set of concepts.
 
 ### What's the difference between a connector and a library?
 
@@ -23,11 +23,11 @@ Actions are outbound: your integration calls the external service. Triggers are 
 
 ### How many connectors are in the catalog, and how are they organized?
 
-Around 165 connector families, browsable and filterable by category (AI & ML, Database, CRM & Sales, Messaging, Storage & Files, and more) and by vendor in the [Connector Catalog](../index.mdx).
+Around 165 connector families, browsable and filterable by category (AI & ML, Database, CRM & Sales, Messaging, Storage & Files, and more) and by vendor in the [Connector Catalog](./catalog/index.mdx).
 
 ### Why do some connectors have no setup guide?
 
-Protocol-level connectors (HTTP, gRPC, GraphQL, TCP, UDP, WebSocket, WebSub, FTP, MQTT, Email, MCP, and AI) ship with the platform itself, rather than integrating with a specific third-party vendor's API like Salesforce, SAP, or HubSpot do. Several of them have no setup guide for exactly this reason, because there's no external account or credentials to configure. You can find them under categories such as Network & Protocols, Messaging, and Storage & Files in the [Connector Catalog](../index.mdx).
+Protocol-level connectors (HTTP, gRPC, GraphQL, TCP, UDP, WebSocket, WebSub, FTP, MQTT, Email, MCP, and AI) ship with the platform itself, rather than integrating with a specific third-party vendor's API like Salesforce, SAP, or HubSpot do. Several of them have no setup guide for exactly this reason, because there's no external account or credentials to configure. You can find them under categories such as Network & Protocols, Messaging, and Storage & Files in the [Connector Catalog](./catalog/index.mdx).
 
 ### What if there's no connector for the service I need?
 
@@ -39,7 +39,7 @@ Not yet. The catalog currently lists WSO2's own pre-built connectors; support fo
 
 ### How do I request a connector that's missing from the catalog?
 
-Open a request on [GitHub](https://github.com/wso2/product-integrator/issues/new/choose), or generate one yourself from an OpenAPI spec if the target API has one — both options are linked directly from the [Connector Catalog](../index.mdx)'s filter sidebar.
+Open a request on [GitHub](https://github.com/wso2/product-integrator/issues/new/choose), or generate one yourself from an OpenAPI spec if the target API has one — both options are linked directly from the [Connector Catalog](./catalog/index.mdx)'s filter sidebar.
 
 ### Do I need to know Ballerina to use connectors?
 

@@ -40,1403 +40,1408 @@ items:
   - id: ai
     name: AI
     description: Build AI-powered applications using Large Language Models with direct LLM interaction, intelligent agents with tool use, and Retrieval-Augmented Generation
-    href: ./reference/catalog/ai/index.mdx
+    href: ./ai/index.mdx
     category: ai-and-ml
   - id: alfresco
     name: Alfresco
     description: Enterprise content management platform with document CRUD, versioning, shared links, and collaboration features
-    href: ./reference/catalog/alfresco/index.mdx
+    href: ./alfresco/index.mdx
     category: storage-and-files
     tags:
       - Alfresco
   - id: amp
     name: AMP
     description: Ballerina observability extension that exports OpenTelemetry traces to the WSO2 AI Agent Management Platform
-    href: ./reference/catalog/amp/index.mdx
+    href: ./amp/index.mdx
     category: developer-tools
     tags:
       - WSO2
   - id: ardoq
     name: Ardoq
     description: Enterprise architecture platform for modeling business and IT landscapes as connected components, references, and workspaces
-    href: ./reference/catalog/ardoq/index.mdx
+    href: ./ardoq/index.mdx
     category: erp-and-business
     tags:
       - Ardoq
   - id: asana
     name: Asana
     description: Project management platform with tasks, projects, sections, goals, and team collaboration
-    href: ./reference/catalog/asana/index.mdx
+    href: ./asana/index.mdx
     category: productivity-and-collaboration
     tags:
       - Asana
+  - id: authzen
+    name: AuthZEN
+    description: 'OpenID AuthZEN Policy Enforcement Point client for any compatible Policy Decision Point: single and batch access evaluation, subject, resource and action search, and PDP metadata discovery'
+    href: ./authzen/index.mdx
+    category: security-and-identity
   - id: aws-dynamodb
     name: AWS DynamoDB
     description: Fully managed, serverless NoSQL key-value database with table lifecycle management, item CRUD, batch processing, querying, scanning, and backups
-    href: ./reference/catalog/aws.dynamodb/index.mdx
+    href: ./aws.dynamodb/index.mdx
     category: database
     tags:
       - Amazon
   - id: aws-dynamodb-streams
     name: AWS DynamoDB Streams
     description: Captures and streams time-ordered item-level modifications from a DynamoDB table for near real-time change processing
-    href: ./reference/catalog/aws.dynamodbstreams/index.mdx
+    href: ./aws.dynamodbstreams/index.mdx
     category: database
     tags:
       - Amazon
   - id: aws-marketplace-mpe
     name: AWS Marketplace MPE
     description: Retrieve customer entitlements for AWS Marketplace products
-    href: ./reference/catalog/aws.marketplace.mpe/index.mdx
+    href: ./aws.marketplace.mpe/index.mdx
     category: cloud-and-infrastructure
     tags:
       - Amazon
   - id: aws-marketplace-mpm
     name: AWS Marketplace MPM
     description: AWS Marketplace metering for customer resolution and usage billing
-    href: ./reference/catalog/aws.marketplace.mpm/index.mdx
+    href: ./aws.marketplace.mpm/index.mdx
     category: cloud-and-infrastructure
     tags:
       - Amazon
   - id: aws-redshift
     name: AWS Redshift
     description: Cloud data warehouse with SQL queries, batch operations, and stored procedure support
-    href: ./reference/catalog/aws.redshift/index.mdx
+    href: ./aws.redshift/index.mdx
     category: database
     tags:
       - Amazon
   - id: aws-redshift-data
     name: AWS Redshift Data
     description: Data warehouse with async SQL execution, batch operations, and streamed result retrieval via the Redshift Data API
-    href: ./reference/catalog/aws.redshiftdata/index.mdx
+    href: ./aws.redshiftdata/index.mdx
     category: database
     tags:
       - Amazon
   - id: aws-s3
     name: AWS S3
     description: Object storage with bucket management, object CRUD, presigned URLs, and multipart uploads
-    href: ./reference/catalog/aws.s3/index.mdx
+    href: ./aws.s3/index.mdx
     category: storage-and-files
     tags:
       - Amazon
   - id: aws-secrets-manager
     name: AWS Secrets Manager
     description: Secrets management service for retrieving and describing AWS secrets
-    href: ./reference/catalog/aws.secretmanager/index.mdx
+    href: ./aws.secretmanager/index.mdx
     category: security-and-identity
     tags:
       - Amazon
   - id: aws-ses
     name: AWS SES
     description: Cost-effective, scalable email platform for sending transactional messages, marketing campaigns, and bulk communications via the SES API v2
-    href: ./reference/catalog/aws.ses/index.mdx
+    href: ./aws.ses/index.mdx
     category: marketing-and-social
     tags:
       - Amazon
   - id: aws-simpledb
     name: AWS SimpleDB
     description: Highly available NoSQL data store organizing data into schemaless domains of items and attributes, queryable with SQL-like select expressions
-    href: ./reference/catalog/aws.simpledb/index.mdx
+    href: ./aws.simpledb/index.mdx
     category: database
     tags:
       - Amazon
   - id: aws-sns
     name: AWS SNS
     description: Pub/sub messaging service for topic-based notifications, SMS, and mobile push
-    href: ./reference/catalog/aws.sns/index.mdx
+    href: ./aws.sns/index.mdx
     category: communication
     tags:
       - Amazon
   - id: aws-sqs
     name: AWS SQS
     description: Connect with Amazon SQS to send, receive, and manage messages across standard and FIFO queues with support for batch operations and event-driven consumption.
-    href: ./reference/catalog/aws.sqs/index.mdx
+    href: ./aws.sqs/index.mdx
     category: messaging
     tags:
       - Amazon
   - id: azure-ai-search
     name: Azure AI Search
     description: Azure AI Search service management for indexes, indexers, data sources, skillsets, and synonym maps
-    href: ./reference/catalog/azure.ai.search/index.mdx
+    href: ./azure.ai.search/index.mdx
     category: ai-and-ml
     tags:
       - Microsoft
   - id: azure-ai-search-index
     name: Azure AI Search Index
     description: AI-powered cloud search with full-text, semantic, and vector search over indexed documents
-    href: ./reference/catalog/azure.ai.search.index/index.mdx
+    href: ./azure.ai.search.index/index.mdx
     category: ai-and-ml
     tags:
       - Microsoft
   - id: azure-files
     name: Azure Files
     description: Azure Files shares with directory and file management, transfers, copies, SAS generation, and event-driven file monitoring
-    href: ./reference/catalog/azure.storage.files/index.mdx
+    href: ./azure.storage.files/index.mdx
     category: storage-and-files
     tags:
       - Microsoft
   - id: azure-service-bus
     name: Azure Service Bus
     description: Enterprise message broker with queues, topics, subscriptions, and event-driven message processing
-    href: ./reference/catalog/asb/index.mdx
+    href: ./asb/index.mdx
     category: messaging
     tags:
       - Microsoft
   - id: azure-storage-service
     name: Azure Storage Service
     description: Azure Blob Storage with container management, blob CRUD, and SAS token support
-    href: ./reference/catalog/azure-storage-service/index.mdx
+    href: ./azure-storage-service/index.mdx
     category: storage-and-files
     tags:
       - Microsoft
   - id: candid
     name: Candid
     description: Nonprofit data platform with search, profiles, financials, and PDF report downloads
-    href: ./reference/catalog/candid/index.mdx
+    href: ./candid/index.mdx
     category: productivity-and-collaboration
     tags:
       - Candid
   - id: cdc
     name: CDC
     description: Change Data Capture framework for streaming real-time database row changes (MySQL, PostgreSQL, MSSQL, Oracle)
-    href: ./reference/catalog/cdc/index.mdx
+    href: ./cdc/index.mdx
     category: database
     tags:
       - Red Hat
   - id: confluent-avro-serdes
     name: Confluent Avro SerDes
     description: Avro serialization and deserialization library using the Confluent Schema Registry wire format
-    href: ./reference/catalog/confluent.cavroserdes/index.mdx
+    href: ./confluent.cavroserdes/index.mdx
     category: messaging
     tags:
       - Confluent
   - id: confluent-schema-registry
     name: Confluent Schema Registry
     description: Schema management for Kafka with schema registration and retrieval
-    href: ./reference/catalog/confluent.cregistry/index.mdx
+    href: ./confluent.cregistry/index.mdx
     category: messaging
     tags:
       - Confluent
   - id: copybook
     name: Copybook
     description: COBOL copybook serialization and deserialization library for mainframe data integration
-    href: ./reference/catalog/copybook/index.mdx
+    href: ./copybook/index.mdx
     category: developer-tools
   - id: discord
     name: Discord
     description: Communication platform with messaging, guild management, roles, webhooks, and slash commands
-    href: ./reference/catalog/discord/index.mdx
+    href: ./discord/index.mdx
     category: communication
     tags:
       - Discord
   - id: docusign-admin
     name: DocuSign Admin
     description: DocuSign organization administration with user management, permissions, bulk imports/exports, and group operations
-    href: ./reference/catalog/docusign.dsadmin/index.mdx
+    href: ./docusign.dsadmin/index.mdx
     category: productivity-and-collaboration
     tags:
       - DocuSign
   - id: elastic-cloud
     name: Elastic Cloud
     description: Elastic Cloud management with deployments, traffic filters, organizations, API keys, and stack versions
-    href: ./reference/catalog/elastic.elasticcloud/index.mdx
+    href: ./elastic.elasticcloud/index.mdx
     category: cloud-and-infrastructure
     tags:
       - Elastic
   - id: email
     name: Email
     description: Send emails via SMTP and receive emails via IMAP and POP3, with attachments, folder management, and email polling support
-    href: ./reference/catalog/email/index.mdx
+    href: ./email/index.mdx
     category: communication
   - id: ftp
     name: FTP
     description: Access FTP, FTPS, and SFTP servers for reading, writing, and managing remote files and directories, with event-driven file monitoring
-    href: ./reference/catalog/ftp/index.mdx
+    href: ./ftp/index.mdx
     category: storage-and-files
   - id: github
     name: GitHub
     description: Source control platform with repository, issue, pull request, and organization management
-    href: ./reference/catalog/github/index.mdx
+    href: ./github/index.mdx
     category: developer-tools
     tags:
       - GitHub
   - id: gmail
     name: Gmail
     description: Email service with message send/receive, drafts, threads, labels, and mailbox history
-    href: ./reference/catalog/googleapis.gmail/index.mdx
+    href: ./googleapis.gmail/index.mdx
     category: communication
     tags:
       - Google
   - id: google-calendar
     name: Google Calendar
     description: Calendar and event management with scheduling, quick-add, filtering, and service account delegation
-    href: ./reference/catalog/googleapis.calendar/index.mdx
+    href: ./googleapis.calendar/index.mdx
     category: productivity-and-collaboration
     tags:
       - Google
   - id: google-calendar-v2
     name: Google Calendar (v2)
     description: Google Calendar integration for managing calendars, events, ACL rules, and free/busy queries
-    href: ./reference/catalog/googleapis.gcalendar/index.mdx
+    href: ./googleapis.gcalendar/index.mdx
     category: productivity-and-collaboration
     tags:
       - Google
   - id: google-chat
     name: Google Chat
     description: 'REST client and webhook listener for Google Chat: send messages, manage spaces and memberships, and handle Chat interaction events'
-    href: ./reference/catalog/google-chat/index.mdx
+    href: ./google-chat/index.mdx
     category: communication
     tags:
       - Google
   - id: google-cloud-pub-sub
     name: Google Cloud Pub/Sub
     description: Pub/Sub messaging service with topic publishing, subscription consumption, and flow control
-    href: ./reference/catalog/gcloud.pubsub/index.mdx
+    href: ./gcloud.pubsub/index.mdx
     category: messaging
     tags:
       - Google
   - id: google-sheets
     name: Google Sheets
     description: Cloud spreadsheet platform with worksheet management, cell/row/column CRUD, range operations, and data filtering
-    href: ./reference/catalog/googleapis.sheets/index.mdx
+    href: ./googleapis.sheets/index.mdx
     category: productivity-and-collaboration
     tags:
       - Google
   - id: graphql
     name: GraphQL
     description: Full-featured GraphQL server framework with automatic schema generation and a client for sending queries and mutations to external endpoints
-    href: ./reference/catalog/graphql/index.mdx
+    href: ./graphql/index.mdx
     category: network-and-protocols
   - id: grpc
     name: gRPC
     description: Build gRPC servers and clients supporting all four communication patterns with authentication, TLS, deadline propagation, compression, and retry
-    href: ./reference/catalog/grpc/index.mdx
+    href: ./grpc/index.mdx
     category: network-and-protocols
   - id: guidewire-insurancenow
     name: Guidewire InsuranceNow
     description: Insurance platform with applications, policies, claims, drivers, and document management
-    href: ./reference/catalog/guidewire.insnow/index.mdx
+    href: ./guidewire.insnow/index.mdx
     category: erp-and-business
     tags:
       - Guidewire
   - id: http
     name: HTTP
     description: Connect and interact with HTTP and HTTP2 endpoints with outbound requests and inbound request handling, plus failover and load balancing
-    href: ./reference/catalog/http/index.mdx
+    href: ./http/index.mdx
     category: network-and-protocols
   - id: hubspot-automation-actions
     name: HubSpot Automation Actions
     description: Custom workflow actions for HubSpot CRM with extension definitions, functions, and callback completion
-    href: ./reference/catalog/hubspot.automation.actions/index.mdx
+    href: ./hubspot.automation.actions/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-associations
     name: HubSpot CRM Associations
     description: CRM association management for linking objects like contacts, deals, companies, and tickets
-    href: ./reference/catalog/hubspot.crm.associations/index.mdx
+    href: ./hubspot.crm.associations/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-associations-schema
     name: HubSpot CRM Associations Schema
     description: HubSpot CRM association schema management for object type relationships and configurations
-    href: ./reference/catalog/hubspot.crm.associations.schema/index.mdx
+    href: ./hubspot.crm.associations.schema/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-commerce-carts
     name: HubSpot CRM Commerce Carts
     description: Commerce cart management with CRUD, search, and batch operations
-    href: ./reference/catalog/hubspot.crm.commerce.carts/index.mdx
+    href: ./hubspot.crm.commerce.carts/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-commerce-discounts
     name: HubSpot CRM Commerce Discounts
     description: HubSpot discount management with CRUD, batch operations, and search
-    href: ./reference/catalog/hubspot.crm.commerce.discounts/index.mdx
+    href: ./hubspot.crm.commerce.discounts/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-commerce-orders
     name: HubSpot CRM Commerce Orders
     description: HubSpot order management with CRUD, batch operations, and search
-    href: ./reference/catalog/hubspot.crm.commerce.orders/index.mdx
+    href: ./hubspot.crm.commerce.orders/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-commerce-quotes
     name: HubSpot CRM Commerce Quotes
     description: Commerce quotes management with CRUD, batch operations, and search
-    href: ./reference/catalog/hubspot.crm.commerce.quotes/index.mdx
+    href: ./hubspot.crm.commerce.quotes/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-commerce-taxes
     name: HubSpot CRM Commerce Taxes
     description: Commerce tax management with CRUD, search, and batch operations
-    href: ./reference/catalog/hubspot.crm.commerce.taxes/index.mdx
+    href: ./hubspot.crm.commerce.taxes/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-companies
     name: HubSpot CRM Companies
     description: Manage HubSpot CRM company records with full CRUD, batch operations, search, and merge
-    href: ./reference/catalog/hubspot.crm.obj.companies/index.mdx
+    href: ./hubspot.crm.obj.companies/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-contacts
     name: HubSpot CRM Contacts
     description: HubSpot CRM contacts management with CRUD, batch operations, search, merge, and GDPR deletion
-    href: ./reference/catalog/hubspot.crm.obj.contacts/index.mdx
+    href: ./hubspot.crm.obj.contacts/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-deals
     name: HubSpot CRM Deals
     description: HubSpot CRM deal management with CRUD, batch operations, search, and merge
-    href: ./reference/catalog/hubspot.crm.obj.deals/index.mdx
+    href: ./hubspot.crm.obj.deals/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-engagement-meeting
     name: HubSpot CRM Engagement Meeting
     description: HubSpot meeting engagements with CRUD, batch operations, and search
-    href: ./reference/catalog/hubspot.crm.engagement.meeting/index.mdx
+    href: ./hubspot.crm.engagement.meeting/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-engagement-notes
     name: HubSpot CRM Engagement Notes
     description: Engagement notes API for creating, reading, updating, and searching CRM notes
-    href: ./reference/catalog/hubspot.crm.engagement.notes/index.mdx
+    href: ./hubspot.crm.engagement.notes/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-engagements-calls
     name: HubSpot CRM Engagements Calls
     description: Call engagement tracking with CRUD, batch operations, and search
-    href: ./reference/catalog/hubspot.crm.engagements.calls/index.mdx
+    href: ./hubspot.crm.engagements.calls/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-engagements-communications
     name: HubSpot CRM Engagements Communications
     description: HubSpot communication records for WhatsApp, LinkedIn, and other messaging channels
-    href: ./reference/catalog/hubspot.crm.engagements.communications/index.mdx
+    href: ./hubspot.crm.engagements.communications/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-engagements-email
     name: HubSpot CRM Engagements Email
     description: HubSpot email engagements with CRUD, batch, and search operations
-    href: ./reference/catalog/hubspot.crm.engagements.email/index.mdx
+    href: ./hubspot.crm.engagements.email/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-engagements-tasks
     name: HubSpot CRM Engagements Tasks
     description: Task engagement tracking with CRUD, batch operations, and search
-    href: ./reference/catalog/hubspot.crm.engagements.tasks/index.mdx
+    href: ./hubspot.crm.engagements.tasks/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-extensions-timelines
     name: HubSpot CRM Extensions Timelines
     description: Custom timeline events on HubSpot CRM records with template and token management
-    href: ./reference/catalog/hubspot.crm.extensions.timelines/index.mdx
+    href: ./hubspot.crm.extensions.timelines/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-extensions-videoconferencing
     name: HubSpot CRM Extensions Videoconferencing
     description: Video conferencing settings management for HubSpot apps
-    href: ./reference/catalog/hubspot.crm.extensions.videoconferencing/index.mdx
+    href: ./hubspot.crm.extensions.videoconferencing/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-feedback
     name: HubSpot CRM Feedback
     description: HubSpot Feedback Submissions API for reading and managing customer survey feedback data
-    href: ./reference/catalog/hubspot.crm.obj.feedback/index.mdx
+    href: ./hubspot.crm.obj.feedback/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-import
     name: HubSpot CRM Import
     description: Bulk import contacts, companies, deals, and other CRM objects into HubSpot via CSV
-    href: ./reference/catalog/hubspot.crm.import/index.mdx
+    href: ./hubspot.crm.import/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-leads
     name: HubSpot CRM Leads
     description: HubSpot CRM lead management with full CRUD, batch operations, and search
-    href: ./reference/catalog/hubspot.crm.obj.leads/index.mdx
+    href: ./hubspot.crm.obj.leads/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-line-items
     name: HubSpot CRM Line Items
     description: HubSpot CRM line items with single-record CRUD, batch operations, and keyword search
-    href: ./reference/catalog/hubspot.crm.obj.lineitems/index.mdx
+    href: ./hubspot.crm.obj.lineitems/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-lists
     name: HubSpot CRM Lists
     description: CRM list management with dynamic/manual lists, memberships, and folder organization
-    href: ./reference/catalog/hubspot.crm.lists/index.mdx
+    href: ./hubspot.crm.lists/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-owners
     name: HubSpot CRM Owners
     description: HubSpot CRM owner retrieval with filtering, pagination, and team assignments
-    href: ./reference/catalog/hubspot.crm.owners/index.mdx
+    href: ./hubspot.crm.owners/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-pipelines
     name: HubSpot CRM Pipelines
     description: CRM pipeline and stage management with full CRUD and audit trail support
-    href: ./reference/catalog/hubspot.crm.pipelines/index.mdx
+    href: ./hubspot.crm.pipelines/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-products
     name: HubSpot CRM Products
     description: HubSpot CRM product catalog management with individual and batch CRUD, search, and upsert
-    href: ./reference/catalog/hubspot.crm.obj.products/index.mdx
+    href: ./hubspot.crm.obj.products/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-properties
     name: HubSpot CRM Properties
     description: CRM property management with CRUD operations, batch processing, and property groups
-    href: ./reference/catalog/hubspot.crm.properties/index.mdx
+    href: ./hubspot.crm.properties/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-schemas
     name: HubSpot CRM Schemas
     description: Manage HubSpot custom object schemas, properties, and inter-object associations
-    href: ./reference/catalog/hubspot.crm.obj.schemas/index.mdx
+    href: ./hubspot.crm.obj.schemas/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-crm-tickets
     name: HubSpot CRM Tickets
     description: CRM platform for managing customer support ticket records with pipeline and priority tracking
-    href: ./reference/catalog/hubspot.crm.obj.tickets/index.mdx
+    href: ./hubspot.crm.obj.tickets/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-events-completions
     name: HubSpot Events Completions
     description: Send single or batched custom behavioral event occurrences to HubSpot for existing event definitions.
-    href: ./reference/catalog/hubspot.events.completions/index.mdx
+    href: ./hubspot.events.completions/index.mdx
     category: crm-and-sales
     tags:
       - HubSpot
   - id: hubspot-marketing-campaigns
     name: HubSpot Marketing Campaigns
     description: Marketing campaign management with CRUD, batch operations, asset associations, and reporting
-    href: ./reference/catalog/hubspot.marketing.campaigns/index.mdx
+    href: ./hubspot.marketing.campaigns/index.mdx
     category: marketing-and-social
     tags:
       - HubSpot
   - id: hubspot-marketing-emails
     name: HubSpot Marketing Emails
     description: Marketing email management with CRUD, A/B testing, drafts, revisions, and statistics
-    href: ./reference/catalog/hubspot.marketing.emails/index.mdx
+    href: ./hubspot.marketing.emails/index.mdx
     category: marketing-and-social
     tags:
       - HubSpot
   - id: hubspot-marketing-events
     name: HubSpot Marketing Events
     description: Marketing event management with CRUD, attendance tracking, participation analytics, and list associations
-    href: ./reference/catalog/hubspot.marketing.events/index.mdx
+    href: ./hubspot.marketing.events/index.mdx
     category: marketing-and-social
     tags:
       - HubSpot
   - id: hubspot-marketing-forms
     name: HubSpot Marketing Forms
     description: Marketing forms management with field groups, styling, legal consent, and form lifecycle operations
-    href: ./reference/catalog/hubspot.marketing.forms/index.mdx
+    href: ./hubspot.marketing.forms/index.mdx
     category: marketing-and-social
     tags:
       - HubSpot
   - id: hubspot-marketing-subscriptions
     name: HubSpot Marketing Subscriptions
     description: Communication preference management with subscription status tracking across email, SMS, and WhatsApp
-    href: ./reference/catalog/hubspot.marketing.subscriptions/index.mdx
+    href: ./hubspot.marketing.subscriptions/index.mdx
     category: marketing-and-social
     tags:
       - HubSpot
   - id: hubspot-marketing-transactional
     name: HubSpot Marketing Transactional
     description: Transactional email sending and SMTP token management via HubSpot Marketing API
-    href: ./reference/catalog/hubspot.marketing.transactional/index.mdx
+    href: ./hubspot.marketing.transactional/index.mdx
     category: marketing-and-social
     tags:
       - HubSpot
   - id: ibm-ctg
     name: IBM CTG
     description: IBM CICS Transaction Gateway connector for invoking mainframe CICS programs via ECI
-    href: ./reference/catalog/ibm.ctg/index.mdx
+    href: ./ibm.ctg/index.mdx
     category: erp-and-business
     tags:
       - IBM
   - id: ibm-mq
     name: IBM MQ
     description: Enterprise messaging middleware with queue and topic operations, and event-driven message consumption
-    href: ./reference/catalog/ibm.ibmmq/index.mdx
+    href: ./ibm.ibmmq/index.mdx
     category: messaging
     tags:
       - IBM
   - id: intercom
     name: Intercom
     description: Customer messaging platform with contacts, conversations, tickets, Help Center articles, tags, and company management
-    href: ./reference/catalog/intercom/index.mdx
+    href: ./intercom/index.mdx
     category: communication
     tags:
       - Intercom
   - id: java-jdbc
     name: Java JDBC
     description: Generic JDBC database connectivity with queries, DML, batch operations, and stored procedures
-    href: ./reference/catalog/java.jdbc/index.mdx
+    href: ./java.jdbc/index.mdx
     category: database
     tags:
       - Oracle
   - id: jira
     name: Jira
     description: Project tracking and issue management with JQL search, workflows, and full CRUD operations
-    href: ./reference/catalog/jira/index.mdx
+    href: ./jira/index.mdx
     category: productivity-and-collaboration
     tags:
       - Atlassian
   - id: jms
     name: JMS
     description: JMS broker integration with queue/topic messaging, durable subscriptions, and event-driven consumption
-    href: ./reference/catalog/java.jms/index.mdx
+    href: ./java.jms/index.mdx
     category: messaging
     tags:
       - Oracle
   - id: kafka
     name: Kafka
     description: Distributed event streaming with producers, consumers, and listener-based triggers
-    href: ./reference/catalog/kafka/index.mdx
+    href: ./kafka/index.mdx
     category: messaging
     tags:
       - Apache
   - id: mailchimp-marketing
     name: Mailchimp Marketing
     description: Email marketing platform with audience management, campaigns, automations, and analytics
-    href: ./reference/catalog/mailchimp.marketing/index.mdx
+    href: ./mailchimp.marketing/index.mdx
     category: marketing-and-social
     tags:
       - Mailchimp
   - id: mailchimp-transactional
     name: Mailchimp Transactional
     description: Transactional email service with message sending, templates, webhooks, and delivery analytics
-    href: ./reference/catalog/mailchimp.transactional/index.mdx
+    href: ./mailchimp.transactional/index.mdx
     category: marketing-and-social
     tags:
       - Mailchimp
   - id: mcp
     name: MCP
     description: Build MCP clients that consume tools from remote servers and MCP servers that expose tools to AI agents for AI-driven integration flows
-    href: ./reference/catalog/mcp/index.mdx
+    href: ./mcp/index.mdx
     category: ai-and-ml
   - id: microsoft-onedrive
     name: Microsoft OneDrive
     description: Cloud file storage with drive/item CRUD, content upload/download, sharing, and search
-    href: ./reference/catalog/microsoft.onedrive/index.mdx
+    href: ./microsoft.onedrive/index.mdx
     category: storage-and-files
     tags:
       - Microsoft
   - id: microsoft-sharepoint-pages
     name: Microsoft SharePoint Pages
     description: Manage Microsoft SharePoint site pages, canvas layouts, sections, and web parts via Microsoft Graph API.
-    href: ./reference/catalog/microsoft.sharepoint.pages/index.mdx
+    href: ./microsoft.sharepoint.pages/index.mdx
     category: storage-and-files
     tags:
       - Microsoft
   - id: microsoft-sharepoint-sites
     name: Microsoft SharePoint Sites
     description: Manage Microsoft SharePoint sites, lists, content types, columns, drives, permissions, and analytics via Microsoft Graph API
-    href: ./reference/catalog/microsoft.sharepoint.sites/index.mdx
+    href: ./microsoft.sharepoint.sites/index.mdx
     category: storage-and-files
     tags:
       - Microsoft
   - id: microsoft-teams
     name: Microsoft Teams
     description: Manage Microsoft Teams teams, channels, members, messages, tabs, and tags via the Microsoft Graph API
-    href: ./reference/catalog/microsoft.teams/index.mdx
+    href: ./microsoft.teams/index.mdx
     category: communication
     tags:
       - Microsoft
   - id: milvus
     name: Milvus
     description: Open-source vector database for similarity search, vector upsert, and collection management
-    href: ./reference/catalog/milvus/index.mdx
+    href: ./milvus/index.mdx
     category: ai-and-ml
     tags:
       - Zilliz
   - id: mistral
     name: Mistral
     description: AI platform with chat completions, code generation, embeddings, OCR, moderation, fine-tuning, and batch processing
-    href: ./reference/catalog/mistral/index.mdx
+    href: ./mistral/index.mdx
     category: ai-and-ml
     tags:
       - Mistral
   - id: mongodb
     name: MongoDB
     description: Document database with CRUD, aggregation pipelines, and index management
-    href: ./reference/catalog/mongodb/index.mdx
+    href: ./mongodb/index.mdx
     category: database
     tags:
       - MongoDB
   - id: mqtt
     name: MQTT
     description: Lightweight IoT messaging protocol with publish/subscribe support, configurable QoS levels, TLS security, and event-driven message consumption using MQTT v5
-    href: ./reference/catalog/mqtt/index.mdx
+    href: ./mqtt/index.mdx
     category: messaging
   - id: mssql
     name: MSSQL
     description: Relational database with SQL queries, batch operations, stored procedures, and CDC event triggers
-    href: ./reference/catalog/mssql/index.mdx
+    href: ./mssql/index.mdx
     category: database
     tags:
       - Microsoft
   - id: mysql
     name: MySQL
     description: Relational database with SQL queries, batch operations, stored procedures, and CDC triggers
-    href: ./reference/catalog/mysql/index.mdx
+    href: ./mysql/index.mdx
     category: database
     tags:
       - Oracle
   - id: nats
     name: NATS
     description: High-performance pub/sub and persistent JetStream messaging with publish, subscribe, request-reply, and stream management
-    href: ./reference/catalog/nats/index.mdx
+    href: ./nats/index.mdx
     category: messaging
     tags:
       - NATS
   - id: openai
     name: OpenAI
     description: AI platform with chat completions, image generation, audio processing, embeddings, assistants, and fine-tuning
-    href: ./reference/catalog/openai/index.mdx
+    href: ./openai/index.mdx
     category: ai-and-ml
     tags:
       - OpenAI
   - id: openai-audio
     name: OpenAI Audio
     description: Text-to-speech, transcription, and audio translation using OpenAI TTS and Whisper models
-    href: ./reference/catalog/openai.audio/index.mdx
+    href: ./openai.audio/index.mdx
     category: ai-and-ml
     tags:
       - OpenAI
   - id: openai-fine-tunes
     name: OpenAI Fine-Tunes
     description: Fine-tune OpenAI models with custom training data, manage files and models
-    href: ./reference/catalog/openai.finetunes/index.mdx
+    href: ./openai.finetunes/index.mdx
     category: ai-and-ml
     tags:
       - OpenAI
   - id: oracle-db
     name: Oracle DB
     description: Enterprise relational database with SQL queries, DML, stored procedures, Oracle-specific type support, and CDC triggers
-    href: ./reference/catalog/oracledb/index.mdx
+    href: ./oracledb/index.mdx
     category: database
     tags:
       - Oracle
   - id: paypal-invoices
     name: PayPal Invoices
     description: Invoicing platform with invoice CRUD, payments, refunds, search, and template management
-    href: ./reference/catalog/paypal.invoices/index.mdx
+    href: ./paypal.invoices/index.mdx
     category: finance-and-accounting
     tags:
       - PayPal
   - id: paypal-orders
     name: PayPal Orders
     description: Payment orders API with creation, authorization, capture, and shipment tracking
-    href: ./reference/catalog/paypal.orders/index.mdx
+    href: ./paypal.orders/index.mdx
     category: finance-and-accounting
     tags:
       - PayPal
   - id: paypal-payments
     name: PayPal Payments
     description: Payment platform with authorization, capture, void, and refund operations
-    href: ./reference/catalog/paypal.payments/index.mdx
+    href: ./paypal.payments/index.mdx
     category: finance-and-accounting
     tags:
       - PayPal
   - id: paypal-subscriptions
     name: PayPal Subscriptions
     description: PayPal recurring billing platform for creating subscription plans and managing subscription lifecycles
-    href: ./reference/catalog/paypal.subscriptions/index.mdx
+    href: ./paypal.subscriptions/index.mdx
     category: finance-and-accounting
     tags:
       - PayPal
   - id: people-hr
     name: People HR
     description: HR management system with employee records, holidays, salaries, vacancies, applicants, and appraisals
-    href: ./reference/catalog/peoplehr/index.mdx
+    href: ./peoplehr/index.mdx
     category: hrms
     tags:
       - PeopleHR
   - id: pricefx
     name: Pricefx
     description: 'Cloud-native pricing and revenue management: products, customers, price lists, calculation grids, quotes, contracts, and rebate agreements'
-    href: ./reference/catalog/pricefx/index.mdx
+    href: ./pricefx/index.mdx
     category: erp-and-business
     tags:
       - Pricefx
   - id: postgresql
     name: PostgreSQL
     description: Object-relational database with SQL queries, batch operations, stored procedures, and CDC triggers
-    href: ./reference/catalog/postgresql/index.mdx
+    href: ./postgresql/index.mdx
     category: database
     tags:
       - PostgreSQL
   - id: rabbitmq
     name: RabbitMQ
     description: AMQP 0-9-1 message broker with queue/exchange management, pub/sub, and consumer services
-    href: ./reference/catalog/rabbitmq/index.mdx
+    href: ./rabbitmq/index.mdx
     category: messaging
     tags:
       - RabbitMQ
   - id: redis
     name: Redis
     description: In-memory data store with string, list, set, sorted set, and hash operations
-    href: ./reference/catalog/redis/index.mdx
+    href: ./redis/index.mdx
     category: database
     tags:
       - Redis
   - id: rudderstack
     name: RudderStack
     description: Customer data platform for streaming identify, track, page, screen, group and alias events, reading and deleting activated profiles, and running Profiles projects
-    href: ./reference/catalog/rudderstack/index.mdx
+    href: ./rudderstack/index.mdx
     category: marketing-and-social
     tags:
       - RudderStack
   - id: salesforce
     name: Salesforce
     description: CRM platform with records, queries, bulk data operations, and change event triggers
-    href: ./reference/catalog/salesforce/index.mdx
+    href: ./salesforce/index.mdx
     category: crm-and-sales
     tags:
       - Salesforce
   - id: salesforce-data-360-data-cloud
     name: Salesforce Data 360 (Data Cloud)
     description: Customer data platform with streaming and bulk ingestion, unified profiles, calculated insights, SQL queries, and identity resolution runs
-    href: ./reference/catalog/salesforce.datacloud/index.mdx
+    href: ./salesforce.datacloud/index.mdx
     category: marketing-and-social
     tags:
       - Salesforce
   - id: salesforce-marketing-cloud
     name: Salesforce Marketing Cloud
     description: Digital marketing platform with journeys, campaigns, contacts, data extensions, assets, and transactional email
-    href: ./reference/catalog/salesforce.marketingcloud/index.mdx
+    href: ./salesforce.marketingcloud/index.mdx
     category: marketing-and-social
     tags:
       - Salesforce
   - id: sap
     name: SAP
     description: SAP HTTP client with built-in CSRF token handling for S/4HANA and other SAP APIs
-    href: ./reference/catalog/sap/index.mdx
+    href: ./sap/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-administration
     name: SAP Business One Administration
     description: Administration and setup connector for SAP Business One — manage users, permissions, approvals, alerts, queries, and Web Client settings via the Service Layer.
-    href: ./reference/catalog/sap.businessone.administration/index.mdx
+    href: ./sap.businessone.administration/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-banking
     name: SAP Business One Banking
     description: Manage SAP Business One banking and payment objects — payments, deposits, checks, bank statements, and reconciliations via the Service Layer.
-    href: ./reference/catalog/sap.businessone.banking/index.mdx
+    href: ./sap.businessone.banking/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-business-partners
     name: SAP Business One Business Partners
     description: Manage SAP Business One business partner master data — customers, vendors, leads, contacts, and related setup — via the Service Layer OData API.
-    href: ./reference/catalog/sap.businessone.businesspartners/index.mdx
+    href: ./sap.businessone.businesspartners/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-crm
     name: SAP Business One CRM
     description: Manage SAP Business One CRM objects — activities, campaigns, target groups, and sales opportunities — via the OData Service Layer.
-    href: ./reference/catalog/sap.businessone.crm/index.mdx
+    href: ./sap.businessone.crm/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-financials
     name: SAP Business One Financials
     description: Manage SAP Business One financial accounting objects — chart of accounts, journal entries, budgets, cost accounting dimensions, profit centers, currencies, and tax setup — via the Service Layer.
-    href: ./reference/catalog/sap.businessone.financials/index.mdx
+    href: ./sap.businessone.financials/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-fixed-assets
     name: SAP Business One Fixed Assets
     description: Manage fixed asset objects of SAP Business One — capitalization, retirement, transfers, and depreciation setup — via the Service Layer.
-    href: ./reference/catalog/sap.businessone.fixedassets/index.mdx
+    href: ./sap.businessone.fixedassets/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-human-resources
     name: SAP Business One Human Resources
     description: Manage SAP Business One human resources objects — employee master data, teams, positions, and HR setup — through the Service Layer.
-    href: ./reference/catalog/sap.businessone.humanresources/index.mdx
+    href: ./sap.businessone.humanresources/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-inventory
     name: SAP Business One Inventory
     description: Manage SAP Business One inventory objects — items, warehouses, price lists, stock transactions, batches, serials, and bin locations — via the Service Layer.
-    href: ./reference/catalog/sap.businessone.inventory/index.mdx
+    href: ./sap.businessone.inventory/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-localization
     name: SAP Business One Localization
     description: Manage SAP Business One localization and electronic document objects — electronic documents, Brazil Nota Fiscal codes, India HSN/SAC codes, Israel deduction documents, and more — via the Service Layer.
-    href: ./reference/catalog/sap.businessone.localization/index.mdx
+    href: ./sap.businessone.localization/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-production
     name: SAP Business One Production
     description: Manage SAP Business One production and MRP objects — bills of materials, production orders, resources, and forecasts — via the Service Layer OData API.
-    href: ./reference/catalog/sap.businessone.production/index.mdx
+    href: ./sap.businessone.production/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-projects
     name: SAP Business One Projects
     description: Manage SAP Business One project management objects — projects, project management entities, and time sheets — via the Service Layer OData API.
-    href: ./reference/catalog/sap.businessone.projects/index.mdx
+    href: ./sap.businessone.projects/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-purchasing
     name: SAP Business One Purchasing
     description: Manage SAP Business One purchasing (A/P) documents — purchase requests, quotations, orders, goods receipts, returns, invoices, and landed costs — via the Service Layer.
-    href: ./reference/catalog/sap.businessone.purchasing/index.mdx
+    href: ./sap.businessone.purchasing/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-sales
     name: SAP Business One Sales
     description: Manage SAP Business One sales (A/R) documents — quotations, orders, deliveries, returns, invoices, credit memos, and dunning — via the Service Layer.
-    href: ./reference/catalog/sap.businessone.sales/index.mdx
+    href: ./sap.businessone.sales/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-business-one-service
     name: SAP Business One Service
     description: Manage SAP Business One service module objects — service calls, contracts, customer equipment cards, and the knowledge base — via the Service Layer OData API.
-    href: ./reference/catalog/sap.businessone.service/index.mdx
+    href: ./sap.businessone.service/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-characteristic-attribute-catalog
     name: SAP Characteristic Attribute Catalog
     description: SAP S/4HANA Characteristic Attribute Catalog - Read (A2X) API for reading plant-specific selected sets, their codes and texts used to record qualitative inspection results
-    href: ./reference/catalog/sap-s4hana-api-charcattributecatalog-srv/index.mdx
+    href: ./sap-s4hana-api-charcattributecatalog-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-commerce
     name: SAP Commerce
     description: E-commerce platform with product catalog, cart management, orders, and B2B procurement
-    href: ./reference/catalog/sap.commerce.webservices/index.mdx
+    href: ./sap.commerce.webservices/index.mdx
     category: e-commerce
     tags:
       - SAP
   - id: sap-customer-returns-delivery
     name: SAP Customer Returns Delivery
     description: SAP S/4HANA Customer Returns Delivery (A2X) API for managing returns deliveries, their items and partners, putaway and goods receipt posting
-    href: ./reference/catalog/sap-s4hana-api-customer-returns-delivery-srv-0002/index.mdx
+    href: ./sap-s4hana-api-customer-returns-delivery-srv-0002/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-delivery-document-with-credit-block
     name: SAP Delivery Document with Credit Block
     description: SAP S/4HANA Delivery Document with Credit Block (A2X) API for reading credit-blocked deliveries and checking, releasing or rejecting the credit block
-    href: ./reference/catalog/sap-s4hana-api-del-doc-with-credit-block/index.mdx
+    href: ./sap-s4hana-api-del-doc-with-credit-block/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-inbound-delivery
     name: SAP Inbound Delivery
     description: SAP S/4HANA Inbound Delivery (A2X) API for managing inbound deliveries, items, partners, texts and serial numbers, putaway and goods receipt posting
-    href: ./reference/catalog/sap-s4hana-api-inbound-delivery-srv-0002/index.mdx
+    href: ./sap-s4hana-api-inbound-delivery-srv-0002/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-inspection-lot
     name: SAP Inspection Lot
     description: 'SAP S/4HANA Inspection Lot (A2X) API for quality inspections: read and update inspection lots, record inspection results and create usage decisions'
-    href: ./reference/catalog/sap-s4hana-api-inspectionlot-srv/index.mdx
+    href: ./sap-s4hana-api-inspectionlot-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-inspection-method
     name: SAP Inspection Method
     description: SAP S/4HANA Inspection Method - Read (A2X) API for reading inspection methods with their settings, administrative data and texts
-    href: ./reference/catalog/sap-s4hana-api-inspectionmethod-srv/index.mdx
+    href: ./sap-s4hana-api-inspectionmethod-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-inspection-plan
     name: SAP Inspection Plan
     description: SAP S/4HANA Inspection Plan (A2X) API for managing inspection plans, material assignments, operations, inspection characteristics and PRTs
-    href: ./reference/catalog/sap-s4hana-api-inspectionplan-srv/index.mdx
+    href: ./sap-s4hana-api-inspectionplan-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-jco
     name: SAP JCo
     description: Connect to SAP systems via JCo for RFC execution, IDoc exchange, and inbound event handling
-    href: ./reference/catalog/sap.jco/index.mdx
+    href: ./sap.jco/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-master-inspection-characteristic
     name: SAP Master Inspection Characteristic
     description: SAP S/4HANA Master Inspection Characteristic - Read (A2X) API for reading master inspection characteristics with their control indicators and texts
-    href: ./reference/catalog/sap-s4hana-api-masterinspcharacteristic-srv/index.mdx
+    href: ./sap-s4hana-api-masterinspcharacteristic-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-material-document
     name: SAP Material Document
     description: 'SAP S/4HANA Material Document (A2X) API for goods movements: read material document headers, items and serial numbers, post goods movements and reverse them'
-    href: ./reference/catalog/sap-s4hana-api-material-document-srv/index.mdx
+    href: ./sap-s4hana-api-material-document-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-material-stock
     name: SAP Material Stock
     description: SAP S/4HANA Material Stock (A2X) API for reading stock quantities by material, plant, storage location, batch and stock type, including serial numbers
-    href: ./reference/catalog/sap-s4hana-api-material-stock-srv/index.mdx
+    href: ./sap-s4hana-api-material-stock-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-outbound-delivery
     name: SAP Outbound Delivery
     description: SAP S/4HANA Outbound Delivery (A2X) API for managing outbound deliveries, items, addresses, texts, handling units and serial numbers, picking and goods issue posting
-    href: ./reference/catalog/sap-s4hana-api-outbound-delivery-srv-0002/index.mdx
+    href: ./sap-s4hana-api-outbound-delivery-srv-0002/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-physical-inventory-document
     name: SAP Physical Inventory Document
     description: 'SAP S/4HANA Physical Inventory Document (A2X) API for stock counts: create inventory documents, enter counts, initiate recounts and post differences'
-    href: ./reference/catalog/sap-s4hana-api-physical-inventory-doc-srv/index.mdx
+    href: ./sap-s4hana-api-physical-inventory-doc-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-purchasing-info-record
     name: SAP Purchasing Info Record
     description: SAP S/4HANA Purchasing Info Record (A2X) API for managing purchasing info records, organization and plant data, purchase order texts and pricing conditions
-    href: ./reference/catalog/sap-s4hana-api-inforecord-process-srv/index.mdx
+    href: ./sap-s4hana-api-inforecord-process-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-quality-info-record
     name: SAP Quality Info Record
     description: SAP S/4HANA Quality Info Record (A2X) API for managing quality info records in procurement and first article inspections
-    href: ./reference/catalog/sap-s4hana-api-qualityinforecord-srv/index.mdx
+    href: ./sap-s4hana-api-qualityinforecord-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-reservation-document
     name: SAP Reservation Document
     description: SAP S/4HANA Reservation Document (A2X) OData V2 API for creating, reading and deleting material reservations and their items
-    href: ./reference/catalog/sap-s4hana-api-reservation-document-srv/index.mdx
+    href: ./sap-s4hana-api-reservation-document-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-reservation-document-a2x
     name: SAP Reservation Document (A2X)
     description: SAP S/4HANA Reservation Document OData V4 API for creating, reading, updating and deleting material reservations and their items
-    href: ./reference/catalog/sap-s4hana-ce-apireservationdocument-0001/index.mdx
+    href: ./sap-s4hana-ce-apireservationdocument-0001/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-sales-area
     name: SAP Sales Area
     description: 'SAP S/4HANA Sales Area master data: retrieve and query Sales Organization, Distribution Channel, and Division combinations'
-    href: ./reference/catalog/sap-s4hana-salesarea-0001/index.mdx
+    href: ./sap-s4hana-salesarea-0001/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-sales-district
     name: SAP Sales District
     description: SAP S/4HANA sales district master data and multilingual text descriptions via OData v2
-    href: ./reference/catalog/sap-s4hana-api-salesdistrict-srv/index.mdx
+    href: ./sap-s4hana-api-salesdistrict-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-sales-inquiry
     name: SAP Sales Inquiry
     description: Read SAP S/4HANA pre-sales inquiry documents including items, partners, and pricing elements via OData v2
-    href: ./reference/catalog/sap-s4hana-api-sales-inquiry-srv/index.mdx
+    href: ./sap-s4hana-api-sales-inquiry-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-sales-order
     name: SAP Sales Order
     description: SAP S/4HANA Sales Order (A2X) API for full order lifecycle management including items, billing, pricing, and scheduling
-    href: ./reference/catalog/sap-s4hana-api-sales-order-srv/index.mdx
+    href: ./sap-s4hana-api-sales-order-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-sales-order-analytics
     name: SAP Sales Order Analytics
     description: SAP S/4HANA Sales Order OData v4 API for full lifecycle management of sales orders and related entities
-    href: ./reference/catalog/sap-s4hana-ce-salesorder-0001/index.mdx
+    href: ./sap-s4hana-ce-salesorder-0001/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-sales-order-simulation
     name: SAP Sales Order Simulation
     description: SAP S/4HANA Sales Order Simulation API for synchronous pricing, material availability, and credit limit checks
-    href: ./reference/catalog/sap-s4hana-api-sales-order-simulation-srv/index.mdx
+    href: ./sap-s4hana-api-sales-order-simulation-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-sales-organization
     name: SAP Sales Organization
     description: 'SAP S/4HANA Sales Organization master data: lookup and listing of organizational units and multilingual texts'
-    href: ./reference/catalog/sap-s4hana-api-salesorganization-srv/index.mdx
+    href: ./sap-s4hana-api-salesorganization-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-sales-quotation
     name: SAP Sales Quotation
     description: SAP S/4HANA Sales Quotation API with full CRUD, partners, pricing, texts, process flow, and approval actions
-    href: ./reference/catalog/sap-s4hana-api-sales-quotation-srv/index.mdx
+    href: ./sap-s4hana-api-sales-quotation-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-sd-incoterms
     name: SAP SD Incoterms
     description: SAP S/4HANA OData API for reading Incoterms classification and version master data with multilingual text support
-    href: ./reference/catalog/sap-s4hana-api-sd-incoterms-srv/index.mdx
+    href: ./sap-s4hana-api-sd-incoterms-srv/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-sd-sold-to-party-determination
     name: SAP SD Sold-to-Party Determination
     description: SAP S/4HANA OData service for querying sold-to party assignments in sales scheduling agreements
-    href: ./reference/catalog/sap-s4hana-api-sd-sa-soldtopartydetn/index.mdx
+    href: ./sap-s4hana-api-sd-sa-soldtopartydetn/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-signavio
     name: SAP Signavio
     description: 'Business process transformation suite: dictionary, directory, model export/import, ingestion, transformation manager, and SIGNAL Engine OData'
-    href: ./reference/catalog/sap.signavio/index.mdx
+    href: ./sap.signavio/index.mdx
     category: erp-and-business
     tags:
       - SAP
   - id: sap-successfactors-employee-central-advances
     name: SAP SuccessFactors Employee Central Advances
     description: Manage employee salary advance requests and eligibility; track advance accumulation and repayment schedules; query installment plans and advance history
-    href: ./reference/catalog/sap.successfactors.ecadvances/index.mdx
+    href: ./sap.successfactors.ecadvances/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-alternative-cost-distribution
     name: SAP SuccessFactors Employee Central Alternative Cost Distribution
     description: Manage alternative cost distribution scenarios for employee expenses; configure cost center allocations and distribution percentages; query and update cost distribution records
-    href: ./reference/catalog/sap.successfactors.ecalternativecostdistribution/index.mdx
+    href: ./sap.successfactors.ecalternativecostdistribution/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-apprentice-management
     name: SAP SuccessFactors Employee Central Apprentice Management
     description: Manage apprentice program registrations and tracking; configure apprentice event types and program definitions; query apprentice progress and training records
-    href: ./reference/catalog/sap.successfactors.ecapprenticemanagement/index.mdx
+    href: ./sap.successfactors.ecapprenticemanagement/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-compensation-information
     name: SAP SuccessFactors Employee Central Compensation Information
     description: Access employee salary and compensation data; manage pay scales, grades, and compensation planning; query one-time deductions and recurring pay components
-    href: ./reference/catalog/sap.successfactors.eccompensationinformation/index.mdx
+    href: ./sap.successfactors.eccompensationinformation/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-dismissal-protection
     name: SAP SuccessFactors Employee Central Dismissal Protection
     description: Manage dismissal protection records and legal compliance; track termination documentation and regulatory requirements; query protection details and compliance status
-    href: ./reference/catalog/sap.successfactors.ecdismissalprotection/index.mdx
+    href: ./sap.successfactors.ecdismissalprotection/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-payroll
     name: SAP SuccessFactors Employee Central Payroll
     description: Access Employee Central Payroll run results and data; query payroll processing records and pay slip information; retrieve payroll simulation and calculation results
-    href: ./reference/catalog/sap.successfactors.ecemployeecentralpayroll/index.mdx
+    href: ./sap.successfactors.ecemployeecentralpayroll/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-employee-profile
     name: SAP SuccessFactors Employee Central Employee Profile
     description: Manage employee profile information including personal details; access education background and work experience records; query background information across multiple categories
-    href: ./reference/catalog/sap.successfactors.ecemployeeprofile/index.mdx
+    href: ./sap.successfactors.ecemployeeprofile/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-employment-information
     name: SAP SuccessFactors Employee Central Employment Information
     description: Access employment-related information including job details; manage employment status, termination data, and work permits; query job information history and employment records
-    href: ./reference/catalog/sap.successfactors.ecemploymentinformation/index.mdx
+    href: ./sap.successfactors.ecemploymentinformation/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-foundation-organization
     name: SAP SuccessFactors Employee Central Foundation Organization
     description: Access foundation objects including legal entities and departments; manage divisions, job classifications, and cost centers; query pay structures and organizational hierarchies
-    href: ./reference/catalog/sap.successfactors.ecfoundationorganization/index.mdx
+    href: ./sap.successfactors.ecfoundationorganization/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-global-assignment
     name: SAP SuccessFactors Employee Central Global Assignment
     description: Manage global assignment data for internationally mobile employees; track assignment details and right-to-return records; query secondary assignment items and global assignment history
-    href: ./reference/catalog/sap.successfactors.ecglobalassignment/index.mdx
+    href: ./sap.successfactors.ecglobalassignment/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-global-benefits
     name: SAP SuccessFactors Employee Central Global Benefits
     description: Manage comprehensive employee benefits including insurance and savings plans; access pension funds, company cars, and benefit enrollments; query benefit employee claims and eligibility records
-    href: ./reference/catalog/sap.successfactors.ecglobalbenefits/index.mdx
+    href: ./sap.successfactors.ecglobalbenefits/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-income-tax-declaration
     name: SAP SuccessFactors Employee Central Income Tax Declaration
     description: Manage income tax declaration and investment declarations; configure fiscal year tax settings and exemption categories; query declaration types and tax configuration data
-    href: ./reference/catalog/sap.successfactors.ecincometaxdeclaration/index.mdx
+    href: ./sap.successfactors.ecincometaxdeclaration/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-master-data-replication
     name: SAP SuccessFactors Employee Central Master Data Replication
     description: Manage master data replication across Employee Central systems; monitor replication status and confirmation error messages; query replication configurations and audit logs
-    href: ./reference/catalog/sap.successfactors.ecmasterdatareplication/index.mdx
+    href: ./sap.successfactors.ecmasterdatareplication/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-payment-information
     name: SAP SuccessFactors Employee Central Payment Information
     description: Manage employee payment information and bank accounts; configure payment methods and direct deposit details; query payment information across multiple regions
-    href: ./reference/catalog/sap.successfactors.ecpaymentinformation/index.mdx
+    href: ./sap.successfactors.ecpaymentinformation/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-payroll-time-sheets
     name: SAP SuccessFactors Employee Central Payroll Time Sheets
     description: Access payroll timesheet data and time tracking records; manage employee time sheets and attendance data; query payroll processing information and time entries
-    href: ./reference/catalog/sap.successfactors.ecpayrolltimesheets/index.mdx
+    href: ./sap.successfactors.ecpayrolltimesheets/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-personal-information
     name: SAP SuccessFactors Employee Central Personal Information
     description: Manage employee personal information including biographical data; access addresses, contacts, national IDs, and social accounts; query emergency contacts and personal details
-    href: ./reference/catalog/sap.successfactors.ecpersonalinformation/index.mdx
+    href: ./sap.successfactors.ecpersonalinformation/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-position-management
     name: SAP SuccessFactors Employee Central Position Management
     description: Manage position creation and hierarchy in organizational structures; configure position requisition workflows and approval status; query position relationships and organizational reporting lines
-    href: ./reference/catalog/sap.successfactors.ecpositionmanagement/index.mdx
+    href: ./sap.successfactors.ecpositionmanagement/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-skills-management
     name: SAP SuccessFactors Employee Central Skills Management
     description: Manage employee skills profiles and competency frameworks; access certification content and skill assessments; query talent tracking and development records
-    href: ./reference/catalog/sap.successfactors.ecskillsmanagement/index.mdx
+    href: ./sap.successfactors.ecskillsmanagement/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-time-off
     name: SAP SuccessFactors Employee Central Time Off
     description: Manage time off and leave requests for employees; access time accounts, holiday calendars, and work schedules; query time account posting rules and employee time records
-    href: ./reference/catalog/sap.successfactors.ectimeoff/index.mdx
+    href: ./sap.successfactors.ectimeoff/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-workflow
     name: SAP SuccessFactors Employee Central Workflow
     description: Manage workflow processes including approval workflows; access pending workflow items and workflow notifications; query workflow history and process automation records
-    href: ./reference/catalog/sap.successfactors.ecworkflow/index.mdx
+    href: ./sap.successfactors.ecworkflow/index.mdx
     category: hrms
     tags:
       - SAP
   - id: sap-successfactors-employee-central-core
     name: SAP SuccessFactors Employee Central Core
     description: Comprehensive Employee Central APIs for employee data management; access organizational structure and position information; query global employee information across multiple regions
-    href: ./reference/catalog/sap.successfactors.employeecentralec/index.mdx
+    href: ./sap.successfactors.employeecentralec/index.mdx
     category: hrms
     tags:
       - SAP
   - id: scim
     name: SCIM
     description: SCIM 2.0 identity provisioning with user, group, and bulk management operations
-    href: ./reference/catalog/scim/index.mdx
+    href: ./scim/index.mdx
     category: security-and-identity
   - id: shopify-admin
     name: Shopify Admin
     description: E-commerce platform with product, order, customer, fulfillment, and webhook management
-    href: ./reference/catalog/shopify.admin/index.mdx
+    href: ./shopify.admin/index.mdx
     category: e-commerce
     tags:
       - Shopify
   - id: slack
     name: Slack
     description: Team messaging platform with channels, direct messages, file sharing, and workspace administration
-    href: ./reference/catalog/slack/index.mdx
+    href: ./slack/index.mdx
     category: communication
     tags:
       - Slack
   - id: smartsheet
     name: Smartsheet
     description: Work management platform with sheets, rows, columns, folders, workspaces, and collaboration
-    href: ./reference/catalog/smartsheet/index.mdx
+    href: ./smartsheet/index.mdx
     category: productivity-and-collaboration
     tags:
       - Smartsheet
   - id: smb
     name: SMB
     description: Read, write, and monitor files on SMB shares (Windows, Samba, NAS) using NTLMv2 or Kerberos authentication
-    href: ./reference/catalog/smb/index.mdx
+    href: ./smb/index.mdx
     category: storage-and-files
   - id: smpp
     name: SMPP
     description: 'Send and receive SMS through an SMSC over SMPP: submit single or multi-destination messages, query, cancel or replace them, and receive mobile-originated messages and delivery receipts via a listener'
-    href: ./reference/catalog/smpp/index.mdx
+    href: ./smpp/index.mdx
     category: messaging
   - id: snowflake
     name: Snowflake
     description: Cloud data warehouse with SQL queries, DML/DDL execution, batch operations, and stored procedures
-    href: ./reference/catalog/snowflake/index.mdx
+    href: ./snowflake/index.mdx
     category: database
     tags:
       - Snowflake
   - id: solace
     name: Solace
     description: Event broker with publish/subscribe, queuing, durable subscriptions, and listener triggers
-    href: ./reference/catalog/solace/index.mdx
+    href: ./solace/index.mdx
     category: messaging
     tags:
       - Solace
   - id: solace-jms
     name: Solace (JMS)
     description: Event broker with publish/subscribe, queuing, durable subscriptions, and listener triggers over the standard JMS API
-    href: ./reference/catalog/solace.jms/index.mdx
+    href: ./solace.jms/index.mdx
     category: messaging
     tags:
       - Solace
   - id: stripe
     name: Stripe
     description: Payment processing platform with customers, charges, invoices, subscriptions, and payouts
-    href: ./reference/catalog/stripe/index.mdx
+    href: ./stripe/index.mdx
     category: finance-and-accounting
     tags:
       - Stripe
   - id: tcp
     name: TCP
     description: Create TCP clients for sending and receiving raw bytes over persistent connections, and TCP listeners that accept inbound connections
-    href: ./reference/catalog/tcp/index.mdx
+    href: ./tcp/index.mdx
     category: network-and-protocols
   - id: telegram
     name: Telegram
     description: 'Client and webhook listener for the Telegram Bot API: send messages and media, manage chats, and receive bot updates'
-    href: ./reference/catalog/telegram/index.mdx
+    href: ./telegram/index.mdx
     category: communication
     tags:
       - Telegram
   - id: trello
     name: Trello
     description: Project management with boards, lists, cards, checklists, and team collaboration
-    href: ./reference/catalog/trello/index.mdx
+    href: ./trello/index.mdx
     category: productivity-and-collaboration
     tags:
       - Trello
   - id: twilio
     name: Twilio
     description: Cloud communications platform for SMS, voice calls, WhatsApp, and messaging APIs
-    href: ./reference/catalog/twilio/index.mdx
+    href: ./twilio/index.mdx
     category: communication
     tags:
       - Twilio
   - id: twitter
     name: Twitter
     description: Social media platform with tweet management, user lookup, DMs, likes, retweets, bookmarks, and lists
-    href: ./reference/catalog/twitter/index.mdx
+    href: ./twitter/index.mdx
     category: marketing-and-social
     tags:
       - Twitter
   - id: udp
     name: UDP
     description: Connectionless and connection-oriented UDP clients for sending and receiving datagrams, with a listener for event-driven UDP services
-    href: ./reference/catalog/udp/index.mdx
+    href: ./udp/index.mdx
     category: network-and-protocols
   - id: websocket
     name: WebSocket
     description: Synchronous client for connecting to WebSocket servers and a listener for building WebSocket servers, enabling real-time bidirectional communication
-    href: ./reference/catalog/websocket/index.mdx
+    href: ./websocket/index.mdx
     category: network-and-protocols
   - id: websub
     name: WebSub
     description: W3C publish-subscribe protocol for real-time content delivery through webhooks with subscriber-side subscription management
-    href: ./reference/catalog/websub/index.mdx
+    href: ./websub/index.mdx
     category: network-and-protocols
   - id: whatsapp-business
     name: WhatsApp Business
     description: 'Client and webhook listener for the WhatsApp Business Cloud API: send messages and templates, manage media, and handle webhook events'
-    href: ./reference/catalog/whatsapp-business/index.mdx
+    href: ./whatsapp-business/index.mdx
     category: communication
     tags:
       - Meta
   - id: wso2-apim-catalog
     name: WSO2 APIM Catalog
     description: WSO2 API Manager Service Catalog for registering and managing backend service definitions
-    href: ./reference/catalog/wso2.apim.catalog/index.mdx
+    href: ./wso2.apim.catalog/index.mdx
     category: developer-tools
     tags:
       - WSO2
   - id: zoom-meetings
     name: Zoom Meetings
     description: Video conferencing platform for scheduling, managing, and reporting on meetings and webinars
-    href: ./reference/catalog/zoom.meetings/index.mdx
+    href: ./zoom.meetings/index.mdx
     category: communication
     tags:
       - Zoom
   - id: zoom-scheduler
     name: Zoom Scheduler
     description: Zoom scheduling service for managing availability windows, meeting schedules, and bookings
-    href: ./reference/catalog/zoom.scheduler/index.mdx
+    href: ./zoom.scheduler/index.mdx
     category: communication
     tags:
       - Zoom

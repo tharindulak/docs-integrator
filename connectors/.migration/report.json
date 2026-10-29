@@ -1,50 +1,52 @@
 {
   "summary": {
-    "source": "wso2/docs-integrator@9014ecc6deba09df44293ef590411a50a16ac432",
+    "source": "wso2/docs-integrator@7cb59796b7a768270e506a938a39eb5fe08008a4",
     "sourceKind": "docusaurus",
     "edition": "_",
     "legacyBase": "https://wso2.com/integration-platform/docs/connectors/",
     "sidebar": "sidebars.ts (its object literal parsed, not run; 1 spreads left out)",
-    "navPages": 847,
-    "sourceFiles": 852,
+    "navPages": 851,
+    "sourceFiles": 856,
     "stats": {
-      "pages": 852,
+      "pages": 856,
       "partials": 0,
       "apiPages": 0,
-      "images": 1937,
-      "imageBytes": 298044181,
+      "images": 1943,
+      "imageBytes": 298734492,
       "unlisted": 5,
-      "links": 3203,
-      "legacyLinks": 236,
+      "links": 3221,
+      "legacyLinks": 237,
       "droppedLinks": 0,
       "missingImages": 2,
-      "generatedDescriptions": 602,
+      "generatedDescriptions": 604,
       "sidebarLabels": 0,
       "components": {
-        "ThemedImage": 1992,
-        "ConnectorCatalog (catalog layout)": 1,
-        "mermaid (shown as code)": 216,
+        "ThemedImage": 1998,
+        "mermaid (shown as code)": 217,
         "ConnectorHeader": 1,
+        "ConnectorCatalog (catalog layout)": 1,
         "admonition caution→warning": 1
       },
       "paletteFallbacks": 0,
       "acceptedByOverrides": 0,
       "excludedPages": 0,
-      "catalogItems": 205,
-      "legacyRedirects": 852
+      "catalogItems": 206,
+      "legacyRedirects": 856
     },
     "issues": {
       "sidebar": 1,
-      "catalog": 1,
-      "fallback": 216,
+      "fallback": 217,
+      "description": 57,
       "image": 4,
-      "description": 55
+      "catalog": 1
     },
     "compileFailures": 0,
     "contentSafetyFindings": 0,
     "overrides": {
+      "file": null,
       "patches": 0,
-      "patchesApplied": 0
+      "patchesApplied": 0,
+      "accepted": 0
     }
   },
   "items": [
@@ -52,11 +54,6 @@
       "kind": "sidebar",
       "file": null,
       "message": "1 spreads in the sidebar (code, not literals) were left out; the docs they add are unlisted"
-    },
-    {
-      "kind": "catalog",
-      "file": "catalog/index.mdx",
-      "message": "201 ConnectorCatalog items have a logo on another host; the catalog layout takes logos under assets/ only, so they are drawn without one"
     },
     {
       "kind": "fallback",
@@ -87,6 +84,21 @@
       "kind": "fallback",
       "file": "catalog/messaging/asb/example.md",
       "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
+      "kind": "description",
+      "file": "catalog/security-identity/authzen/actions.md",
+      "message": "description longer than 160 characters (176); one was generated from the first paragraph"
+    },
+    {
+      "kind": "fallback",
+      "file": "catalog/security-identity/authzen/example.md",
+      "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
+      "kind": "description",
+      "file": "catalog/security-identity/authzen/connector-overview.md",
+      "message": "description longer than 160 characters (170); one was generated from the first paragraph"
     },
     {
       "kind": "fallback",
@@ -562,6 +574,11 @@
       "kind": "fallback",
       "file": "catalog/erp-business/ibm.ctg/example.md",
       "message": "a Mermaid diagram is shown as its code: the Platform renders no Mermaid diagrams"
+    },
+    {
+      "kind": "catalog",
+      "file": "catalog/index.mdx",
+      "message": "202 ConnectorCatalog items have a logo on another host; the catalog layout takes logos under assets/ only, so they are drawn without one"
     },
     {
       "kind": "fallback",

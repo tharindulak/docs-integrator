@@ -1,0 +1,88 @@
+---
+title: Setup Guide
+description: This guide walks you through creating a HubSpot developer app and obtaining the App ID and developer API key required to use the HubSpot CRM Extensions…
+type: reference
+sidebar_position: 1
+---
+
+This guide walks you through creating a HubSpot developer app and obtaining the App ID and developer API key required to use the HubSpot CRM Extensions Video Conferencing connector.
+
+## Prerequisites
+
+- A HubSpot developer account. If you do not have one, [sign up for a free account](https://developers.hubspot.com/get-started).
+
+## Step 1: Log in to the HubSpot developer portal
+
+Log in to your [HubSpot developer account](https://app.hubspot.com/).
+
+## Step 2: Create a developer test account (optional)
+
+Developer test accounts let you test apps and integrations without affecting real HubSpot data.
+
+1. Select **Test accounts** in the left sidebar.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/test-accounts-section.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/test-accounts-section.png" alt="Test accounts section" />
+
+2. Select **Create developer test account**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/create-dev-account.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/create-dev-account.png" alt="Create developer test account" />
+
+3. Provide a name and select **Create**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/name-dev-account.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/name-dev-account.png" alt="Name the test account" />
+
+:::note
+Developer test accounts are for development and testing only. Do not use them in production.
+:::
+
+## Step 3: Create a HubSpot app
+
+1. Navigate to **Apps** and select **Create app**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/create-app.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/create-app.png" alt="Create app" />
+
+2. Enter the app name and an optional description.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/name-app.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/name-app.png" alt="Name the app" />
+
+## Step 4: Set the redirect URI
+
+1. Go to the **Auth** tab.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/auth-tab.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/auth-tab.png" alt="Auth tab" />
+
+2. Under **Redirect URL**, add your redirect URL and select **Create app**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/set-redirect-url.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/set-redirect-url.png" alt="Add redirect URL" />
+
+## Step 5: Get your App ID
+
+1. Navigate back to **Apps**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/go-to-apps.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/go-to-apps.png" alt="Go to apps" />
+
+2. Copy the **App ID** displayed next to your app name.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/get-app-id.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/get-app-id.png" alt="Get app ID" />
+
+## Step 6: Get your developer API key
+
+1. Select **Keys** in the left sidebar, then select **Developer API Key**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/dev-key-screen.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/dev-key-screen.png" alt="Developer API key screen" />
+
+2. Select **Create Key**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/create-dev-key.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/create-dev-key.png" alt="Create the key" />
+
+3. Select **Show** to reveal the key.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/show-dev-key.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/show-dev-key.png" alt="Show the key" />
+
+4. Select **Copy** to copy the developer API key.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/copy-dev-key.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.extensions.videoconferencing/setup/copy-dev-key.png" alt="Copy the key" />
+
+:::warning
+Store the App ID and developer API key securely. Do not commit them to source control. Use Ballerina's `configurable` feature and a `Config.toml` file to supply them at runtime.
+:::

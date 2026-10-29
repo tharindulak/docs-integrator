@@ -1,0 +1,101 @@
+---
+title: Setup Guide
+description: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Commerce Carts connector.
+type: reference
+sidebar_position: 1
+---
+
+This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot CRM Commerce Carts connector.
+
+## Prerequisites
+
+- A HubSpot developer account. If you do not have one, [sign up for a free account](https://developers.hubspot.com/get-started).
+
+## Step 1: Log in to the HubSpot developer portal
+
+Log in to your [HubSpot developer account](https://app.hubspot.com/).
+
+## Step 2: Create a developer test account (optional)
+
+Developer test accounts let you test apps and integrations without affecting real HubSpot data.
+
+1. Select **Test accounts** in the left sidebar.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/test-account.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/test-account.png" alt="Test accounts section" />
+
+2. Select **Create developer test account**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/create-test-account.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/create-test-account.png" alt="Create developer test account" />
+
+3. Provide a name and select **Create**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/create-account.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/create-account.png" alt="Name the test account" />
+
+4. The new account appears in the test accounts list.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/test-account-portal.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/test-account-portal.png" alt="Test account portal" />
+
+:::note
+Developer test accounts are for development and testing only. Do not use them in production.
+:::
+
+## Step 3: Create a HubSpot app
+
+1. Navigate to **Apps** in the left sidebar and select **Create app**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/create-app.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/create-app.png" alt="Create app" />
+
+2. Enter a public app name and an optional description.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/app-name-desc.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/app-name-desc.png" alt="App name and description" />
+
+## Step 4: Set up authentication
+
+1. Go to the **Auth** tab.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/config-auth.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/config-auth.png" alt="Configure authentication" />
+
+2. Under **Scopes**, select **Add new scopes** and add:
+   - `crm.objects.carts.read`
+   - `crm.objects.carts.write`
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/add-scopes.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/add-scopes.png" alt="Add scopes" />
+
+3. Under **Redirect URL**, add your redirect URL and select **Create App**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/redirect-url.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/redirect-url.png" alt="Redirect URL" />
+
+## Step 5: Get the client ID and client secret
+
+In the **Auth** tab, copy the **Client ID** and **Client Secret**.
+
+<ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/client-id-secret.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/client-id-secret.png" alt="Client ID and client secret" />
+
+## Step 6: Get the refresh token
+
+1. Construct the authorization URL:
+
+   ```
+   https://app.hubspot.com/oauth/authorize?client_id=<YOUR_CLIENT_ID>&scope=<YOUR_SCOPES>&redirect_uri=<YOUR_REDIRECT_URI>
+   ```
+
+2. Open the URL in a browser and select your developer test account to install the app.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/hubspot-oauth-consent-screen.png" dark="../../../../assets/img/connectors/catalog/crm-sales/hubspot.crm.commerce.carts/setup/hubspot-oauth-consent-screen.png" alt="OAuth consent screen" />
+
+3. Copy the authorization code from the redirect URL.
+
+4. Exchange the code for tokens:
+
+   ```bash
+   curl --request POST \
+     --url https://api.hubapi.com/oauth/v1/token \
+     --header 'content-type: application/x-www-form-urlencoded' \
+     --data 'grant_type=authorization_code&code=<CODE>&redirect_uri=<YOUR_REDIRECT_URI>&client_id=<YOUR_CLIENT_ID>&client_secret=<YOUR_CLIENT_SECRET>'
+   ```
+
+5. Copy the `refresh_token` from the response.
+
+:::tip
+Store the client ID, client secret, and refresh token securely. Use Ballerina's `configurable` feature and a `Config.toml` file to supply them at runtime.
+:::

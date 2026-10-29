@@ -1,0 +1,83 @@
+---
+title: Setup Guide
+description: This guide walks you through creating an AWS IAM user and obtaining the access credentials required to use the AWS S3 connector.
+type: reference
+sidebar_position: 1
+---
+
+This guide walks you through creating an AWS IAM user and obtaining the access credentials required to use the AWS S3 connector.
+
+## Prerequisites
+
+- An active AWS account. If you do not have one, [sign up here](https://portal.aws.amazon.com/billing/signup).
+
+## Step 1: Sign in to the AWS Management Console
+
+1. Go to [console.aws.amazon.com](https://console.aws.amazon.com/) and sign in.
+2. In the top navigation bar, select the AWS **Region** where you want to create your S3 buckets (for example, `us-east-1`).
+
+## Step 2: Create an IAM user
+
+1. Open the **IAM** console by searching for "IAM" in the AWS Management Console.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/create-user-1.jpeg" dark="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/create-user-1.jpeg" alt="Search for IAM" />
+
+2. In the left navigation pane, select **Users**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/create-user-2.jpeg" dark="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/create-user-2.jpeg" alt="IAM Dashboard - select Users" />
+
+3. Select **Create user**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/create-user-3.jpeg" dark="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/create-user-3.jpeg" alt="Users page - Create user" />
+
+4. Enter a **User name** (for example, `S3-USER`) and select **Next**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/specify-user-details.jpeg" dark="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/specify-user-details.jpeg" alt="Specify user details" />
+
+5. Under **Set permissions**, select **Attach policies directly**. Search for and select the **AmazonS3FullAccess** managed policy (or a custom policy with the minimum S3 permissions your integration requires).
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/set-user-permissions.jpeg" dark="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/set-user-permissions.jpeg" alt="Set user permissions" />
+
+6. Select **Next**, review the details, and select **Create user**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/review-create-user.jpeg" dark="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/review-create-user.jpeg" alt="Review and create user" />
+
+7. You should see a confirmation that the user was created successfully.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/users.jpeg" dark="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/users.jpeg" alt="User created successfully" />
+
+:::tip
+For production use, follow the principle of least privilege — create a custom IAM policy that grants only the specific S3 actions and resources your integration needs.
+:::
+
+## Step 3: Generate access keys
+
+1. In the IAM console, select the user you just created. Under **Access keys**, select **Create access key**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/create-access-key-1.png" dark="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/create-access-key-1.png" alt="Create access key" />
+
+2. Select the **Application running outside AWS** use case, then select **Next**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/select-usecase.png" dark="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/select-usecase.png" alt="Select use case" />
+
+3. Optionally add a description tag, then select **Create access key**.
+
+4. Copy the **Access key ID** and **Secret access key** — these are your `accessKeyId` and `secretAccessKey`.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/retrieve-access-key.png" dark="../../../../assets/img/connectors/catalog/storage-file/aws.s3/setup/retrieve-access-key.png" alt="Retrieve access keys" />
+
+:::warning
+The secret access key is shown only once. Store both keys securely and do not commit them to source control. Use Ballerina's `configurable` feature and a `Config.toml` file to supply them at runtime.
+:::
+
+## Step 4: Note your AWS region
+
+Identify the AWS Region for your S3 operations (for example, `us-east-1`, `eu-west-1`, `ap-southeast-1`). This value is passed as the `region` configuration parameter when initializing the connector.
+
+:::note
+If you do not specify a region, the connector defaults to **US East (N. Virginia)** (`us-east-1`).
+:::
+
+## What's next
+
+- [Action reference](./action-reference.mdx): Available operations

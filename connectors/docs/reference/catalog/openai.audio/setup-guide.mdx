@@ -1,0 +1,42 @@
+---
+title: Setup Guide
+description: This guide walks you through creating an OpenAI account and generating an API key required to use the OpenAI Audio connector.
+type: reference
+sidebar_position: 1
+---
+
+This guide walks you through creating an OpenAI account and generating an API key required to use the OpenAI Audio connector.
+
+## Prerequisites
+
+- An OpenAI account. If you do not have one, [sign up at platform.openai.com](https://platform.openai.com/signup).
+- Billing enabled on your OpenAI account with an active prepaid credit balance. Audio API calls fail with a 402 error without credits on file. Add a payment method and top up credits in the [Billing settings](https://platform.openai.com/account/billing).
+
+## Step 1: Navigate to the API keys dashboard
+
+1. Open the [OpenAI Platform Dashboard](https://platform.openai.com).
+2. Navigate to **Dashboard > API keys** in the left sidebar.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ai-ml/openai.audio/setup/navigate-api-key-dashboard.png" dark="../../../../assets/img/connectors/catalog/ai-ml/openai.audio/setup/navigate-api-key-dashboard.png" alt="Navigate to API keys dashboard" />
+
+## Step 2: Create a new secret key
+
+1. Select **Create new secret key**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ai-ml/openai.audio/setup/api-key-dashboard.png" dark="../../../../assets/img/connectors/catalog/ai-ml/openai.audio/setup/api-key-dashboard.png" alt="API keys dashboard" />
+
+2. Fill in the required details and select **Create secret key**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ai-ml/openai.audio/setup/create-new-secret-key.png" dark="../../../../assets/img/connectors/catalog/ai-ml/openai.audio/setup/create-new-secret-key.png" alt="Create new secret key dialog" />
+
+3. Copy the generated API key immediately — it will not be shown again.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ai-ml/openai.audio/setup/saved-key.png" dark="../../../../assets/img/connectors/catalog/ai-ml/openai.audio/setup/saved-key.png" alt="Copy and save the API key" />
+
+:::warning
+Store the API key securely. Do not commit it to source control. Use Ballerina's `configurable` feature and a `Config.toml` file to supply it at runtime.
+:::
+
+## What's next
+
+- [Action reference](./actions.mdx): Available operations

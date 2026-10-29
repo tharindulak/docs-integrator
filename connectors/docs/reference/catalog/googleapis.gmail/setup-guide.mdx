@@ -1,0 +1,63 @@
+---
+title: Setup Guide
+description: This guide walks you through creating a Google Cloud Platform project and obtaining the OAuth 2.0 credentials required to use the Gmail connector.
+type: reference
+sidebar_position: 1
+---
+
+This guide walks you through creating a Google Cloud Platform project and obtaining the OAuth 2.0 credentials required to use the Gmail connector.
+
+## Step 1: Create a Google Cloud Platform project
+
+1. Open the [Google Cloud Platform Console](https://console.cloud.google.com/).
+2. Select an existing project or create a new one from the project drop-down menu.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/gcp-console-project-view.png" dark="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/gcp-console-project-view.png" alt="GCP Console project view" />
+
+## Step 2: Enable Gmail API
+
+1. Navigate to the **Library** tab and enable the Gmail API.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/enable-gmail-api.png" dark="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/enable-gmail-api.png" alt="Enable Gmail API" />
+
+## Step 3: Configure OAuth consent
+
+1. Select the **OAuth consent screen** tab in the Google Cloud Platform console.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/consent-screen.png" dark="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/consent-screen.png" alt="Consent screen" />
+
+2. Provide a name for the consent application and save your changes.
+
+## Step 4: Create an OAuth client
+
+1. Navigate to the **Credentials** tab and select **Create credentials** → **OAuth client ID**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/create-credentials.png" dark="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/create-credentials.png" alt="Create credentials" />
+
+2. Fill in the following fields and select **Create**:
+
+   | Field | Value |
+   |---|---|
+   | Application type | Web Application |
+   | Name | GmailConnector |
+   | Authorized redirect URIs | `https://developers.google.com/oauthplayground` |
+
+3. Save the provided **Client ID** and **Client secret**.
+
+## Step 5: Get the access and refresh tokens
+
+:::note
+It is recommended to use the OAuth 2.0 playground to obtain the tokens.
+:::
+
+1. Configure the [OAuth 2.0 playground](https://developers.google.com/oauthplayground) with your client ID and client secret.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/oauth-playground.png" dark="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/oauth-playground.png" alt="OAuth playground" />
+
+2. Authorize the Gmail APIs (select all scopes except the metadata scope).
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/authorize-apis.png" dark="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/authorize-apis.png" alt="Authorize APIs" />
+
+3. Exchange the authorization code for tokens.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/exchange-tokens.png" dark="../../../../assets/img/connectors/catalog/communication/googleapis.gmail/setup/exchange-tokens.png" alt="Exchange tokens" />

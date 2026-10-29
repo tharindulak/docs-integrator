@@ -1,0 +1,54 @@
+---
+title: Setup Guide
+description: This guide walks you through creating an OpenAI account and generating an API key required to use the OpenAI connector.
+type: reference
+sidebar_position: 1
+---
+
+This guide walks you through creating an OpenAI account and generating an API key required to use the OpenAI connector.
+
+## Prerequisites
+
+- An OpenAI account. If you do not have one, [sign up at platform.openai.com](https://platform.openai.com/signup).
+
+## Step 1: Log in to the OpenAI Platform
+
+1. Visit [platform.openai.com](https://platform.openai.com/).
+2. Sign in with your credentials or create a new account.
+
+## Step 2: Create a project
+
+1. Select your profile icon in the top-right corner.
+2. In the dropdown menu, select **Your Profile**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/your_profile.png" dark="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/your_profile.png" alt="Your profile menu" />
+
+3. Navigate to the **Projects** section from the sidebar.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/project_portal.png" dark="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/project_portal.png" alt="Projects portal" />
+
+4. Select **Create Project** and provide a name.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/create_project.png" dark="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/create_project.png" alt="Create project" />
+
+## Step 3: Create an API key
+
+1. Navigate to the **API Keys** section from the sidebar and select **+ Create new secret key**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/api_key_portal.png" dark="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/api_key_portal.png" alt="API keys portal" />
+
+2. Provide a name for the key (for example, `Connector Key`), select your project, and confirm.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/create_api_key.png" dark="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/create_api_key.png" alt="Create new API key" />
+
+3. Copy the generated API key immediately — it will not be shown again.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/copy_key.png" dark="../../../../assets/img/connectors/catalog/ai-ml/openai/setup/copy_key.png" alt="Copy generated key" />
+
+:::warning
+Store the API key securely. Do not commit it to source control. Use Ballerina's `configurable` feature and a `Config.toml` file to supply it at runtime.
+:::
+
+## What's next
+
+- [Action reference](./actions.mdx): Available operations

@@ -1,0 +1,106 @@
+---
+title: Setup Guide
+description: This guide walks you through creating a Shopify development store and obtaining the Admin API access token required to use the Shopify Admin connector.
+type: reference
+sidebar_position: 1
+---
+
+This guide walks you through creating a Shopify development store and obtaining the Admin API access token required to use the Shopify Admin connector.
+
+## Prerequisites
+
+- A Shopify account. If you do not have one, [sign up at the Shopify signup portal](https://accounts.shopify.com/signup).
+- Membership in the [Shopify Partner Program](https://www.shopify.com/partners) to access development tools.
+
+## Step 1: Sign up for a Shopify developer account
+
+1. Create a Shopify account via the [Shopify signup portal](https://accounts.shopify.com/signup).
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/signup-page.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/signup-page.png" alt="Shopify signup page" />
+
+2. Join the [Shopify Partner Program](https://www.shopify.com/partners) to access development tools.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/partner-page.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/partner-page.png" alt="Shopify partner program" />
+
+## Step 2: Create a new organization
+
+1. In the Shopify Partner Dashboard, connect to an existing organization or create a new one.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/new-organization.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/new-organization.png" alt="New organization" />
+
+2. Select your main focus as a Shopify partner and follow the on-screen instructions.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/main-focus-as-shopify-partner.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/main-focus-as-shopify-partner.png" alt="Main focus as Shopify partner" />
+
+3. Provide business contact details and finalize the setup.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/business-contact-information.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/business-contact-information.png" alt="Business contact information" />
+
+## Step 3: Create a development store
+
+1. In the [Shopify Partner Dashboard](https://partners.shopify.com/), select **Stores** in the left navigation.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/home-page.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/home-page.png" alt="Stores section" />
+
+2. Select **Create store** to proceed.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/create-store.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/create-store.png" alt="Create store" />
+
+3. Complete the store setup by following the on-screen instructions.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/create-store-configs.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/create-store-configs.png" alt="Store configuration" />
+
+:::note
+A development store is free and intended for testing and development purposes.
+:::
+
+## Step 4: Create a new app
+
+1. In your store admin, select **Settings**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/settings.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/settings.png" alt="Settings" />
+
+2. Go to the **Apps** section and select **Develop apps**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/apps-section.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/apps-section.png" alt="Apps section" />
+
+3. Select **Allow custom app development**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/develop-apps.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/develop-apps.png" alt="Develop apps" />
+
+4. Select **Create an app**, enter an app name, and confirm.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/create-app.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/create-app.png" alt="Create app" />
+
+## Step 5: Generate an access token
+
+1. Once the app is created, select **Configure Admin API scopes** and apply the scopes required for your use case (for example, `read_products`, `write_orders`).
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/configure-admin-api-scopes.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/configure-admin-api-scopes.png" alt="Configure Admin API scopes" />
+
+2. Select **Install app** to generate an Admin API access token.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/add-access-token.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/add-access-token.png" alt="Install app" />
+
+3. Select **Reveal token once** to copy and save the token securely.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/reveal-access-token.png" dark="../../../../assets/img/connectors/catalog/ecommerce/shopify.admin/setup/reveal-access-token.png" alt="Reveal access token" />
+
+:::warning
+The access token is shown only once. Copy it immediately and store it securely. Do not commit it to source control. Use Ballerina's `configurable` feature and a `Config.toml` file to supply it at runtime.
+:::
+
+## Step 6: Get your store URL
+
+Your store URL follows this pattern:
+
+```
+https://<your-store-name>.myshopify.com
+```
+
+You can find it in the browser address bar when viewing your Shopify admin dashboard.
+
+## What's next
+
+- [Action reference](./actions.mdx): Available operations
+- [Trigger reference](./triggers.mdx): Event-driven integration

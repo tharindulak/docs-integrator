@@ -1,0 +1,115 @@
+---
+title: Setup Guide
+description: This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot Marketing Events connector.
+type: reference
+sidebar_position: 1
+---
+
+This guide walks you through creating a HubSpot developer app and obtaining the OAuth 2.0 credentials required to use the HubSpot Marketing Events connector.
+
+## Prerequisites
+
+- A HubSpot developer account. If you do not have one, [sign up for a free account](https://developers.hubspot.com/get-started).
+
+## Step 1: Log in to the HubSpot developer portal
+
+Log in to your [HubSpot developer account](https://app.hubspot.com/).
+
+## Step 2: Create a developer test account (optional)
+
+Developer test accounts let you test apps and integrations without affecting real HubSpot data.
+
+1. Select **Test accounts** in the left sidebar.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/test_acc_1.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/test_acc_1.png" alt="Developer portal" />
+
+2. Select **Create developer test account**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/test_acc_2.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/test_acc_2.png" alt="Create test account" />
+
+3. Provide a name and select **Create**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/test_acc_3.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/test_acc_3.png" alt="Name the test account" />
+
+:::note
+Developer test accounts are for development and testing only. Do not use them in production.
+:::
+
+## Step 3: Create a HubSpot app
+
+1. Navigate to **Apps** and select **Create App**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/create_app_1.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/create_app_1.png" alt="Create app" />
+
+2. Provide the app name and description.
+
+## Step 4: Configure authentication
+
+1. Go to the **Auth** tab.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/create_app_2.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/create_app_2.png" alt="Auth tab" />
+
+2. Under **Scopes**, select **Add new scope** and add:
+   - `crm.objects.marketing_events.read`
+   - `crm.objects.marketing_events.write`
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/scope_set.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/scope_set.png" alt="Set scope" />
+
+3. Add your redirect URI and select **Create App**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/create_app_final.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/create_app_final.png" alt="Create app with redirect" />
+
+## Step 5: Get the client ID and client secret
+
+In the **Auth** section, copy the **Client ID** and **Client Secret**.
+
+<ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/get_credentials.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/get_credentials.png" alt="Get credentials" />
+
+## Step 6: Get the refresh token
+
+1. Construct the authorization URL:
+
+   ```
+   https://app.hubspot.com/oauth/authorize?client_id=<YOUR_CLIENT_ID>&scope=<YOUR_SCOPES>&redirect_uri=<YOUR_REDIRECT_URI>
+   ```
+
+2. Open the URL in a browser and select your developer test account.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/install_app.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/install_app.png" alt="Select account to install app" />
+
+3. Copy the authorization code from the redirect URL.
+
+4. Exchange the code for tokens:
+
+   ```bash
+   curl --request POST \
+     --url https://api.hubapi.com/oauth/v1/token \
+     --header 'content-type: application/x-www-form-urlencoded' \
+     --data 'grant_type=authorization_code&code=<CODE>&redirect_uri=<YOUR_REDIRECT_URI>&client_id=<YOUR_CLIENT_ID>&client_secret=<YOUR_CLIENT_SECRET>'
+   ```
+
+5. Copy the `refresh_token` from the response.
+
+:::tip
+Store the client ID, client secret, and refresh token securely. Use Ballerina's `configurable` feature and a `Config.toml` file to supply them at runtime.
+:::
+
+## Step 7: Get a developer API key (optional)
+
+Some Marketing Events API calls for managing app settings require a developer API key in addition to OAuth.
+
+1. In your HubSpot developer account, navigate to **Apps**.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/api_key_1.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/api_key_1.png" alt="Apps section" />
+
+2. Select **HubSpot API key** in the left sidebar.
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/api_key_2.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/api_key_2.png" alt="API key section" />
+
+3. Select **Generate API key** (or copy your existing key).
+
+   <ThemedImage light="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/api_key_3.png" dark="../../../../assets/img/connectors/catalog/marketing-social/hubspot.marketing.events/setup/api_key_3.png" alt="Generate API key" />
+
+## What's next
+
+- [Action reference](./actions.mdx): Available operations
